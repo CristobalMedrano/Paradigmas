@@ -61,7 +61,7 @@ void MostrarMenu()
 	printf("***----------------------***\n");
 	printf("**                        **\n");
 	printf("*         PaDSearch        *\n");
-	printf("*        Version 0.0       *\n");
+	printf("*        Version 0.1       *\n");
 	printf("**                        **\n");
 	printf("***----------------------***\n");
 	printf("\n");
@@ -114,7 +114,7 @@ void AcercaDe()
 
 void PresionarContinuar()
 {
-	int opcion = 0;
-	printf("\nPresione una letra e intro para continuar... ");
-	scanf("%d", &opcion);
+	fflush(stdin);
+	printf("\nPresione intro para continuar...");
+	getchar();
 }
