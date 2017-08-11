@@ -1,10 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "buscador.h"
+#include <time.h>
+#include <Estructuras.h>
+#include <buscador.h>
+#include <Procesamiento.h>
 
 int main(int argc, char const *argv[])
 {
 	int opcion;
+	code statusCode = 0;
 	do{
 		opcion = SIN_INGRESO;
 		LimpiarConsola();
@@ -15,31 +19,37 @@ int main(int argc, char const *argv[])
 		{
 			case CARGAR_STOPWORDS: 
 				printf("Cargando StopWords...\n");
+				printf("statusCode: %d\n", statusCode);
 				PresionarContinuar();
 				break;
 
 			case CREAR_INDEX: 
 				printf("Creando Index...\n");
+				printf("statusCode: %d\n", statusCode);
 				PresionarContinuar();
 				break;
 
 			case GUARDAR_INDEX:
 				printf("Guardando Index...\n");
+				printf("statusCode: %d\n", statusCode);
 				PresionarContinuar();
 				break;
 
 			case CARGAR_INDEX:
 				printf("Cargando Index...\n");
+				printf("statusCode: %d\n", statusCode);
 				PresionarContinuar();
 				break;
 
 			case BUSCAR:
 				printf("Buscando...\n");
+				printf("statusCode: %d\n", statusCode);
 				PresionarContinuar();
 				break;
 
 			case MOSTRAR_RESULTADOS:
 				printf("Mostrando resultados...\n");
+				printf("statusCode: %d\n", statusCode);
 				PresionarContinuar();
 				break;
 
@@ -61,7 +71,7 @@ void MostrarMenu()
 	printf("***----------------------***\n");
 	printf("**                        **\n");
 	printf("*         PaDSearch        *\n");
-	printf("*        Version 0.1       *\n");
+	printf("*        Version 0.2       *\n");
 	printf("**                        **\n");
 	printf("***----------------------***\n");
 	printf("\n");

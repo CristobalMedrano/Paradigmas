@@ -11,9 +11,11 @@
 #define ACERCA_DE 7
 #define SALIR 8
 
+// Funciones del Menu.
 void MostrarMenu();
 void LimpiarConsola();
 void ValidarOpcionIngresada(int* opcionIngresada, int Min, int Max);
 void AcercaDe();
 void PresionarContinuar();
+
 #endif

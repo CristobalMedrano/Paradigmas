@@ -25,7 +25,7 @@ HEADERS = Header/
 CCDebug = gcc -Wall
 CC = gcc -Wall
 INCLUDE = -I $(HEADERS)
-OBJECTS = Indexacion.o buscador.o
+OBJECTS = Procesamiento.o buscador.o
 
 .SILENT: clean all
 all: $(OBJECTS)
@@ -35,8 +35,8 @@ all: $(OBJECTS)
 buscador.o: buscador.c $(HEADERS)buscador.h
 	$(CC) $(INCLUDE) -c buscador.c -o buscador.o
 
-Indexacion.o: $(SOURCES)Indexacion.c $(HEADERS)Indexacion.h
-	$(CC) $(INCLUDE) -c $(SOURCES)Indexacion.c -o Indexacion.o
+Procesamiento.o: $(SOURCES)Procesamiento.c $(HEADERS)Procesamiento.h
+	$(CC) $(INCLUDE) -c $(SOURCES)Procesamiento.c -o Procesamiento.o
 
 #file.o: $(SOURCES)file.c $(HEADERS)file.h
 #	$(CC) $(INCLUDE) -c $(SOURCES)file.c -o file.o
