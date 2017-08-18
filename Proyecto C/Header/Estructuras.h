@@ -3,7 +3,10 @@
 
 typedef struct InvertedIndex
 {
-
+	//Palabra
+	//ListaEnlazada Indice de doc donde se encuentra.
+	//Hijoizquierdo
+	//Hijoderecho
 } InvertedIndex;
 
 typedef struct Result
@@ -18,6 +21,8 @@ typedef struct Ranking
 
 typedef struct StopWords
 {
+	char *palabra;
+	struct StopWords *siguiente;
 
 } StopWords;
 

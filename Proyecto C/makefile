@@ -25,7 +25,7 @@ HEADERS = Header/
 CCDebug = gcc -Wall
 CC = gcc -Wall
 INCLUDE = -I $(HEADERS)
-OBJECTS = Procesamiento.o buscador.o
+OBJECTS = Index.o StopWords.o Menu.o buscador.o
 
 .SILENT: clean all
 all: $(OBJECTS)
@@ -35,8 +35,14 @@ all: $(OBJECTS)
 buscador.o: buscador.c $(HEADERS)buscador.h
 	$(CC) $(INCLUDE) -c buscador.c -o buscador.o
 
-Procesamiento.o: $(SOURCES)Procesamiento.c $(HEADERS)Procesamiento.h
-	$(CC) $(INCLUDE) -c $(SOURCES)Procesamiento.c -o Procesamiento.o
+Menu.o: $(SOURCES)Menu.c $(HEADERS)Menu.h
+	$(CC) $(INCLUDE) -c $(SOURCES)Menu.c -o Menu.o
+
+StopWords.o: $(SOURCES)StopWords.c $(HEADERS)StopWords.h
+	$(CC) $(INCLUDE) -c $(SOURCES)StopWords.c -o StopWords.o
+
+Index.o: $(SOURCES)Index.c $(HEADERS)Index.h
+	$(CC) $(INCLUDE) -c $(SOURCES)Index.c -o Index.o
 
 #file.o: $(SOURCES)file.c $(HEADERS)file.h
 #	$(CC) $(INCLUDE) -c $(SOURCES)file.c -o file.o
