@@ -15,14 +15,14 @@ int main(int argc, char const *argv[])
 	int id = 0;
 	char* pathStopWordsFile = NULL;
 	char* pathDocumentsFile = NULL;
-	StopWords* listaSW;
-	InvertedIndex* index;
+	StopWords* listaSW = NULL;
+	InvertedIndex* index = NULL;
 	code statusCode;
 	
 	do
 	{
 		opcion = SIN_INGRESO;
-		statusCode = 0;
+		statusCode = FAIL;
 		LimpiarConsola();
 		MostrarMenu();
 		ValidarOpcionIngresada(&opcion, 1,8);
@@ -37,7 +37,7 @@ int main(int argc, char const *argv[])
 				break;
 
 			case CREAR_INDEX:
-				pathDocumentsFile = obtenerNombreArchivo(); 
+				pathDocumentsFile = obtenerNombreArchivo();
 				index = createIndex(pathDocumentsFile, listaSW, &statusCode);
 				MostrarStatusCode(statusCode);
 				PresionarContinuar();

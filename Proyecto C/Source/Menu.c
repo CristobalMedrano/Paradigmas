@@ -9,7 +9,7 @@ void MostrarMenu()
 	printf("***----------------------***\n");
 	printf("**                        **\n");
 	printf("*         PaDSearch        *\n");
-	printf("*        Version 0.3       *\n");
+	printf("*        Version 0.4       *\n");
 	printf("**                        **\n");
 	printf("***----------------------***\n");
 	printf("\n");
@@ -81,6 +81,9 @@ void MostrarStatusCode(code statusCode)
 			break;
 		case FAIL: 
 			printf("statusCode: FAIL\n");
+			break;
+		case ERR_STOPWORDS_NOT_FOUND:
+			printf("statusCode: ERR_STOPWORDS_NOT_FOUND\n");
 			break;
 	}
 }
