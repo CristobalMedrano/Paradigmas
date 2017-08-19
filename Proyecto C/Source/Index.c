@@ -20,6 +20,7 @@ InvertedIndex* createIndex(char* pathDocumentsFile, StopWords* sw, code*statusCo
 	InvertedIndex* index = NULL;
 	char* palabra = NULL;
 	int palabraValida = 0;
+	int palabraRepetida = 0;
 	
 	archivoEntrada = fopen(pathDocumentsFile, "rb");
 
@@ -29,14 +30,15 @@ InvertedIndex* createIndex(char* pathDocumentsFile, StopWords* sw, code*statusCo
 		{
 			palabra = LeerPalabra(archivoEntrada);
 			palabraValida = QuitarStopWords(palabra, sw);
-			if (palabraValida == TRUE)
+			palabraRepetida = QuitarPalabraRepetida(index, palabra);
+
+			if (palabraValida == TRUE && palabraRepetida == TRUE)
 			{
-				//Falta condicion para que no agregue palabras repetidas...!!
 				//Falta funcion que agregue el id a la palabra
 				// La idea es encontrar la palabra que no sea stopwords y agregar el indice.
 				// texto2- tomo la palabra, la busco en el texto, si está, añado el indice a la lista.
 
-				// Primero termino funcion que evite palabras repetidas.
+				// --- Primero termino funcion que evite palabras repetidas.
 				// Segundo creo funcion que almacene un texto.
 				// Tercero busco en ese texto mi palabra.
 				// Cuarto si la palabra está, agrego la id del texto a la palabra.
@@ -48,6 +50,7 @@ InvertedIndex* createIndex(char* pathDocumentsFile, StopWords* sw, code*statusCo
 	else
 	{
 		*statusCode = ERR_FILE_NOT_FOUND;
+		return NULL;
 	}
 	preOrden(index);
 	fclose(archivoEntrada);
@@ -83,6 +86,26 @@ int QuitarStopWords(char* palabra, StopWords* listaSW)
 		i++;
 	}
 	return TRUE;
+}
+
+int QuitarPalabraRepetida(InvertedIndex* index, char* palabra)
+{
+	if (index == NULL)
+	{
+		return TRUE;
+	}
+	InvertedIndex* indicePalabraRepetida = BuscarPalabraIndex(index, palabra);
+
+	if (indicePalabraRepetida == NULL)
+	{
+		return TRUE;
+	}
+	return FALSE;
+}
+
+void LeerTexto()
+{
+	
 }
 
 char* LeerPalabra(FILE* archivoEntrada)

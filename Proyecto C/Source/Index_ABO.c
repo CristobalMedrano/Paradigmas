@@ -87,6 +87,28 @@ char* ObtenerPalabraIndex(InvertedIndex* index)
 	}
 }
 
+InvertedIndex* BuscarPalabraIndex(InvertedIndex* index, char* palabra)
+{
+	InvertedIndex* indice = index;
+	while (indice != NULL)
+	{
+		char* palabraActual = ObtenerPalabraIndex(indice);
+		if (strcmp(palabra, palabraActual) == 0)
+		{
+			return indice;
+		}
+		if (strcmp(palabra, palabraActual) < 0)
+		{
+			indice = hijo_IZQUIERDO(indice);
+		}
+		else
+		{
+			indice = hijo_DERECHO(indice);
+		}
+	}
+	return NULL;
+}
+
 void preOrden(InvertedIndex* index)
 {
 	if (index != NULL)

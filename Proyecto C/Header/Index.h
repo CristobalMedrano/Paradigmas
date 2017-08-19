@@ -8,6 +8,7 @@ InvertedIndex* createIndex(char* pathDocumentsFile, StopWords*sw, code*statusCod
 void saveIndex(InvertedIndex*i, int*id, code*statusCode);
 InvertedIndex* loadIndex(int id, code*statusCode);
 int QuitarStopWords(char* palabra, StopWords* listaSW);
+int QuitarPalabraRepetida(InvertedIndex* index, char* palabra);
 char* LeerPalabra(FILE* archivoEntrada);
 int obtenerID();
 

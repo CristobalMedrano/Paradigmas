@@ -6,6 +6,7 @@ InvertedIndex* CrearHoja(char* palabra, InvertedIndex* arbol_izquierdo, Inverted
 InvertedIndex* hijo_IZQUIERDO(InvertedIndex* index);
 InvertedIndex* hijo_DERECHO(InvertedIndex* index);
 char* ObtenerPalabraIndex(InvertedIndex* index);
+InvertedIndex* BuscarPalabraIndex(InvertedIndex* index, char* palabra);
 void preOrden(InvertedIndex* index);
 
 #endif

@@ -9,7 +9,7 @@ void MostrarMenu()
 	printf("***----------------------***\n");
 	printf("**                        **\n");
 	printf("*         PaDSearch        *\n");
-	printf("*        Version 0.4       *\n");
+	printf("*       Version 0.41       *\n");
 	printf("**                        **\n");
 	printf("***----------------------***\n");
 	printf("\n");
