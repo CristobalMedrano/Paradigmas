@@ -20,7 +20,7 @@ Index* CrearNodoIndex()
 	}
 }
 
-Index* InsertarIndex(Index* index, int pos, int id)
+Index* InsertarIndex(Index* index, int pos, char* id)
 {
 	int i;
 	if(pos < 0)
@@ -60,10 +60,11 @@ void MostrarIndex(Index* index)
         auxiliar = index;
         while(auxiliar != NULL)
         {
-            printf("Elemento: %d\n", auxiliar->id);
+            printf("- %s -", auxiliar->id);
             auxiliar = auxiliar->siguiente;
         }
 	}
+	printf("\n");
 }
 
 int LargoIndex(Index* index)
@@ -78,12 +79,12 @@ int LargoIndex(Index* index)
 	return i;
 }
 
-int ObtenerIndexID(Index* listaID, int pos)
+char* ObtenerIndexID(Index* listaID, int pos)
 {
 	int i;
 	if(pos < 0)
 	{
-		return 0;
+		return NULL;
 	}
 	i = 0;
 	Index* indice = listaID;
@@ -94,7 +95,7 @@ int ObtenerIndexID(Index* listaID, int pos)
 	}
 	if(indice == NULL)
 	{
-		return 0;
+		return NULL;
 	}
 	return indice->id;
 }

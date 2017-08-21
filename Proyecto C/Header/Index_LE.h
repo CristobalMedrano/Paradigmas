@@ -2,9 +2,9 @@
 #define INDEX_LE
 
 Index* CrearNodoIndex();
-Index* InsertarIndex(Index* index, int pos, int id);
+Index* InsertarIndex(Index* index, int pos, char* id);
 void MostrarIndex(Index* listaID);
 int LargoIndex(Index* listaID);
-int ObtenerIndexID(Index* listaID, int pos);
+char* ObtenerIndexID(Index* listaID, int pos);
 
 #endif

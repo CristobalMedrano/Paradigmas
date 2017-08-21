@@ -40,6 +40,7 @@ int main(int argc, char const *argv[])
 				pathDocumentsFile = obtenerNombreArchivo();
 				index = createIndex(pathDocumentsFile, listaSW, &statusCode);
 				MostrarStatusCode(statusCode);
+				printf("%p\n", index);
 				PresionarContinuar();
 				break;
 

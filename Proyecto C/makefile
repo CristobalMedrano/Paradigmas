@@ -1,4 +1,4 @@
-#Makefile para Windows y Linux del codigo Laboratorio_5_19083864-1.c por Cristobal Medrano.
+#Makefile para Windows y Linux del codigo Laboratorio_Paradigmas_19083864-1.c por Cristobal Medrano.
 
 #Comprobamos el Sistema Operativo.
 ifeq ($(OS),Windows_NT)

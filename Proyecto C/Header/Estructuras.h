@@ -4,7 +4,7 @@
 
 typedef struct Index
 {
-	int id;
+	char* id;
 	struct Index* siguiente;
 
 } Index ;
@@ -12,7 +12,7 @@ typedef struct Index
 typedef struct InvertedIndex
 {
 	char* palabra;
-	Index* index;
+	Index* indexListID;
 	struct InvertedIndex* hijoIzquierdo;
 	struct InvertedIndex* hijoDerecho;
 
