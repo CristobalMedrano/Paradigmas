@@ -45,9 +45,8 @@ int main(int argc, char const *argv[])
 				break;
 
 			case GUARDAR_INDEX:
-				id = obtenerID();
 				printf("Guardando Index...\n");
-				saveIndex(NULL, &id, &statusCode);
+				saveIndex(index, &id, &statusCode);
 				MostrarStatusCode(statusCode);
 				PresionarContinuar();
 				break;

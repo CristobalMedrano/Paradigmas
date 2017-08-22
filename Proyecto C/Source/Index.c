@@ -92,10 +92,10 @@ InvertedIndex* createIndex(char* pathDocumentsFile, StopWords* sw, code*statusCo
 		*statusCode = ERR_FILE_NOT_FOUND;
 		return NULL;
 	}
-	/* Para probar el indice --> servira para buscar.
-	indexPalabra = BuscarPalabraIndex(index, "incompressible");
-	printf("Palabra: incompressible\n");
-	MostrarIndex(indexPalabra->indexListID); */
+	//Para probar el indice --> servira para buscar.
+	/*indexPalabra = BuscarPalabraIndex(index, "viscosity");
+	printf("Palabra: viscosity\n");*/
+	MostrarIndex(indexPalabra->indexListID); 
 	//preOrden(index);
 	fclose(archivoEntrada);
 	*statusCode = OK;
@@ -105,7 +105,24 @@ InvertedIndex* createIndex(char* pathDocumentsFile, StopWords* sw, code*statusCo
 void saveIndex(InvertedIndex*i, int*id, code*statusCode)
 {
 	*id = obtenerID();
-	printf("Soy la ID: %d\n", *id);
+	char* saveID = generarNombreSave(id);
+	printf("%s\n", saveID);
+	printf("%d\n", *id);
+	char* fecha = obtenerFecha(id);
+	FILE *archivoSalida;
+	archivoSalida = fopen(saveID, "w");
+	if (archivoSalida != NULL)
+	{
+		// guardar Palabra, luego su lista con el largo de ella.
+
+		fprintf(archivoSalida, "%s", fecha);
+	}
+	else
+	{
+		*statusCode = ERR_FILE_NOT_PERMISSION;
+	}
+	*statusCode = OK;
+	fclose(archivoSalida);
 }
 
 InvertedIndex* loadIndex(int id, code*statusCode)
@@ -194,7 +211,38 @@ char* LeerPalabra(FILE* archivoEntrada)
 	return palabra;	
 }
 
+char* generarNombreSave(int *id)
+{
+	char* saveID = (char*)malloc(sizeof(char)*256);
+	if (saveID != NULL)
+	{
+		// Convertimos la id en string.
+		char strID[128];
+		sprintf(strID, "%d", *id);
 
+		// Concatenamos el nombre del archivo.
+		strcpy(saveID, "save_");
+		strcat(saveID, strID);
+		strcat(saveID, ".index");
+		return saveID;
+	}
+	return NULL;
+}
+
+char* obtenerFecha(int *id)
+{
+	char* fecha = (char*)malloc(sizeof(char)*256);
+	if (fecha != NULL)
+	{
+		char hora[128];
+		time_t tiempo = *id;
+	    struct tm *tlocal = localtime(&tiempo);
+	    strftime(hora, 128, "Fecha: %d/%m/%y Hora: %H:%M:%S", tlocal);
+	    strcpy(fecha, hora);
+	    return fecha;
+	}
+	return NULL;
+}
 
 int obtenerID()
 {
