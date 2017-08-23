@@ -40,7 +40,6 @@ int main(int argc, char const *argv[])
 				pathDocumentsFile = obtenerNombreArchivo();
 				index = createIndex(pathDocumentsFile, listaSW, &statusCode);
 				MostrarStatusCode(statusCode);
-				printf("%p\n", index);
 				PresionarContinuar();
 				break;
 
@@ -53,6 +52,8 @@ int main(int argc, char const *argv[])
 
 			case CARGAR_INDEX:
 				printf("Cargando Index...\n");
+				id = obtenerIDArchivo();
+				index = loadIndex(id, &statusCode);
 				MostrarStatusCode(statusCode);
 				PresionarContinuar();
 				break;

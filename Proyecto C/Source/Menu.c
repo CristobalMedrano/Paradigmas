@@ -9,7 +9,7 @@ void MostrarMenu()
 	printf("***----------------------***\n");
 	printf("**                        **\n");
 	printf("*         PaDSearch        *\n");
-	printf("*       Version 0.51       *\n");
+	printf("*        Version 0.6       *\n");
 	printf("**                        **\n");
 	printf("***----------------------***\n");
 	printf("\n");
@@ -98,6 +98,16 @@ char* obtenerNombreArchivo()
 	fflush(stdin);
 	strcpy(nombreArchivo, nombreLeido);
 	return nombreArchivo;
+}
+
+int obtenerIDArchivo()
+{
+	printf("Ingrese el nombre del archivo: ");
+	int idArchivo = 0;
+	fflush(stdin);
+	scanf("%d", &idArchivo);
+	fflush(stdin);
+	return idArchivo;
 }
 
 void AcercaDe()

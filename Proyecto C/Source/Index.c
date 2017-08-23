@@ -57,33 +57,40 @@ InvertedIndex* createIndex(char* pathDocumentsFile, StopWords* sw, code*statusCo
 				if (palabraNoRepetida == TRUE)
 				{
 					index = InsertarPalabra(index, palabra);
-					listaID = InsertarIndex(listaID, 0, textID);
-					indexPalabra = BuscarPalabraIndex(index, palabra);
-					indexPalabra->indexListID = listaID;
-					//printf("-------------- %s ----------------\n", textID);
-					//MostrarIndex(indexPalabra->indexListID);
-					//printf("-------------------------------\n");
-					listaID = NULL;
-				}			
+                    if (listaID == NULL)
+                    {
+                        listaID = InsertarIndex(listaID, 0, textID);
+                        indexPalabra = BuscarPalabraIndex(index, palabra);
+                        indexPalabra->indexListID = listaID;
+                        listaID = NULL;
+                    }
+                    else
+                    {
+                        listaID = NULL;
+                        listaID = InsertarIndex(listaID, 0, textID);
+                        indexPalabra = BuscarPalabraIndex(index, palabra);
+                        indexPalabra->indexListID = listaID;
+                        listaID = NULL;
+                    }				
+                }			
 				else
 				{
 					// si la palabra esta en el indice.
 					indexPalabra = BuscarPalabraIndex(index, palabra);
 					listaID = indexPalabra->indexListID;
 					//verifico la id
-					idRepetida = QuitarIDRepetida(listaID, textID);
+					idRepetida = VerificarIDRepetida(listaID, textID);
 					// Si la id no se encuentra en la indexacion.
 					if (idRepetida == TRUE)
 					{
 						listaID = InsertarIndex(listaID, 0, textID);
 						indexPalabra->indexListID = listaID;
-						//printf("-------------- %s ----------------\n", textID);
-						//MostrarIndex(indexPalabra->indexListID);
-						//printf("-------------------------------\n");
 						listaID = NULL;
 					}
 				}
 			}
+			//MostrarIndex(indexPalabra->indexListID);
+
 		}
 
 	}
@@ -95,8 +102,8 @@ InvertedIndex* createIndex(char* pathDocumentsFile, StopWords* sw, code*statusCo
 	//Para probar el indice --> servira para buscar.
 	/*indexPalabra = BuscarPalabraIndex(index, "viscosity");
 	printf("Palabra: viscosity\n");*/
-	MostrarIndex(indexPalabra->indexListID); 
-	//preOrden(index);
+	//MostrarIndex(indexPalabra->indexListID);
+	//postOrden(index);
 	fclose(archivoEntrada);
 	*statusCode = OK;
 	return index;
@@ -106,27 +113,58 @@ void saveIndex(InvertedIndex*i, int*id, code*statusCode)
 {
 	*id = obtenerID();
 	char* saveID = generarNombreSave(id);
-	printf("%s\n", saveID);
-	printf("%d\n", *id);
 	char* fecha = obtenerFecha(id);
 	FILE *archivoSalida;
 	archivoSalida = fopen(saveID, "w");
 	if (archivoSalida != NULL)
 	{
 		// guardar Palabra, luego su lista con el largo de ella.
-
+		fprintf(archivoSalida, "%d\n", 	nElementos(i));
+		EscribirPalabra(archivoSalida, i);
 		fprintf(archivoSalida, "%s", fecha);
+		*statusCode = OK;
 	}
 	else
 	{
 		*statusCode = ERR_FILE_NOT_PERMISSION;
 	}
-	*statusCode = OK;
 	fclose(archivoSalida);
+	*statusCode = OK;
 }
 
-InvertedIndex* loadIndex(int id, code*statusCode)
+InvertedIndex* loadIndex(int id, code* statusCode)
 {
+	InvertedIndex* loadIndex = NULL;
+	int n_Palabras = 0;
+	int i = 0;
+
+	char* loadID = generarNombreSave(&id);
+	FILE* archivoEntrada;
+	archivoEntrada = fopen(loadID, "rb");
+	if (archivoEntrada != NULL)
+	{
+		fscanf(archivoEntrada, "%d", &n_Palabras);
+		printf("Numero de palabras: %d\n", n_Palabras);
+		while(i < n_Palabras)
+		{
+			// Funcion que lee la palabra(ya existe).
+			// Insertar la palabra en el index.
+			// Obtener el index de la palabra.
+			// Creo el while del n° indice.
+			// Agrego las palabras a la lista
+			// guardo la lista en el index de la palabra.
+			// retorno el indice invertido cargado.
+			i++;
+		}
+		*statusCode = OK;
+	}
+	else
+	{
+		*statusCode = ERR_FILE_NOT_FOUND;
+	}
+	
+	fclose(archivoEntrada);
+	*statusCode = OK;
 	return NULL;
 }
 
@@ -161,7 +199,7 @@ int QuitarPalabraRepetida(InvertedIndex* index, char* palabra)
 	return FALSE;
 }
 
-int QuitarIDRepetida(Index* indexListID, char* textID)
+int VerificarIDRepetida(Index* indexListID, char* textID)
 {
 	int i = 0;
 	int Largo = LargoIndex(indexListID);
@@ -171,14 +209,10 @@ int QuitarIDRepetida(Index* indexListID, char* textID)
 		textInID = ObtenerIndexID(indexListID, i);
 		if (textInID != NULL)
 		{
-			// Si encuentra la id del texto en la lista.
+			// Si la id existe en la lista.
 			if (strcmp(textInID, textID) == 0)
 			{
 				return FALSE;
-			}
-			else
-			{
-				return TRUE;
 			}
 		}
 		else
@@ -187,6 +221,7 @@ int QuitarIDRepetida(Index* indexListID, char* textID)
 		}
 		i++;
 	}
+	// TRUE indica que no esta en la lista
 	return TRUE;
 }
 
@@ -248,4 +283,33 @@ int obtenerID()
 {
     return (int)time(NULL);
 }
+
+void EscribirPalabra(FILE* archivoSalida, InvertedIndex* index)
+{
+	if (index != NULL)
+	{ 
+		EscribirPalabra(archivoSalida, index->hijoIzquierdo);
+	 	EscribirPalabra(archivoSalida, index->hijoDerecho);
+	 	fprintf(archivoSalida, "%s\n", index->palabra);
+	 	EscribirIndicePalabra(archivoSalida, index->indexListID);
+ 	}
+}
+
+void EscribirIndicePalabra(FILE* archivoSalida, Index* index)
+{
+	int largo = LargoIndex(index);
+	fprintf(archivoSalida, "Largo_ %d ", largo);
+	if (index != NULL)
+	{
+		Index* auxiliar = CrearNodoIndex();
+        auxiliar = index;
+        while(auxiliar != NULL)
+        {
+        	fprintf(archivoSalida, "%s ", auxiliar->id);
+            auxiliar = auxiliar->siguiente;
+        }
+        fprintf(archivoSalida, "\n");
+	}
+}
+
 

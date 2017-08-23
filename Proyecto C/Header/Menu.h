@@ -8,5 +8,6 @@ void LimpiarConsola();
 void PresionarContinuar();
 void MostrarStatusCode(code statusCode);
 char* obtenerNombreArchivo();
+int obtenerIDArchivo();
 void AcercaDe();
 #endif

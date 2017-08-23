@@ -9,7 +9,7 @@ InvertedIndex* createIndex(char* pathDocumentsFile, StopWords*sw, code*statusCod
 
 int QuitarStopWords(char* palabra, StopWords* listaSW);
 int QuitarPalabraRepetida(InvertedIndex* index, char* palabra);
-int QuitarIDRepetida(Index* indexListID, char* textID);
+int VerificarIDRepetida(Index* indexListID, char* textID);
 int LeerTexto(char* palabra);
 char* LeerPalabra(FILE* archivoEntrada);
 
@@ -19,6 +19,8 @@ void saveIndex(InvertedIndex*i, int*id, code*statusCode);
 char* generarNombreSave(int *id);
 char* obtenerFecha(int *id);
 int obtenerID();
+void EscribirPalabra(FILE* archivoSalida, InvertedIndex* index);
+void EscribirIndicePalabra(FILE* archivoSalida, Index* index);
 
 // Cargando IndexInvertido
 InvertedIndex* loadIndex(int id, code*statusCode);

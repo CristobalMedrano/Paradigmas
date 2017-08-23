@@ -8,5 +8,9 @@ InvertedIndex* hijo_DERECHO(InvertedIndex* index);
 char* ObtenerPalabraIndex(InvertedIndex* index);
 InvertedIndex* BuscarPalabraIndex(InvertedIndex* index, char* palabra);
 void preOrden(InvertedIndex* index);
+void inOrden(InvertedIndex* index);
+void postOrden(InvertedIndex* index);
+int nElementos(InvertedIndex* index);
+void obtenerElemento(InvertedIndex* index, int* n);
 
 #endif

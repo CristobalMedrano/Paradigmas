@@ -118,3 +118,40 @@ void preOrden(InvertedIndex* index)
  	preOrden(index->hijoDerecho);
 	}
 }
+
+void inOrden(InvertedIndex* index)
+{
+	if (index != NULL)
+	{ 
+	inOrden(index->hijoIzquierdo);
+	printf("%s\n", index->palabra);
+ 	inOrden(index->hijoDerecho);
+ 	}
+}
+
+void postOrden(InvertedIndex* index)
+{
+	if (index != NULL)
+	{ 
+	postOrden(index->hijoIzquierdo);
+ 	postOrden(index->hijoDerecho);
+	printf("%s\n", index->palabra);
+ 	}
+}
+
+int nElementos(InvertedIndex* index)
+{
+	int n = 0;
+	obtenerElemento(index, &n);
+	return n;
+}
+
+void obtenerElemento(InvertedIndex* index, int* n)
+{
+	if (index != NULL)
+	{ 
+		obtenerElemento(index->hijoIzquierdo, n);
+		*n = *n + 1;
+	 	obtenerElemento(index->hijoDerecho, n);
+ 	}
+}
