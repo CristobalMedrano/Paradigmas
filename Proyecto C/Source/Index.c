@@ -134,9 +134,14 @@ void saveIndex(InvertedIndex*i, int*id, code*statusCode)
 
 InvertedIndex* loadIndex(int id, code* statusCode)
 {
-	InvertedIndex* loadIndex = NULL;
+	InvertedIndex* load_Index = NULL;
+	InvertedIndex* indicePalabra = NULL;
+	Index* listaID = NULL;
 	int n_Palabras = 0;
+	int n_Lista_Palabras = 0;
+	int cont_Lista_Palabras = 0;
 	int i = 0;
+	char* palabra = NULL;
 
 	char* loadID = generarNombreSave(&id);
 	FILE* archivoEntrada;
@@ -144,28 +149,46 @@ InvertedIndex* loadIndex(int id, code* statusCode)
 	if (archivoEntrada != NULL)
 	{
 		fscanf(archivoEntrada, "%d", &n_Palabras);
-		printf("Numero de palabras: %d\n", n_Palabras);
+		//printf("Numero de palabras: %d\n", n_Palabras);
 		while(i < n_Palabras)
-		{
-			// Funcion que lee la palabra(ya existe).
+		{	
+			// Funcion que lee la palabra.
+			palabra = LeerPalabra(archivoEntrada);
 			// Insertar la palabra en el index.
+			load_Index = InsertarPalabra(load_Index, palabra);
 			// Obtener el index de la palabra.
-			// Creo el while del n° indice.
-			// Agrego las palabras a la lista
-			// guardo la lista en el index de la palabra.
-			// retorno el indice invertido cargado.
+			indicePalabra = BuscarPalabraIndex(load_Index, palabra);
+			// Leo Largo_
+			palabra = LeerPalabra(archivoEntrada);
+			if (strcmp(palabra, "Largo_") == 0)
+			{
+				cont_Lista_Palabras = 0;
+				n_Lista_Palabras = LeerNmoPalabra(archivoEntrada);
+
+				while(cont_Lista_Palabras < n_Lista_Palabras)
+				{
+					palabra = LeerPalabra(archivoEntrada);
+					//printf(" %s ", palabra);
+					listaID = InsertarIndex(listaID, 0, palabra);
+					cont_Lista_Palabras++;
+				}
+				indicePalabra->indexListID = listaID;
+				listaID = NULL;
+			}
 			i++;
 		}
+		// retorno el indice invertido cargado.
 		*statusCode = OK;
 	}
 	else
 	{
 		*statusCode = ERR_FILE_NOT_FOUND;
+		return NULL;
 	}
 	
 	fclose(archivoEntrada);
 	*statusCode = OK;
-	return NULL;
+	return load_Index;
 }
 
 int QuitarStopWords(char* palabra, StopWords* listaSW)
@@ -244,6 +267,13 @@ char* LeerPalabra(FILE* archivoEntrada)
 		strcpy(palabra, obtenerPalabra);
 	}
 	return palabra;	
+}
+
+int LeerNmoPalabra(FILE* archivoEntrada)
+{
+	int NmoPalabra = 0;
+	fscanf(archivoEntrada, "%d", &NmoPalabra);
+	return NmoPalabra;	
 }
 
 char* generarNombreSave(int *id)

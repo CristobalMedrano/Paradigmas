@@ -24,6 +24,7 @@ void EscribirIndicePalabra(FILE* archivoSalida, Index* index);
 
 // Cargando IndexInvertido
 InvertedIndex* loadIndex(int id, code*statusCode);
+int LeerNmoPalabra(FILE* archivoEntrada);
 
 
 #endif
