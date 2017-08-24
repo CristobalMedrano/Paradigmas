@@ -20,6 +20,7 @@ typedef struct InvertedIndex
 
 typedef struct Result
 {
+	
 
 } Result;
 
@@ -37,6 +38,7 @@ typedef struct StopWords
 
 
 
-typedef enum code { OK, NO_MEMORY, ERR_FILE_NOT_FOUND, ERR_FILE_NOT_PERMISSION, FAIL, ERR_STOPWORDS_NOT_FOUND } code;
+typedef enum code { OK, NO_MEMORY, ERR_FILE_NOT_FOUND, ERR_FILE_NOT_PERMISSION, FAIL
+	, ERR_STOPWORDS_NOT_FOUND, ERR_INDEX_NOT_FOUND} code;
 
 #endif

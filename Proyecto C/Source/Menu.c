@@ -2,22 +2,25 @@
 #include <stdlib.h>
 #include <string.h>
 #include <Estructuras.h>
+#include <buscador.h>
 #include <Menu.h>
 
-void MostrarMenu()
+void MostrarMenu(int ultimaID, int id)
 {
 	printf("***----------------------***\n");
 	printf("**                        **\n");
 	printf("*         PaDSearch        *\n");
-	printf("*        Version 0.7       *\n");
+	printf("*       Version 0.71       *\n");
 	printf("**                        **\n");
 	printf("***----------------------***\n");
 	printf("\n");
+	if(ultimaID == ULTIMA_ID_ON)printf("Ultima ID cargada: %d\n\n", id);
+	if(ultimaID == SAVE_ID_ON)printf("Ultima ID guardada: %d\n\n", id);
 	printf("1.- Cargar StopWords.\n");
 	printf("2.- Crear Index.\n");
 	printf("3.- Guardar Index.\n");
 	printf("4.- Cargar Index.\n");
-	printf("5.- Buscar.\n");
+	printf("5.- Buscar(Query).\n");
 	printf("6.- Mostrar Resultados.\n");
 	printf("7.- Acerca de.\n");
 	printf("8.- Salir.\n\n");
@@ -85,12 +88,23 @@ void MostrarStatusCode(code statusCode)
 		case ERR_STOPWORDS_NOT_FOUND:
 			printf("statusCode: ERR_STOPWORDS_NOT_FOUND\n");
 			break;
+		case ERR_INDEX_NOT_FOUND:
+			printf("statusCode: ERR_INDEX_NOT_FOUND\n");
+			break;
 	}
 }
 
-char* obtenerNombreArchivo()
+char* obtenerNombre(int tipo)
 {
-	printf("Ingrese el nombre del archivo: ");
+	switch(tipo)
+	{
+		case 0:
+			printf("Ingrese el nombre del archivo: ");
+			break;
+		case 1:
+			printf("Buscar: ");
+			break;
+	}
 	char* nombreArchivo = (char*)malloc(sizeof(char)*256);
 	char nombreLeido[256];
 	fflush(stdin);

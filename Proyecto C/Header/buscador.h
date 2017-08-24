@@ -11,4 +11,11 @@
 #define ACERCA_DE 7
 #define SALIR 8
 
+#define ARCHIVO 0
+#define BUSCAR_PALABRA 1
+
+#define ULTIMA_ID_OFF 0
+#define ULTIMA_ID_ON 1
+#define SAVE_ID_ON 2
+#define SAVE_ID_OFF 0
 #endif

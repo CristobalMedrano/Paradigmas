@@ -2,12 +2,12 @@
 #define MENU
 
 // Funciones del Menu.
-void MostrarMenu();
+void MostrarMenu(int ultimaID, int id);
 void ValidarOpcionIngresada(int* opcionIngresada, int Min, int Max);
 void LimpiarConsola();
 void PresionarContinuar();
 void MostrarStatusCode(code statusCode);
-char* obtenerNombreArchivo();
+char* obtenerNombre(int tipo);
 int obtenerIDArchivo();
 void AcercaDe();
 #endif

@@ -25,7 +25,7 @@ HEADERS = Header/
 CCDebug = gcc -Wall
 CC = gcc -Wall
 INCLUDE = -I $(HEADERS)
-OBJECTS = Index_LE.o Index_ABO.o Index.o StopWords_LE.o StopWords.o Menu.o buscador.o
+OBJECTS = Results.o Index_LE.o Index_ABO.o Index.o StopWords_LE.o StopWords.o Menu.o buscador.o
 
 .SILENT: clean all
 all: $(OBJECTS)
@@ -52,6 +52,9 @@ Index_ABO.o: $(SOURCES)Index_ABO.c $(HEADERS)Index_ABO.h
 
 Index_LE.o: $(SOURCES)Index_LE.c $(HEADERS)Index_LE.h
 	$(CC) $(INCLUDE) -c $(SOURCES)Index_LE.c -o Index_LE.o
+
+Results.o: $(SOURCES)Results.c $(HEADERS)Results.h
+	$(CC) $(INCLUDE) -c $(SOURCES)Results.c -o Results.o
 
 #file.o: $(SOURCES)file.c $(HEADERS)file.h
 #	$(CC) $(INCLUDE) -c $(SOURCES)file.c -o file.o

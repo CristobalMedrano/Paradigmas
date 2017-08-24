@@ -6,17 +6,20 @@
 #include <Menu.h>
 #include <StopWords.h>
 #include <Index.h>
-#include <Procesamiento.h>
+#include <Results.h>
 
 int main(int argc, char const *argv[])
 {
 	srand(time(NULL));
 	int opcion;
 	int id = 0;
+	int ultimaID = ULTIMA_ID_OFF;
 	char* pathStopWordsFile = NULL;
 	char* pathDocumentsFile = NULL;
+	char* searchWord = NULL;
 	StopWords* listaSW = NULL;
 	InvertedIndex* index = NULL;
+	Ranking* ranking = NULL;
 	code statusCode;
 	
 	do
@@ -24,20 +27,20 @@ int main(int argc, char const *argv[])
 		opcion = SIN_INGRESO;
 		statusCode = FAIL;
 		LimpiarConsola();
-		MostrarMenu();
+		MostrarMenu(ultimaID, id);
 		ValidarOpcionIngresada(&opcion, 1,8);
 
 		switch(opcion)
 		{
 			case CARGAR_STOPWORDS: 
-				pathStopWordsFile = obtenerNombreArchivo();
+				pathStopWordsFile = obtenerNombre(ARCHIVO);
 				listaSW = loadStopWords(pathStopWordsFile, &statusCode);
 				MostrarStatusCode(statusCode);
 				PresionarContinuar();
 				break;
 
 			case CREAR_INDEX:
-				pathDocumentsFile = obtenerNombreArchivo();
+				pathDocumentsFile = obtenerNombre(ARCHIVO);
 				index = createIndex(pathDocumentsFile, listaSW, &statusCode);
 				MostrarStatusCode(statusCode);
 				PresionarContinuar();
@@ -46,6 +49,8 @@ int main(int argc, char const *argv[])
 			case GUARDAR_INDEX:
 				printf("Guardando Index...\n");
 				saveIndex(index, &id, &statusCode);
+				printf("ID del Index creado: %d\n", id);
+				ultimaID = SAVE_ID_ON;
 				MostrarStatusCode(statusCode);
 				PresionarContinuar();
 				break;
@@ -54,12 +59,14 @@ int main(int argc, char const *argv[])
 				printf("Cargando Index...\n");
 				id = obtenerIDArchivo();
 				index = loadIndex(id, &statusCode);
+				ultimaID = ULTIMA_ID_ON;
 				MostrarStatusCode(statusCode);
 				PresionarContinuar();
 				break;
 
 			case BUSCAR:
-				printf("Buscando...\n");
+				searchWord = obtenerNombre(BUSCAR_PALABRA);
+				ranking = query(index, listaSW, searchWord, &statusCode);
 				MostrarStatusCode(statusCode);
 				PresionarContinuar();
 				break;

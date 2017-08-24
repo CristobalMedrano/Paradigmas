@@ -111,25 +111,32 @@ InvertedIndex* createIndex(char* pathDocumentsFile, StopWords* sw, code*statusCo
 
 void saveIndex(InvertedIndex*i, int*id, code*statusCode)
 {
-	*id = obtenerID();
-	char* saveID = generarNombreSave(id);
-	char* fecha = obtenerFecha(id);
-	FILE *archivoSalida;
-	archivoSalida = fopen(saveID, "w");
-	if (archivoSalida != NULL)
+	if (i == NULL)
 	{
-		// guardar Palabra, luego su lista con el largo de ella.
-		fprintf(archivoSalida, "%d\n", 	nElementos(i));
-		EscribirPalabra(archivoSalida, i);
-		fprintf(archivoSalida, "%s", fecha);
-		*statusCode = OK;
+		*statusCode = ERR_INDEX_NOT_FOUND;
 	}
 	else
 	{
-		*statusCode = ERR_FILE_NOT_PERMISSION;
-	}
-	fclose(archivoSalida);
-	*statusCode = OK;
+		*id = obtenerID();
+		char* saveID = generarNombreSave(id);
+		char* fecha = obtenerFecha(id);
+		FILE *archivoSalida;
+		archivoSalida = fopen(saveID, "w");
+		if (archivoSalida != NULL)
+		{
+			// guardar Palabra, luego su lista con el largo de ella.
+			fprintf(archivoSalida, "%d\n", 	nElementos(i));
+			EscribirPalabra(archivoSalida, i);
+			fprintf(archivoSalida, "%s", fecha);
+			*statusCode = OK;
+		}
+		else
+		{
+			*statusCode = ERR_FILE_NOT_PERMISSION;
+		}
+		fclose(archivoSalida);
+		*statusCode = OK;
+	}	
 }
 
 InvertedIndex* loadIndex(int id, code* statusCode)
