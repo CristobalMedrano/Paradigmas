@@ -18,7 +18,7 @@ int main(int argc, char const *argv[])
 	char* pathDocumentsFile = NULL;
 	char* searchWord = NULL;
 	StopWords* listaSW = NULL;
-	InvertedIndex* index = NULL;
+	Index* index = NULL;
 	Ranking* ranking = NULL;
 	code statusCode;
 	

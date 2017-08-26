@@ -4,9 +4,9 @@
 #include <Estructuras.h>
 #include <Index_ABO.h>
 
-InvertedIndex* InsertarPalabra(InvertedIndex* index, char* palabra)
+Index* InsertarPalabra(Index* index, char* palabra)
 {
-	InvertedIndex* hoja = CrearHoja(palabra, NULL, NULL);
+	Index* hoja = CrearHoja(palabra, NULL, NULL);
 	if (index == NULL)
 	{
 		return hoja;
@@ -34,9 +34,9 @@ InvertedIndex* InsertarPalabra(InvertedIndex* index, char* palabra)
 	return index;
 }
 
-InvertedIndex* CrearHoja(char* palabra, InvertedIndex* index_izquierdo, InvertedIndex* index_derecho)
+Index* CrearHoja(char* palabra, Index* index_izquierdo, Index* index_derecho)
 {
-	InvertedIndex* nuevaHoja = (InvertedIndex*)malloc(sizeof(InvertedIndex)); 
+	Index* nuevaHoja = (Index*)malloc(sizeof(Index)); 
 	if(nuevaHoja!=NULL){ 
 	    nuevaHoja->palabra = palabra;
 		nuevaHoja->hijoIzquierdo = index_izquierdo;
@@ -50,7 +50,7 @@ InvertedIndex* CrearHoja(char* palabra, InvertedIndex* index_izquierdo, Inverted
 	} 
 }
 
-InvertedIndex* hijo_IZQUIERDO(InvertedIndex* index)
+Index* hijo_IZQUIERDO(Index* index)
 {
 	if (index == NULL)
 	{
@@ -62,7 +62,7 @@ InvertedIndex* hijo_IZQUIERDO(InvertedIndex* index)
 	}
 }
 
-InvertedIndex* hijo_DERECHO(InvertedIndex* index)
+Index* hijo_DERECHO(Index* index)
 {
 	if (index == NULL)
 	{
@@ -75,7 +75,7 @@ InvertedIndex* hijo_DERECHO(InvertedIndex* index)
 	return index;
 }
 
-char* ObtenerPalabraIndex(InvertedIndex* index)
+char* ObtenerPalabraIndex(Index* index)
 {
 	if (index == NULL)
 	{
@@ -87,9 +87,9 @@ char* ObtenerPalabraIndex(InvertedIndex* index)
 	}
 }
 
-InvertedIndex* BuscarPalabraIndex(InvertedIndex* index, char* palabra)
+Index* BuscarPalabraIndex(Index* index, char* palabra)
 {
-	InvertedIndex* indice = index;
+	Index* indice = index;
 	while (indice != NULL)
 	{
 		char* palabraActual = ObtenerPalabraIndex(indice);
@@ -109,7 +109,7 @@ InvertedIndex* BuscarPalabraIndex(InvertedIndex* index, char* palabra)
 	return NULL;
 }
 
-void preOrden(InvertedIndex* index)
+void preOrden(Index* index)
 {
 	if (index != NULL)
 	{ 
@@ -119,7 +119,7 @@ void preOrden(InvertedIndex* index)
 	}
 }
 
-void inOrden(InvertedIndex* index)
+void inOrden(Index* index)
 {
 	if (index != NULL)
 	{ 
@@ -129,7 +129,7 @@ void inOrden(InvertedIndex* index)
  	}
 }
 
-void postOrden(InvertedIndex* index)
+void postOrden(Index* index)
 {
 	if (index != NULL)
 	{ 
@@ -139,14 +139,14 @@ void postOrden(InvertedIndex* index)
  	}
 }
 
-int nElementos(InvertedIndex* index)
+int nElementos(Index* index)
 {
 	int n = 0;
 	obtenerElemento(index, &n);
 	return n;
 }
 
-void obtenerElemento(InvertedIndex* index, int* n)
+void obtenerElemento(Index* index, int* n)
 {
 	if (index != NULL)
 	{ 

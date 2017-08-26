@@ -10,10 +10,12 @@ endif
 #Seleccionamos las variables a cambiar dependiendo del OS.
 ifeq ($(OS_detected), Windows)
 	EJECUTABLE = buscador.exe
+	EJECUTAR = buscador.exe
     REMOVE = -del
 endif
 ifeq ($(OS_detected), Linux)
 	EJECUTABLE = buscador.out
+	EJECUTAR = ./buscador.out
     REMOVE = -rm -f
 endif
 
@@ -22,39 +24,42 @@ SOURCES = Source/
 HEADERS = Header/
 
 #Variables
-CCDebug = gcc -Wall
-CC = gcc -Wall
+CC = gcc
+OPTS = -Wall -g3
 INCLUDE = -I $(HEADERS)
-OBJECTS = Results.o Index_LE.o Index_ABO.o Index.o StopWords_LE.o StopWords.o Menu.o buscador.o
+OBJECTS = Results.o Results_LE.o Index_ABO.o Index.o StopWords_LE.o StopWords.o Menu.o buscador.o
 
 .SILENT: clean all
 all: $(OBJECTS)
-	$(CC) -o $(EJECUTABLE) $(OBJECTS)
+	$(CC) $(OPTS) -o $(EJECUTABLE) $(OBJECTS)
 	echo Compilacion Completa. Ejecutable: $(EJECUTABLE)
 
+Ejecutar: all
+	$(EJECUTAR)
+
 buscador.o: buscador.c $(HEADERS)buscador.h
-	$(CC) $(INCLUDE) -c buscador.c -o buscador.o
+	$(CC) $(OPTS) $(INCLUDE) -c buscador.c -o buscador.o
 
 Menu.o: $(SOURCES)Menu.c $(HEADERS)Menu.h
-	$(CC) $(INCLUDE) -c $(SOURCES)Menu.c -o Menu.o
+	$(CC) $(OPTS) $(INCLUDE) -c $(SOURCES)Menu.c -o Menu.o
 
 StopWords.o: $(SOURCES)StopWords.c $(HEADERS)StopWords.h
-	$(CC) $(INCLUDE) -c $(SOURCES)StopWords.c -o StopWords.o
+	$(CC) $(OPTS) $(INCLUDE) -c $(SOURCES)StopWords.c -o StopWords.o
 
 StopWords_LE.o: $(SOURCES)StopWords_LE.c $(HEADERS)StopWords_LE.h
-	$(CC) $(INCLUDE) -c $(SOURCES)StopWords_LE.c -o StopWords_LE.o
+	$(CC) $(OPTS) $(INCLUDE) -c $(SOURCES)StopWords_LE.c -o StopWords_LE.o
 
 Index.o: $(SOURCES)Index.c $(HEADERS)Index.h
-	$(CC) $(INCLUDE) -c $(SOURCES)Index.c -o Index.o
+	$(CC) $(OPTS) $(INCLUDE) -c $(SOURCES)Index.c -o Index.o
 
 Index_ABO.o: $(SOURCES)Index_ABO.c $(HEADERS)Index_ABO.h
-	$(CC) $(INCLUDE) -c $(SOURCES)Index_ABO.c -o Index_ABO.o
+	$(CC) $(OPTS) $(INCLUDE) -c $(SOURCES)Index_ABO.c -o Index_ABO.o
 
-Index_LE.o: $(SOURCES)Index_LE.c $(HEADERS)Index_LE.h
-	$(CC) $(INCLUDE) -c $(SOURCES)Index_LE.c -o Index_LE.o
+Results_LE.o: $(SOURCES)Results_LE.c $(HEADERS)Results_LE.h
+	$(CC) $(OPTS) $(INCLUDE) -c $(SOURCES)Results_LE.c -o Results_LE.o
 
 Results.o: $(SOURCES)Results.c $(HEADERS)Results.h
-	$(CC) $(INCLUDE) -c $(SOURCES)Results.c -o Results.o
+	$(CC) $(OPTS) $(INCLUDE) -c $(SOURCES)Results.c -o Results.o
 
 #file.o: $(SOURCES)file.c $(HEADERS)file.h
 #	$(CC) $(INCLUDE) -c $(SOURCES)file.c -o file.o

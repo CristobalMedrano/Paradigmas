@@ -5,10 +5,10 @@
 #include <Estructuras.h>
 #include <StopWords.h>
 #include <Index_ABO.h>
-#include <Index_LE.h>
+#include <Results_LE.h>
 #include <Index.h>
 
-InvertedIndex* createIndex(char* pathDocumentsFile, StopWords* sw, code*statusCode)
+Index* createIndex(char* pathDocumentsFile, StopWords* sw, code*statusCode)
 {
 	if (sw == NULL)
 	{
@@ -17,14 +17,14 @@ InvertedIndex* createIndex(char* pathDocumentsFile, StopWords* sw, code*statusCo
 	}
 
 	FILE* archivoEntrada;
-	InvertedIndex* index = NULL;
-	InvertedIndex* indexPalabra = NULL;
-	Index* listaID = NULL;
+	Index* index = NULL;
+	Index* indexPalabra = NULL;
+	Result* listaID = NULL;
 	char* palabra = NULL;
-	int palabraValida = FALSE;
+	int noEsStopWord = FALSE;
 	int palabraNoRepetida = FALSE;
 	int idRepetida = FALSE;
-	int leerTexto = FALSE;
+	int caracterI = FALSE;
 	char* textID = NULL;
 	
 	archivoEntrada = fopen(pathDocumentsFile, "rb");
@@ -35,8 +35,9 @@ InvertedIndex* createIndex(char* pathDocumentsFile, StopWords* sw, code*statusCo
 		while (feof(archivoEntrada) == 0)
 		{
 			palabra = LeerPalabra(archivoEntrada);
-			leerTexto = LeerTexto(palabra);
-			if(leerTexto == TRUE)
+			// Leer un Texto.
+			caracterI = LeerTexto(palabra);
+			if(caracterI == TRUE)
 			{
 				textID = LeerPalabra(archivoEntrada);
 				index =	InsertarPalabra(index, textID);
@@ -48,10 +49,10 @@ InvertedIndex* createIndex(char* pathDocumentsFile, StopWords* sw, code*statusCo
 				//index = AgregarIndice(index, palabra, textID);
 				//printf("Text(%s)\n", textID);
 			}
-			palabraValida = QuitarStopWords(palabra, sw);
+			noEsStopWord = QuitarStopWords(palabra, sw);
 			palabraNoRepetida = QuitarPalabraRepetida(index, palabra);
 
-			if (palabraValida == TRUE)
+			if (noEsStopWord == TRUE)
 			{
 				// Si la palabra no existe en el indice.
 				if (palabraNoRepetida == TRUE)
@@ -109,7 +110,7 @@ InvertedIndex* createIndex(char* pathDocumentsFile, StopWords* sw, code*statusCo
 	return index;
 }
 
-void saveIndex(InvertedIndex*i, int*id, code*statusCode)
+void saveIndex(Index*i, int*id, code*statusCode)
 {
 	if (i == NULL)
 	{
@@ -139,11 +140,11 @@ void saveIndex(InvertedIndex*i, int*id, code*statusCode)
 	}	
 }
 
-InvertedIndex* loadIndex(int id, code* statusCode)
+Index* loadIndex(int id, code* statusCode)
 {
-	InvertedIndex* load_Index = NULL;
-	InvertedIndex* indicePalabra = NULL;
-	Index* listaID = NULL;
+	Index* load_Index = NULL;
+	Index* indicePalabra = NULL;
+	Result* listaID = NULL;
 	int n_Palabras = 0;
 	int n_Lista_Palabras = 0;
 	int cont_Lista_Palabras = 0;
@@ -218,9 +219,9 @@ int QuitarStopWords(char* palabra, StopWords* listaSW)
 	return TRUE;
 }
 
-int QuitarPalabraRepetida(InvertedIndex* index, char* palabra)
+int QuitarPalabraRepetida(Index* index, char* palabra)
 {
-	InvertedIndex* palabraInIndex = BuscarPalabraIndex(index, palabra);
+	Index* palabraInIndex = BuscarPalabraIndex(index, palabra);
 	// Si la palabra no existe en el indice
 	if (palabraInIndex == NULL)
 	{
@@ -229,7 +230,7 @@ int QuitarPalabraRepetida(InvertedIndex* index, char* palabra)
 	return FALSE;
 }
 
-int VerificarIDRepetida(Index* indexListID, char* textID)
+int VerificarIDRepetida(Result* indexListID, char* textID)
 {
 	int i = 0;
 	int Largo = LargoIndex(indexListID);
@@ -321,7 +322,7 @@ int obtenerID()
     return (int)time(NULL);
 }
 
-void EscribirPalabra(FILE* archivoSalida, InvertedIndex* index)
+void EscribirPalabra(FILE* archivoSalida, Index* index)
 {
 	if (index != NULL)
 	{ 
@@ -332,14 +333,14 @@ void EscribirPalabra(FILE* archivoSalida, InvertedIndex* index)
  	}
 }
 
-void EscribirIndicePalabra(FILE* archivoSalida, Index* index)
+void EscribirIndicePalabra(FILE* archivoSalida, Result* result)
 {
-	int largo = LargoIndex(index);
+	int largo = LargoIndex(result);
 	fprintf(archivoSalida, "Largo_ %d ", largo);
-	if (index != NULL)
+	if (result != NULL)
 	{
-		Index* auxiliar = CrearNodoIndex();
-        auxiliar = index;
+		Result* auxiliar = CrearNodoIndex();
+        auxiliar = result;
         while(auxiliar != NULL)
         {
         	fprintf(archivoSalida, "%s ", auxiliar->id);

@@ -1,5 +1,5 @@
-#ifndef STOPWORDS_LE
-#define STOPWORDS_LE
+#ifndef _FUNC_STOPWORDS_LE_H_
+#define _FUNC_STOPWORDS_LE_H_
 
 StopWords* CrearNodo();
 StopWords* InsertarStopWord(StopWords* listaSW, int pos, char* palabra);

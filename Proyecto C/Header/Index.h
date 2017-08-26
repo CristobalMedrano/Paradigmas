@@ -1,29 +1,29 @@
-#ifndef INDEX
-#define INDEX
+#ifndef _FUNC_INDEX_H_
+#define _FUNC_INDEX_H_
 
 #define TRUE 1
 #define FALSE 0
 
 // Creando IndexInvertido
-InvertedIndex* createIndex(char* pathDocumentsFile, StopWords*sw, code*statusCode);
+Index* createIndex(char* pathDocumentsFile, StopWords*sw, code*statusCode);
 
 int QuitarStopWords(char* palabra, StopWords* listaSW);
-int QuitarPalabraRepetida(InvertedIndex* index, char* palabra);
-int VerificarIDRepetida(Index* indexListID, char* textID);
+int QuitarPalabraRepetida(Index* index, char* palabra);
+int VerificarIDRepetida(Result* indexListID, char* textID);
 int LeerTexto(char* palabra);
 char* LeerPalabra(FILE* archivoEntrada);
 
 // Guardando IndexInvertido
-void saveIndex(InvertedIndex*i, int*id, code*statusCode);
+void saveIndex(Index*i, int*id, code*statusCode);
 
 char* generarNombreSave(int *id);
 char* obtenerFecha(int *id);
 int obtenerID();
-void EscribirPalabra(FILE* archivoSalida, InvertedIndex* index);
-void EscribirIndicePalabra(FILE* archivoSalida, Index* index);
+void EscribirPalabra(FILE* archivoSalida, Index* index);
+void EscribirIndicePalabra(FILE* archivoSalida, Result* result);
 
 // Cargando IndexInvertido
-InvertedIndex* loadIndex(int id, code*statusCode);
+Index* loadIndex(int id, code*statusCode);
 int LeerNmoPalabra(FILE* archivoEntrada);
 
 

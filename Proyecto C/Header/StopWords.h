@@ -1,5 +1,5 @@
-#ifndef STOPWORDS
-#define STOPWORDS
+#ifndef _FUNC_STOPWORDS_H_
+#define _FUNC_STOPWORDS_H_
 
 StopWords* loadStopWords(char* pathStopWordsFile, code*statusCode);
 StopWords* CrearNodo();

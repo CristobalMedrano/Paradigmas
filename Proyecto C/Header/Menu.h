@@ -1,5 +1,5 @@
-#ifndef MENU
-#define MENU
+#ifndef _FUNC_MENU_H_
+#define _FUNC_MENU_H_
 
 // Funciones del Menu.
 void MostrarMenu(int ultimaID, int id);

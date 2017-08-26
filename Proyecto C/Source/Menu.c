@@ -20,8 +20,9 @@ void MostrarMenu(int ultimaID, int id)
 	printf("2.- Crear Index.\n");
 	printf("3.- Guardar Index.\n");
 	printf("4.- Cargar Index.\n");
-	printf("5.- Buscar(Query).\n");
+	printf("5.- Consultar(Query).\n");
 	printf("6.- Mostrar Resultados.\n");
+	//printf("0.- Buscar.\n")
 	printf("7.- Acerca de.\n");
 	printf("8.- Salir.\n\n");
 	printf("Ingrese la opcion deseada: ");
@@ -90,6 +91,9 @@ void MostrarStatusCode(code statusCode)
 			break;
 		case ERR_INDEX_NOT_FOUND:
 			printf("statusCode: ERR_INDEX_NOT_FOUND\n");
+			break;
+		case NO_SEARCH_RESULTS:
+			printf("statusCode: NO_SEARCH_RESULTS\n");
 			break;
 	}
 }

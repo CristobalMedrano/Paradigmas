@@ -1,16 +1,16 @@
-#ifndef INDEX_ABO
-#define INDEX_ABO
+#ifndef _FUNC_INDEX_ABO_H_
+#define _FUNC_INDEX_ABO_H_
 
-InvertedIndex* InsertarPalabra(InvertedIndex* index, char* palabra);
-InvertedIndex* CrearHoja(char* palabra, InvertedIndex* arbol_izquierdo, InvertedIndex* arbol_derecho);
-InvertedIndex* hijo_IZQUIERDO(InvertedIndex* index);
-InvertedIndex* hijo_DERECHO(InvertedIndex* index);
-char* ObtenerPalabraIndex(InvertedIndex* index);
-InvertedIndex* BuscarPalabraIndex(InvertedIndex* index, char* palabra);
-void preOrden(InvertedIndex* index);
-void inOrden(InvertedIndex* index);
-void postOrden(InvertedIndex* index);
-int nElementos(InvertedIndex* index);
-void obtenerElemento(InvertedIndex* index, int* n);
+Index* InsertarPalabra(Index* index, char* palabra);
+Index* CrearHoja(char* palabra, Index* arbol_izquierdo, Index* arbol_derecho);
+Index* hijo_IZQUIERDO(Index* index);
+Index* hijo_DERECHO(Index* index);
+char* ObtenerPalabraIndex(Index* index);
+Index* BuscarPalabraIndex(Index* index, char* palabra);
+void preOrden(Index* index);
+void inOrden(Index* index);
+void postOrden(Index* index);
+int nElementos(Index* index);
+void obtenerElemento(Index* index, int* n);
 
 #endif

@@ -1,5 +1,5 @@
-#ifndef MAIN
-#define MAIN
+#ifndef _FUNC_MAIN_H_
+#define _FUNC_MAIN_H_
 
 #define SIN_INGRESO -1
 #define CARGAR_STOPWORDS 1
@@ -18,4 +18,7 @@
 #define ULTIMA_ID_ON 1
 #define SAVE_ID_ON 2
 #define SAVE_ID_OFF 0
+
+int main(int argc, char const *argv[]);
+
 #endif
