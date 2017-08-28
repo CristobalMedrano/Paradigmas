@@ -1,0 +1,6100 @@
+3051
+(/viscous
+Largo_ 1 73 
+(0.4,
+Largo_ 1 40 
+(3),
+Largo_ 1 42 
+(and
+Largo_ 1 85 
+(base
+Largo_ 1 96 
+(based
+Largo_ 1 53 
+(bodies
+Largo_ 1 27 
+(critical)
+Largo_ 1 89 
+(from
+Largo_ 1 82 
+(here
+Largo_ 1 25 
+(igc),
+Largo_ 1 83 
+(igy)
+Largo_ 1 83 
+(imperfect-gas
+Largo_ 1 68 
+(is
+Largo_ 1 76 
+(karman-pohlhausen
+Largo_ 1 72 
+(naca
+Largo_ 1 77 
+(radial
+Largo_ 1 100 
+(reference
+Largo_ 1 28 
+(speeds
+Largo_ 1 27 
+(that
+Largo_ 1 80 
+(where
+Largo_ 1 73 
+)
+Largo_ 1 59 
+-semivertex-angle
+Largo_ 1 63 
+..
+Largo_ 6 100 85 64 62 59 51 
+/correlation/
+Largo_ 1 99 
+/exact/
+Largo_ 1 86 
+/far
+Largo_ 1 25 
+/isotropic/
+Largo_ 1 99 
+/max/
+Largo_ 1 20 
+/practical
+Largo_ 1 49 
+/significant
+Largo_ 1 33 
+/static/
+Largo_ 1 32 
+0.3
+Largo_ 1 89 
+0.35
+Largo_ 1 53 
+0.635
+Largo_ 1 82 
+0.75,
+Largo_ 1 50 
+1,600
+Largo_ 1 84 
+1-1/m
+Largo_ 1 73 
+1.0,
+Largo_ 1 62 
+1.3
+Largo_ 1 52 
+1.61
+Largo_ 1 80 
+1.77)
+Largo_ 1 74 
+1.97,
+Largo_ 1 40 
+10(1957),
+Largo_ 1 20 
+10,000,
+Largo_ 1 76 
+100
+Largo_ 0 100,000
+Largo_ 1 85 
+1019.
+Largo_ 1 31 
+1109.
+Largo_ 1 14 
+12
+Largo_ 2 56 12 
+120.
+Largo_ 1 98 
+124.9
+Largo_ 1 82 
+1250
+Largo_ 1 79 
+126.
+Largo_ 1 22 
+145.
+Largo_ 1 15 
+15
+Largo_ 4 83 69 58 15 
+152.
+Largo_ 1 90 
+15x10
+Largo_ 1 79 
+16,
+Largo_ 1 49 
+169.
+Largo_ 1 39 
+17,
+Largo_ 1 42 
+18,
+Largo_ 1 23 
+1938,
+Largo_ 1 100 
+1946.
+Largo_ 1 73 
+1949.
+Largo_ 1 70 
+1950.
+Largo_ 1 56 
+1952,
+Largo_ 1 98 
+1952.
+Largo_ 2 54 50 
+1954,
+Largo_ 1 95 
+1955.
+Largo_ 3 71 62 55 
+1957
+Largo_ 1 83 
+1958
+Largo_ 1 83 
+1959
+Largo_ 1 83 
+1960
+Largo_ 1 83 
+1960.
+Largo_ 2 76 53 
+1961.
+Largo_ 5 83 82 78 69 58 
+2.01
+Largo_ 1 80 
+2.3
+Largo_ 1 63 
+2.8
+Largo_ 1 62 
+20
+Largo_ 3 83 63 20 
+206.
+Largo_ 1 94 
+21,
+Largo_ 1 95 
+22
+Largo_ 1 22 
+2250,
+Largo_ 1 57 
+23
+Largo_ 1 23 
+235.
+Largo_ 1 33 
+24
+Largo_ 1 24 
+25
+Largo_ 1 25 
+250,000
+Largo_ 1 85 
+26
+Largo_ 0 2601)
+Largo_ 1 20 
+27
+Largo_ 1 27 
+27.
+Largo_ 1 86 
+28,
+Largo_ 7 94 89 88 85 84 45 43 
+29
+Largo_ 1 29 
+3.12
+Largo_ 1 79 
+3.5
+Largo_ 2 82 63 
+3.7
+Largo_ 1 63 
+3.86
+Largo_ 1 58 
+30
+Largo_ 3 83 57 30 
+31
+Largo_ 1 31 
+32
+Largo_ 1 32 
+34
+Largo_ 1 34 
+35,000
+Largo_ 1 85 
+38
+Largo_ 1 38 
+39
+Largo_ 1 39 
+4)
+Largo_ 1 89 
+4-foot
+Largo_ 1 80 
+4.5
+Largo_ 1 82 
+400,000,
+Largo_ 1 53 
+4047),
+Largo_ 1 77 
+43.
+Largo_ 1 100 
+433.
+Largo_ 1 85 
+44
+Largo_ 1 44 
+457.
+Largo_ 1 89 
+46
+Largo_ 1 46 
+48
+Largo_ 1 48 
+485.
+Largo_ 1 93 
+49
+Largo_ 1 49 
+5),
+Largo_ 1 27 
+500
+Largo_ 1 83 
+51.
+Largo_ 1 84 
+54
+Largo_ 1 54 
+58
+Largo_ 2 59 58 
+595.
+Largo_ 1 92 
+6.0,
+Largo_ 1 84 
+60
+Largo_ 0 600
+Largo_ 1 84 
+61
+Largo_ 1 61 
+62
+Largo_ 1 62 
+65
+Largo_ 1 65 
+66
+Largo_ 1 66 
+67
+Largo_ 1 67 
+69
+Largo_ 1 69 
+70
+Largo_ 1 70 
+72
+Largo_ 1 72 
+73
+Largo_ 1 73 
+73.
+Largo_ 1 24 
+736.
+Largo_ 1 88 
+76
+Largo_ 1 76 
+77
+Largo_ 1 77 
+78
+Largo_ 1 78 
+78.
+Largo_ 1 34 
+79
+Largo_ 1 79 
+798.
+Largo_ 1 18 
+8.
+Largo_ 1 95 
+80
+Largo_ 1 80 
+88
+Largo_ 1 88 
+89
+Largo_ 1 89 
+90
+Largo_ 1 90 
+92
+Largo_ 1 92 
+96
+Largo_ 1 96 
+99
+Largo_ 1 99 
+=
+Largo_ 3 44 20 19 
+able
+Largo_ 1 99 
+accelerated
+Largo_ 1 83 
+acceleration,
+Largo_ 1 51 
+accelerations,
+Largo_ 1 51 
+accelerator
+Largo_ 1 34 
+accompanied
+Largo_ 1 53 
+accomplished
+Largo_ 1 47 
+accounted
+Largo_ 1 72 
+accuracy
+Largo_ 3 92 70 57 
+accuracy,
+Largo_ 1 54 
+accurate
+Largo_ 6 72 55 54 50 49 36 
+accurately,
+Largo_ 1 32 
+acoustic
+Largo_ 1 75 
+acoustically
+Largo_ 1 65 
+action
+Largo_ 1 100 
+activity
+Largo_ 1 83 
+activity,
+Largo_ 1 83 
+adams,e.w.
+Largo_ 1 82 
+add
+Largo_ 1 78 
+addition,
+Largo_ 1 60 
+adequately
+Largo_ 1 92 
+adjacent
+Largo_ 1 100 
+advantage
+Largo_ 1 77 
+advantageous
+Largo_ 1 34 
+adverse
+Largo_ 5 79 62 55 54 40 
+ae.scs.
+Largo_ 1 94 
+aerial-ground
+Largo_ 1 86 
+aero.
+Largo_ 1 22 
+aerodynamically
+Largo_ 2 66 51 
+aerodynamieist
+Largo_ 1 27 
+aeroelastician
+Largo_ 1 14 
+affecting
+Largo_ 1 82 
+ago
+Largo_ 1 91 
+ahead
+Largo_ 1 89 
+aid
+Largo_ 4 96 66 33 27 
+air-helium
+Largo_ 1 68 
+aircraft-engine-propeller
+Largo_ 1 78 
+airfoil
+Largo_ 3 70 52 39 
+airspeeds
+Largo_ 1 78 
+algranti,j.s.
+Largo_ 1 76 
+allen.
+Largo_ 1 67 
+also,
+Largo_ 1 94 
+although,
+Largo_ 1 82 
+altitude
+Largo_ 1 82 
+altitudes
+Largo_ 2 85 76 
+amick,j.l.
+Largo_ 1 58 
+amplitude
+Largo_ 1 15 
+analogy
+Largo_ 2 91 62 
+analyses
+Largo_ 3 92 51 42 
+analyses-e.g.,
+Largo_ 1 14 
+analysis
+Largo_ 27 99 94 92 90 84 77 73 67 65 64 60 57 56 52 49 47 46 39 36 35 30 29 25 21 16 15 10 
+analyzer
+Largo_ 1 66 
+analyzing
+Largo_ 1 14 
+anderson,k.
+Largo_ 1 83 
+anemometers
+Largo_ 2 80 76 
+angle
+Largo_ 10 82 70 69 64 57 56 48 32 27 9 
+angles,
+Largo_ 1 64 
+angular
+Largo_ 1 51 
+apparatus
+Largo_ 1 76 
+appearance
+Largo_ 2 83 67 
+appeared
+Largo_ 2 80 8 
+applicable
+Largo_ 6 91 68 56 49 29 17 
+applies
+Largo_ 2 62 56 
+applying
+Largo_ 1 49 
+appreciable
+Largo_ 2 94 14 
+approaches
+Largo_ 1 77 
+appropriate
+Largo_ 2 33 22 
+approximated
+Largo_ 2 52 49 
+approximating
+Largo_ 1 49 
+approximation
+Largo_ 5 94 73 35 27 19 
+approximations
+Largo_ 3 93 68 60 
+arbitrary
+Largo_ 7 89 65 64 62 50 49 47 
+area
+Largo_ 1 25 
+argued
+Largo_ 1 43 
+arising
+Largo_ 2 55 39 
+arrangement
+Largo_ 1 60 
+arrival
+Largo_ 1 83 
+arrive
+Largo_ 1 83 
+article
+Largo_ 1 89 
+artifice
+Largo_ 1 77 
+ascending
+Largo_ 2 94 67 
+aspects
+Largo_ 2 83 68 
+assistant,
+Largo_ 1 87 
+assume
+Largo_ 1 85 
+assuming
+Largo_ 2 81 22 
+asymptotic
+Largo_ 1 94 
+atmospheric
+Largo_ 1 90 
+attached
+Largo_ 3 100 58 53 
+attack,.
+Largo_ 1 69 
+attain
+Largo_ 1 77 
+attendant
+Largo_ 1 100 
+attenuating
+Largo_ 1 64 
+augmentation
+Largo_ 1 86 
+august
+Largo_ 1 83 
+author's
+Largo_ 1 20 
+authors
+Largo_ 4 77 46 21 15 
+average
+Largo_ 2 74 66 
+away
+Largo_ 1 85 
+axes
+Largo_ 1 78 
+axially
+Largo_ 2 94 49 
+axis
+Largo_ 3 42 34 23 
+axisymmetric
+Largo_ 2 85 20 
+axisymmetric,
+Largo_ 1 17 
+backup
+Largo_ 1 78 
+ballistic
+Largo_ 2 82 77 
+ballistic,
+Largo_ 1 77 
+barrier
+Largo_ 1 90 
+basically
+Largo_ 1 96 
+began
+Largo_ 1 83 
+behaves
+Largo_ 1 94 
+beings,
+Largo_ 1 83 
+believes
+Largo_ 1 20 
+bending
+Largo_ 2 29 15 
+bends
+Largo_ 1 89 
+bergmann,h.w.
+Largo_ 1 47 
+bertram
+Largo_ 1 46 
+bessel
+Largo_ 1 67 
+better
+Largo_ 1 35 
+biot
+Largo_ 1 30 
+bland,s.r.
+Largo_ 1 78 
+blast
+Largo_ 1 25 
+blunt-based
+Largo_ 1 96 
+blunt-body
+Largo_ 2 93 89 
+blunter
+Largo_ 1 44 
+bluntness
+Largo_ 1 79 
+bobbitt,p.j.
+Largo_ 1 60 
+bodies,
+Largo_ 2 96 37 
+body,
+Largo_ 1 44 
+boison,j.c.
+Largo_ 1 40 
+boundaries
+Largo_ 2 89 78 
+boundary-
+Largo_ 3 16 9 4 
+boundary-layer
+Largo_ 26 96 94 84 80 79 76 72 63 62 61 55 54 40 37 36 34 25 24 21 17 16 8 7 4 3 2 
+bounded
+Largo_ 1 71 
+braslow,a.l.
+Largo_ 1 80 
+breakdown
+Largo_ 1 7 
+breaks
+Largo_ 1 7 
+brief
+Largo_ 1 49 
+bring
+Largo_ 1 46 
+browne,k.a.
+Largo_ 1 100 
+buckling
+Largo_ 1 31 
+buoyant
+Largo_ 1 88 
+busemann
+Largo_ 1 94 
+c
+Largo_ 1 63 
+calculate
+Largo_ 2 52 36 
+calculated,
+Largo_ 1 95 
+calculating
+Largo_ 5 63 58 54 52 49 
+calculation
+Largo_ 6 82 54 39 37 35 32 
+calculations,
+Largo_ 1 99 
+calif.
+Largo_ 1 46 
+campbell
+Largo_ 1 91 
+canada
+Largo_ 1 91 
+cantilever
+Largo_ 2 75 42 
+cap
+Largo_ 1 95 
+capability
+Largo_ 1 92 
+capacity
+Largo_ 1 92 
+capsule
+Largo_ 1 69 
+carry
+Largo_ 2 99 52 
+case,
+Largo_ 5 72 59 44 43 33 
+cases,
+Largo_ 3 68 53 44 
+cause
+Largo_ 1 27 
+caused,
+Largo_ 1 53 
+cavities
+Largo_ 1 89 
+cent
+Largo_ 1 49 
+cent)
+Largo_ 1 40 
+centerline
+Largo_ 1 84 
+certain
+Largo_ 9 99 94 82 81 46 44 33 25 14 
+change
+Largo_ 1 89 
+changes
+Largo_ 5 89 78 70 59 39 
+channel
+Largo_ 2 34 33 
+chapman-rubesin
+Largo_ 1 63 
+characteristically
+Largo_ 1 33 
+characterized
+Largo_ 2 94 77 
+charges
+Largo_ 2 87 44 
+charts
+Largo_ 3 78 57 56 
+charwat,a.f.
+Largo_ 2 89 45 
+chief
+Largo_ 1 73 
+chordwise
+Largo_ 1 70 
+chrichlow,w.j.
+Largo_ 1 92 
+circle
+Largo_ 1 18 
+circular
+Largo_ 2 48 18 
+clarke,j.h.
+Largo_ 1 54 
+class
+Largo_ 1 25 
+clearly
+Largo_ 1 83 
+cleveland,
+Largo_ 2 87 21 
+coaxial
+Largo_ 1 84 
+coefficient,
+Largo_ 2 81 49 
+cold
+Largo_ 1 74 
+collapses,
+Largo_ 1 89 
+collected
+Largo_ 1 49 
+combinations
+Largo_ 2 82 66 
+combining
+Largo_ 1 58 
+common
+Largo_ 2 99 75 
+comparable
+Largo_ 1 77 
+comparatively
+Largo_ 1 82 
+comparing
+Largo_ 1 56 
+comparison,
+Largo_ 1 49 
+compensating
+Largo_ 1 77 
+compiled
+Largo_ 1 68 
+completed
+Largo_ 1 90 
+completion,
+Largo_ 1 85 
+complex
+Largo_ 3 92 60 47 
+complexity
+Largo_ 1 14 
+composed
+Largo_ 1 47 
+compressibility
+Largo_ 2 81 72 
+compressive
+Largo_ 1 39 
+comprised
+Largo_ 1 78 
+computers
+Largo_ 1 92 
+conceivably
+Largo_ 1 44 
+conception
+Largo_ 1 99 
+concepts,
+Largo_ 1 58 
+concerned,
+Largo_ 1 94 
+conclusion
+Largo_ 2 82 43 
+conclusions
+Largo_ 1 41 
+conditions,.
+Largo_ 1 84 
+conducting
+Largo_ 4 87 61 44 33 
+conduction-controlled
+Largo_ 1 85 
+cone
+Largo_ 6 94 79 56 48 44 40 
+cones,
+Largo_ 1 58 
+configurations
+Largo_ 3 92 60 53 
+conic
+Largo_ 1 93 
+conjunction
+Largo_ 3 53 48 37 
+connection
+Largo_ 2 77 17 
+conservation
+Largo_ 1 89 
+consideration
+Largo_ 4 100 99 83 72 
+considerations
+Largo_ 4 44 25 19 12 
+considered)
+Largo_ 1 68 
+considered,
+Largo_ 1 49 
+considering
+Largo_ 2 49 23 
+consistently
+Largo_ 1 78 
+consists
+Largo_ 1 42 
+constant-area
+Largo_ 1 33 
+constant-temperature,
+Largo_ 1 88 
+constants
+Largo_ 1 25 
+constructing
+Largo_ 1 35 
+contact
+Largo_ 2 91 33 
+contained
+Largo_ 1 25 
+continue
+Largo_ 1 83 
+continuity
+Largo_ 2 92 69 
+continuous
+Largo_ 3 100 40 34 
+contributed
+Largo_ 1 83 
+control
+Largo_ 2 61 52 
+control-surface
+Largo_ 1 14 
+convected
+Largo_ 1 77 
+convection
+Largo_ 3 95 65 59 
+convection,
+Largo_ 2 87 44 
+conventional
+Largo_ 2 49 37 
+converting
+Largo_ 1 77 
+coolant
+Largo_ 2 84 77 
+cooled
+Largo_ 3 80 59 53 
+cools
+Largo_ 1 85 
+cooperation
+Largo_ 1 83 
+core
+Largo_ 1 85 
+corollary,
+Largo_ 1 82 
+correction
+Largo_ 1 94 
+correctly
+Largo_ 1 51 
+correlations
+Largo_ 1 99 
+country
+Largo_ 1 99 
+coupled
+Largo_ 2 52 42 
+cramer,k.r.
+Largo_ 1 88 
+cresci,r.j.
+Largo_ 1 84 
+crest
+Largo_ 1 70 
+crew
+Largo_ 1 100 
+criterion
+Largo_ 3 73 43 31 
+crocco
+Largo_ 3 94 50 49 
+crossed
+Largo_ 1 34 
+currently
+Largo_ 1 92 
+currents
+Largo_ 1 33 
+curvature
+Largo_ 4 94 75 58 23 
+curves
+Largo_ 1 89 
+cutout
+Largo_ 1 89 
+cutting
+Largo_ 1 92 
+cylinders
+Largo_ 3 58 57 56 
+cylindrical
+Largo_ 1 53 
+damping,
+Largo_ 1 78 
+data
+Largo_ 16 96 92 79 75 72 69 68 63 50 47 40 35 33 19 17 8 
+days
+Largo_ 1 83 
+decay
+Largo_ 1 99 
+decays
+Largo_ 1 85 
+decreased
+Largo_ 1 79 
+decreases
+Largo_ 1 66 
+defined
+Largo_ 3 86 63 56 
+definition
+Largo_ 1 49 
+deflections,
+Largo_ 1 52 
+deformations
+Largo_ 1 51 
+delay
+Largo_ 1 94 
+delta
+Largo_ 1 52 
+demonstrated
+Largo_ 3 43 35 16 
+density,
+Largo_ 1 80 
+depression
+Largo_ 1 89 
+derivable
+Largo_ 1 94 
+derivation
+Largo_ 1 56 
+derivatives,
+Largo_ 1 99 
+derive
+Largo_ 3 82 52 38 
+descending
+Largo_ 2 67 32 
+describes
+Largo_ 2 89 45 
+describing
+Largo_ 2 33 32 
+desirability
+Largo_ 1 100 
+desirable,.
+Largo_ 1 82 
+desk
+Largo_ 1 92 
+detached
+Largo_ 1 93 
+detail,
+Largo_ 1 67 
+detectable
+Largo_ 1 83 
+determinate
+Largo_ 1 92 
+determination
+Largo_ 6 60 57 56 54 51 29 
+determine,
+Largo_ 1 37 
+determining
+Largo_ 8 91 85 73 72 56 54 51 39 
+develop
+Largo_ 1 18 
+developed,
+Largo_ 1 88 
+developing
+Largo_ 1 77 
+development
+Largo_ 3 90 33 20 
+device
+Largo_ 1 99 
+devised
+Largo_ 1 35 
+did
+Largo_ 1 80 
+diego,
+Largo_ 1 46 
+differences
+Largo_ 3 68 59 48 
+differentiates
+Largo_ 1 94 
+difficulties
+Largo_ 1 92 
+digital
+Largo_ 1 92 
+dimension
+Largo_ 1 25 
+dimensionless
+Largo_ 4 98 59 33 30 
+direction
+Largo_ 4 85 70 25 23 
+disappear
+Largo_ 1 79 
+disc
+Largo_ 1 42 
+discuss,
+Largo_ 1 99 
+discusses
+Largo_ 1 18 
+discussions
+Largo_ 1 82 
+disk
+Largo_ 1 81 
+disregarding
+Largo_ 1 82 
+dissipation
+Largo_ 2 98 81 
+dissociation
+Largo_ 1 85 
+distortion
+Largo_ 1 81 
+distributed
+Largo_ 1 80 
+distribution,
+Largo_ 1 94 
+distributions
+Largo_ 14 95 94 90 89 85 70 62 59 58 57 56 39 38 31 
+disturbance
+Largo_ 4 100 73 64 27 
+disturbances,
+Largo_ 1 80 
+diverse
+Largo_ 1 70 
+divided
+Largo_ 4 85 59 57 42 
+domain
+Largo_ 1 39 
+donoughe,p.l.
+Largo_ 1 59 
+dore,f.j.
+Largo_ 1 32 
+double
+Largo_ 2 7 6 
+downstream/
+Largo_ 1 25 
+drastically
+Largo_ 1 100 
+drew
+Largo_ 1 91 
+duct
+Largo_ 1 34 
+dyke,m.d.
+Largo_ 1 93 
+dynamic
+Largo_ 3 76 67 32 
+e.g.
+Largo_ 1 99 
+e.g.,
+Largo_ 1 21 
+easily
+Largo_ 1 100 
+eddy
+Largo_ 1 17 
+edges
+Largo_ 1 29 
+effectiveness
+Largo_ 1 43 
+efficacious
+Largo_ 1 84 
+efficient
+Largo_ 1 77 
+eggers,a.j.
+Largo_ 1 77 
+ehret,d.m.
+Largo_ 1 56 
+einbinder,
+Largo_ 1 28 
+electric-analog
+Largo_ 1 47 
+electrical
+Largo_ 2 88 33 
+electron
+Largo_ 1 85 
+electronic
+Largo_ 2 93 66 
+elemental
+Largo_ 1 16 
+elementary
+Largo_ 1 14 
+elliott,d.
+Largo_ 1 94 
+emission,
+Largo_ 1 83 
+emitted
+Largo_ 2 85 83 
+emphasized,
+Largo_ 1 92 
+employ
+Largo_ 1 68 
+employment
+Largo_ 1 82 
+end
+Largo_ 1 77 
+energies
+Largo_ 1 83 
+energy
+Largo_ 6 94 77 73 50 25 22 
+engine-propeller
+Largo_ 1 42 
+engineering
+Largo_ 2 57 33 
+engines),
+Largo_ 1 100 
+enter
+Largo_ 1 73 
+entitled
+Largo_ 1 49 
+entry
+Largo_ 1 69 
+envelopes
+Largo_ 1 69 
+environmental
+Largo_ 1 90 
+equal,
+Largo_ 1 94 
+equally
+Largo_ 1 83 
+equation,
+Largo_ 1 72 
+equations.,
+Largo_ 1 99 
+equilibrium
+Largo_ 4 92 85 47 24 
+error
+Largo_ 1 57 
+establish
+Largo_ 1 84 
+establishment
+Largo_ 1 99 
+establishment,
+Largo_ 1 91 
+estimated
+Largo_ 1 70 
+estimation
+Largo_ 1 60 
+euler
+Largo_ 1 59 
+evaluating
+Largo_ 1 43 
+event
+Largo_ 1 83 
+evidence
+Largo_ 1 99 
+evidently,
+Largo_ 1 78 
+exact,
+Largo_ 1 82 
+examine
+Largo_ 1 44 
+examines
+Largo_ 1 78 
+example
+Largo_ 4 98 54 49 42 
+exception
+Largo_ 1 77 
+exert
+Largo_ 2 88 82 
+exhibited
+Largo_ 1 28 
+existence,
+Largo_ 1 89 
+existing
+Largo_ 3 93 86 80 
+expansion-controlled
+Largo_ 1 85 
+expected
+Largo_ 2 68 56 
+experiment
+Largo_ 5 52 39 30 17 1 
+experimentally,.
+Largo_ 1 78 
+explain
+Largo_ 1 43 
+explicitly
+Largo_ 1 98 
+exponents
+Largo_ 1 94 
+expressing
+Largo_ 2 59 47 
+expressions
+Largo_ 3 81 72 68 
+extended
+Largo_ 3 100 57 54 
+extensions
+Largo_ 1 93 
+extreme
+Largo_ 1 79 
+face
+Largo_ 1 91 
+facilitate
+Largo_ 1 49 
+facing
+Largo_ 1 36 
+fact,
+Largo_ 3 80 73 34 
+factor
+Largo_ 5 82 81 63 55 24 
+factors,
+Largo_ 1 71 
+fage,
+Largo_ 1 99 
+failures
+Largo_ 1 100 
+falkner
+Largo_ 1 59 
+falkner,
+Largo_ 1 59 
+family
+Largo_ 1 62 
+fashion
+Largo_ 1 47 
+fatigue
+Largo_ 2 100 75 
+favorable
+Largo_ 4 94 79 62 47 
+feasible
+Largo_ 1 92 
+features
+Largo_ 2 90 83 
+feldman,s.
+Largo_ 1 85 
+ferri,a.
+Largo_ 1 37 
+fields,
+Largo_ 1 34 
+fighter
+Largo_ 1 76 
+final
+Largo_ 4 92 73 49 47 
+finding
+Largo_ 1 91 
+finish
+Largo_ 1 79 
+first,
+Largo_ 1 99 
+first-order
+Largo_ 1 94 
+fixed
+Largo_ 3 78 61 40 
+flange
+Largo_ 1 30 
+flare
+Largo_ 1 83 
+flares
+Largo_ 1 83 
+flat-plate
+Largo_ 2 88 52 
+flexible
+Largo_ 1 100 
+flexural
+Largo_ 1 47 
+flights
+Largo_ 1 83 
+floor-pressure
+Largo_ 1 89 
+flow)
+Largo_ 1 89 
+flows,
+Largo_ 3 89 45 39 
+fluctuation,
+Largo_ 1 76 
+fluctuations
+Largo_ 3 99 76 45 
+fluid,
+Largo_ 1 73 
+fluids
+Largo_ 2 61 50 
+flying
+Largo_ 3 100 85 76 
+for,
+Largo_ 1 94 
+force
+Largo_ 4 87 70 60 44 
+forecasting
+Largo_ 1 83 
+formation
+Largo_ 1 92 
+forms
+Largo_ 1 68 
+formula
+Largo_ 1 24 
+forth
+Largo_ 1 93 
+forum,
+Largo_ 1 91 
+forward-fuselage
+Largo_ 1 76 
+fourth
+Largo_ 1 88 
+fraction
+Largo_ 1 83 
+frames
+Largo_ 1 27 
+free-shear
+Largo_ 1 89 
+freedom
+Largo_ 2 87 44 
+freeman,n.c.
+Largo_ 1 28 
+frequency
+Largo_ 1 83 
+friction
+Largo_ 10 99 77 72 62 61 59 49 21 16 9 
+friedman
+Largo_ 1 99 
+ft
+Largo_ 1 85 
+fulfilled),
+Largo_ 1 18 
+function
+Largo_ 10 95 89 76 73 72 67 59 39 32 16 
+functions
+Largo_ 2 50 47 
+fundamentals
+Largo_ 1 99 
+further,
+Largo_ 2 100 79 
+fuselage
+Largo_ 1 92 
+fuselage-section
+Largo_ 1 76 
+g
+Largo_ 1 44 
+gained
+Largo_ 1 92 
+gas,
+Largo_ 1 33 
+gases
+Largo_ 2 84 68 
+geiger,r.e.
+Largo_ 1 35 
+generality,
+Largo_ 1 49 
+generalization
+Largo_ 3 94 75 20 
+generalized-newtonian
+Largo_ 1 20 
+generally
+Largo_ 2 94 77 
+geometrical
+Largo_ 1 92 
+geometry,
+Largo_ 1 89 
+geophysical
+Largo_ 1 83 
+gerard,g.
+Largo_ 1 30 
+gives
+Largo_ 1 39 
+glass
+Largo_ 1 82 
+glass-type
+Largo_ 1 82 
+glide
+Largo_ 1 77 
+gooderum,p.n.
+Largo_ 1 74 
+governs
+Largo_ 1 89 
+gradient,
+Largo_ 3 94 55 54 
+gradually
+Largo_ 1 89 
+graduate
+Largo_ 1 87 
+granular-type
+Largo_ 1 80 
+graphs
+Largo_ 1 95 
+grashof
+Largo_ 1 88 
+great
+Largo_ 3 83 73 53 
+greatly
+Largo_ 4 89 83 73 66 
+grober
+Largo_ 1 90 
+ground
+Largo_ 1 86 
+growth
+Largo_ 2 63 25 
+gupta
+Largo_ 2 87 44 
+gyroscope
+Largo_ 1 42 
+gyroscopic
+Largo_ 1 42 
+haggenmacher,g.w.
+Largo_ 1 92 
+half-angle
+Largo_ 1 58 
+handling
+Largo_ 1 92 
+hardly
+Largo_ 1 100 
+hartmann
+Largo_ 1 88 
+having
+Largo_ 7 100 91 77 70 68 52 42 
+hazard
+Largo_ 1 83 
+head
+Largo_ 1 44 
+heat,
+Largo_ 1 82 
+heat-input
+Largo_ 1 91 
+heat-transfer
+Largo_ 12 98 94 81 71 66 61 55 50 49 44 36 23 
+heated
+Largo_ 4 66 62 51 13 
+heats
+Largo_ 3 68 28 20 
+held
+Largo_ 2 62 50 
+here,
+Largo_ 1 94 
+hess,n.w.
+Largo_ 1 75 
+high-drag
+Largo_ 1 69 
+high-temperature
+Largo_ 1 85 
+hoff
+Largo_ 1 95 
+homogeneous,
+Largo_ 1 82 
+hopelessly
+Largo_ 1 92 
+horizontally,
+Largo_ 1 42 
+hovering
+Largo_ 1 86 
+hydrodynamic
+Largo_ 1 99 
+hydrodynamical
+Largo_ 1 86 
+hypothetical
+Largo_ 1 82 
+i-beam
+Largo_ 1 29 
+i.e.,
+Largo_ 1 99 
+i:
+Largo_ 1 89 
+ideal
+Largo_ 2 68 63 
+identification
+Largo_ 1 83 
+identified
+Largo_ 1 62 
+ignoring
+Largo_ 1 57 
+ii:
+Largo_ 1 45 
+illustrated
+Largo_ 1 60 
+illustrations
+Largo_ 1 68 
+immediately
+Largo_ 1 58 
+impingement
+Largo_ 1 64 
+importance
+Largo_ 3 100 99 60 
+important,
+Largo_ 2 100 83 
+in,
+Largo_ 1 100 
+in.
+Largo_ 1 9 
+inaccuracies
+Largo_ 1 81 
+inappropriate
+Largo_ 1 49 
+inc.
+Largo_ 1 17 
+incidence
+Largo_ 1 64 
+incident
+Largo_ 1 64 
+inclination
+Largo_ 1 20 
+include..
+Largo_ 1 45 
+includes
+Largo_ 1 99 
+including
+Largo_ 5 92 80 54 52 14 
+incomplete
+Largo_ 1 6 
+incorrect
+Largo_ 1 49 
+increased
+Largo_ 6 94 80 75 61 43 40 
+increases
+Largo_ 3 82 66 29 
+increasingly
+Largo_ 1 14 
+indeed,
+Largo_ 1 73 
+independent
+Largo_ 3 89 62 37 
+independently
+Largo_ 2 47 16 
+indicated
+Largo_ 3 86 65 58 
+indicates
+Largo_ 4 93 62 54 39 
+inferred
+Largo_ 1 49 
+infinitely
+Largo_ 2 62 42 
+infinity
+Largo_ 1 18 
+information
+Largo_ 4 41 36 35 29 
+initiated
+Largo_ 1 80 
+injected
+Largo_ 2 84 9 
+inner
+Largo_ 1 89 
+inquire
+Largo_ 1 28 
+insofar
+Largo_ 1 86 
+instability
+Largo_ 1 78 
+instance,
+Largo_ 1 2 
+insulating
+Largo_ 1 90 
+integrals
+Largo_ 1 94 
+integration
+Largo_ 2 72 34 
+integrations
+Largo_ 2 72 14 
+intensity
+Largo_ 1 83 
+interaction,
+Largo_ 1 96 
+interested
+Largo_ 1 99 
+interesting
+Largo_ 5 87 44 37 34 28 
+interferometric
+Largo_ 1 74 
+interior
+Largo_ 1 66 
+international
+Largo_ 1 83 
+interpreted
+Largo_ 1 41 
+intersection-type
+Largo_ 1 92 
+intimately
+Largo_ 1 100 
+introduce
+Largo_ 1 99 
+introduced,
+Largo_ 1 62 
+introducing
+Largo_ 1 38 
+invariant
+Largo_ 2 17 16 
+inversion
+Largo_ 2 47 46 
+investigate
+Largo_ 2 42 7 
+investigated,
+Largo_ 2 94 40 
+investigating
+Largo_ 3 51 37 34 
+investigation,
+Largo_ 1 56 
+investigations
+Largo_ 3 99 89 34 
+inviscid,
+Largo_ 1 86 
+inviscid-incompressible
+Largo_ 1 86 
+inviscid-viscous
+Largo_ 1 26 
+involved
+Largo_ 7 87 77 73 50 49 44 24 
+inward
+Largo_ 1 89 
+ionization
+Largo_ 1 85 
+irregular
+Largo_ 1 92 
+isolation
+Largo_ 1 100 
+isotropic
+Largo_ 1 99 
+issuing
+Largo_ 1 86 
+it,.
+Largo_ 1 77 
+iteration
+Largo_ 1 15 
+itself
+Largo_ 1 42 
+jack,j.r.
+Largo_ 1 79 
+jets
+Largo_ 1 86 
+joint
+Largo_ 1 66 
+july,
+Largo_ 1 83 
+junction
+Largo_ 1 25 
+justify
+Largo_ 1 33 
+karman
+Largo_ 2 99 98 
+kept
+Largo_ 1 77 
+kerrebrock,j.p.
+Largo_ 1 34 
+key
+Largo_ 1 16 
+kinetic
+Largo_ 1 77 
+km,
+Largo_ 1 82 
+knudsen
+Largo_ 1 22 
+kubota,t.
+Largo_ 1 25 
+laboratories,
+Largo_ 1 17 
+laboratory,
+Largo_ 3 40 21 19 
+lack
+Largo_ 1 17 
+lacquer
+Largo_ 1 9 
+laminar,
+Largo_ 1 88 
+laminar-turbulent
+Largo_ 1 89 
+langley
+Largo_ 1 80 
+large-scale
+Largo_ 1 92 
+larger
+Largo_ 1 25 
+late
+Largo_ 1 99 
+law
+Largo_ 2 56 50 
+laws
+Largo_ 1 13 
+layer-free
+Largo_ 1 89 
+layers,
+Largo_ 1 91 
+lead
+Largo_ 1 54 
+leading-edge
+Largo_ 3 39 26 25 
+leaving
+Largo_ 1 89 
+led
+Largo_ 1 26 
+left
+Largo_ 1 85 
+length,
+Largo_ 1 89 
+lengths
+Largo_ 1 65 
+level
+Largo_ 2 82 75 
+levels
+Largo_ 1 40 
+li,t.y.
+Largo_ 1 35 
+libby,pa.
+Largo_ 1 84 
+life
+Largo_ 1 100 
+life,
+Largo_ 1 75 
+lift-drag
+Largo_ 1 77 
+light-weight,
+Largo_ 1 82 
+like
+Largo_ 2 94 91 
+likely
+Largo_ 2 100 34 
+limited
+Largo_ 1 100 
+limits
+Largo_ 2 56 27 
+lin,c.c.
+Largo_ 1 73 
+line
+Largo_ 3 91 39 37 
+liquid-metal,
+Largo_ 1 88 
+liquids
+Largo_ 1 33 
+literature
+Largo_ 2 76 30 
+load
+Largo_ 2 47 12 
+loadings,
+Largo_ 1 60 
+loads
+Largo_ 3 92 51 14 
+located
+Largo_ 1 88 
+locating
+Largo_ 1 55 
+location
+Largo_ 5 79 78 54 43 40 
+long-range
+Largo_ 1 77 
+longitudinal
+Largo_ 1 76 
+love,e.s.
+Largo_ 2 68 20 
+low-
+Largo_ 1 47 
+low-aspect-ratio
+Largo_ 1 47 
+lowers
+Largo_ 1 66 
+lu
+Largo_ 2 87 17 
+m,
+Largo_ 1 82 
+m.i.t.
+Largo_ 1 48 
+m=6.85
+Largo_ 1 44 
+mach-number
+Largo_ 1 89 
+mager
+Largo_ 1 17 
+magneto-
+Largo_ 1 33 
+magneto-aerodynamic
+Largo_ 1 33 
+magneto-gasdynamic
+Largo_ 1 34 
+magnetohydrodynamic
+Largo_ 3 88 87 44 
+magnitude
+Largo_ 3 94 88 80 
+magnitude,
+Largo_ 1 62 
+main-stream
+Largo_ 1 59 
+mainly
+Largo_ 2 85 44 
+major
+Largo_ 2 100 30 
+malvestuto,f.s.
+Largo_ 1 60 
+mangler
+Largo_ 1 94 
+mangler's
+Largo_ 1 94 
+manned
+Largo_ 1 83 
+maps
+Largo_ 1 85 
+marble,f.e.
+Largo_ 1 34 
+maslen
+Largo_ 2 22 21 
+mass
+Largo_ 8 100 89 84 77 69 44 32 17 
+material
+Largo_ 2 82 77 
+materially
+Largo_ 1 42 
+mathematical
+Largo_ 3 78 73 49 
+matric
+Largo_ 1 46 
+matrices
+Largo_ 2 47 46 
+matrix
+Largo_ 3 92 47 15 
+maximum-acceleration
+Largo_ 1 33 
+meaning
+Largo_ 1 94 
+measure
+Largo_ 2 88 76 
+measured,
+Largo_ 1 76 
+measurement
+Largo_ 1 76 
+mechanical
+Largo_ 1 87 
+medium-sized
+Largo_ 1 93 
+meets
+Largo_ 1 92 
+melting-type
+Largo_ 1 82 
+member
+Largo_ 1 47 
+members
+Largo_ 2 92 47 
+members,
+Largo_ 1 47 
+meridian
+Largo_ 1 48 
+method,
+Largo_ 4 93 54 47 14 
+mev
+Largo_ 1 83 
+microinches
+Largo_ 1 79 
+microphone
+Largo_ 1 76 
+millsaps,k.
+Largo_ 1 98 
+minimizing
+Largo_ 1 77 
+minimum-size
+Largo_ 1 92 
+mirels,h.
+Largo_ 2 72 71 
+missiles
+Largo_ 1 77 
+missiles,
+Largo_ 1 36 
+mixed
+Largo_ 1 38 
+mode
+Largo_ 3 73 67 42 
+modern
+Largo_ 1 92 
+moment
+Largo_ 1 60 
+monotonically
+Largo_ 1 82 
+moore,f.k.
+Largo_ 1 64 
+morduchow,m.
+Largo_ 2 55 54 
+morgan,h.g.
+Largo_ 1 52 
+morkovin,m.v.
+Largo_ 1 41 
+motors
+Largo_ 2 90 77 
+mount,
+Largo_ 1 78 
+mounting
+Largo_ 1 100 
+moves
+Largo_ 1 64 
+mull,h.r.
+Largo_ 1 76 
+multicellular
+Largo_ 1 31 
+multiplicative
+Largo_ 1 81 
+n
+Largo_ 1 94 
+naca
+Largo_ 25 81 79 77 75 74 73 72 71 70 67 66 65 64 63 62 61 60 59 57 56 55 54 52 51 50 
+naca,
+Largo_ 1 21 
+nasa
+Largo_ 9 83 82 80 78 76 69 68 58 53 
+nature
+Largo_ 1 41 
+near-sonic
+Largo_ 1 39 
+necessarily
+Largo_ 1 44 
+neglect
+Largo_ 1 57 
+neglected
+Largo_ 3 95 94 32 
+negligible
+Largo_ 2 73 57 
+neighborhood
+Largo_ 2 83 77 
+net
+Largo_ 1 49 
+neutral
+Largo_ 1 78 
+nitzburg,g.e.
+Largo_ 1 70 
+noise
+Largo_ 2 100 65 
+nominally
+Largo_ 1 43 
+non-
+Largo_ 1 28 
+nondecomposing
+Largo_ 1 82 
+nondimensional
+Largo_ 3 88 78 66 
+nonequilibrium
+Largo_ 1 24 
+nontrivial
+Largo_ 1 34 
+nonviscous
+Largo_ 2 68 36 
+normal-shock
+Largo_ 1 69 
+noses
+Largo_ 1 44 
+notches
+Largo_ 1 89 
+noted
+Largo_ 3 81 75 58 
+notes
+Largo_ 1 43 
+nozzles,
+Largo_ 1 96 
+number)
+Largo_ 1 73 
+number,
+Largo_ 9 94 88 81 78 53 50 49 48 45 
+numerical
+Largo_ 10 98 93 92 72 55 54 49 34 29 24 
+nusselt
+Largo_ 2 81 59 
+objective
+Largo_ 1 99 
+observables
+Largo_ 1 85 
+observations,
+Largo_ 1 45 
+obtain
+Largo_ 3 94 36 32 
+obtaining
+Largo_ 1 86 
+occasionally
+Largo_ 1 100 
+occur
+Largo_ 5 83 78 49 44 11 
+occurred
+Largo_ 3 83 69 9 
+offset,
+Largo_ 1 77 
+often-used
+Largo_ 1 60 
+ogive
+Largo_ 2 57 56 
+ogive-cylinder
+Largo_ 1 53 
+oliver,h.
+Largo_ 1 95 
+oncoming
+Largo_ 2 89 45 
+one-tenth
+Largo_ 1 58 
+ont.,
+Largo_ 1 91 
+opaque
+Largo_ 1 82 
+opaque,
+Largo_ 1 82 
+open-ended,
+Largo_ 1 88 
+opportunely
+Largo_ 1 92 
+opposite
+Largo_ 3 73 47 43 
+optically
+Largo_ 1 40 
+organization
+Largo_ 1 92 
+orientations
+Largo_ 1 65 
+orifice
+Largo_ 1 58 
+origin
+Largo_ 1 12 
+originally
+Largo_ 1 14 
+originating
+Largo_ 1 100 
+oscillation
+Largo_ 1 67 
+ostrach,s.
+Largo_ 1 81 
+ottawa,
+Largo_ 1 91 
+outlined
+Largo_ 1 91 
+output
+Largo_ 1 76 
+overexpanded
+Largo_ 1 96 
+pages
+Largo_ 1 91 
+pallone,a.j.
+Largo_ 1 26 
+panels
+Largo_ 2 75 31 
+paper
+Largo_ 10 100 99 94 89 83 78 45 42 35 15 
+papers
+Largo_ 1 46 
+paragraphs
+Largo_ 1 34 
+parallel-plate
+Largo_ 1 88 
+parameter,
+Largo_ 3 66 63 62 
+paramount
+Largo_ 1 99 
+particle,
+Largo_ 1 85 
+particles
+Largo_ 2 83 80 
+particularly
+Largo_ 1 75 
+parts,
+Largo_ 1 100 
+passengers
+Largo_ 1 100 
+paths
+Largo_ 1 67 
+pau-chang
+Largo_ 1 87 
+peculiarities
+Largo_ 1 92 
+penetrating
+Largo_ 1 83 
+penetration
+Largo_ 1 82 
+perfect
+Largo_ 1 91 
+performance
+Largo_ 2 82 77 
+performances
+Largo_ 1 11 
+performing
+Largo_ 1 60 
+periodic
+Largo_ 2 91 90 
+peripheral
+Largo_ 1 86 
+permitted
+Largo_ 1 72 
+pertinent
+Largo_ 2 90 89 
+perturbations
+Largo_ 1 73 
+philosophy
+Largo_ 1 92 
+photographic
+Largo_ 1 42 
+photothermoelastic
+Largo_ 1 30 
+physiological
+Largo_ 1 100 
+picard
+Largo_ 1 59 
+pipe
+Largo_ 1 88 
+pitch
+Largo_ 1 78 
+pitching
+Largo_ 1 42 
+placed
+Largo_ 2 73 45 
+plant
+Largo_ 1 100 
+plants
+Largo_ 1 100 
+plasticity
+Largo_ 1 92 
+plausible
+Largo_ 1 93 
+pohle,f.v.
+Largo_ 1 95 
+pohlhausen
+Largo_ 1 59 
+pohlhausen,k.
+Largo_ 1 98 
+point,
+Largo_ 1 85 
+points
+Largo_ 1 59 
+polynomials
+Largo_ 1 52 
+porous
+Largo_ 4 87 84 59 44 
+portion
+Largo_ 6 90 89 85 62 45 25 
+position
+Largo_ 2 8 7 
+positively
+Largo_ 1 49 
+possessing
+Largo_ 1 34 
+possibilities
+Largo_ 1 33 
+possibility
+Largo_ 4 83 68 35 9 
+postulate
+Largo_ 1 16 
+potentials
+Largo_ 1 60 
+potentials,
+Largo_ 1 60 
+power
+Largo_ 2 100 86 
+power-plant
+Largo_ 1 78 
+powered
+Largo_ 1 77 
+powerplants
+Largo_ 1 75 
+powers
+Largo_ 2 94 14 
+practically
+Largo_ 2 82 37 
+practice
+Largo_ 2 54 36 
+prandtl
+Largo_ 8 98 62 55 54 50 49 37 23 
+precession-type
+Largo_ 1 78 
+predict
+Largo_ 4 70 69 48 36 
+predicting
+Largo_ 3 93 89 83 
+predictions
+Largo_ 2 79 49 
+preponderance
+Largo_ 1 100 
+prescribed
+Largo_ 2 30 18 
+presence
+Largo_ 7 87 61 54 44 40 33 11 
+present-day
+Largo_ 1 77 
+presented,
+Largo_ 2 95 24 
+presents
+Largo_ 3 84 83 42 
+pressure)
+Largo_ 1 76 
+pressure-gradient
+Largo_ 1 59 
+pressurized
+Largo_ 1 92 
+prevails
+Largo_ 1 84 
+previous
+Largo_ 2 81 79 
+previously
+Largo_ 4 80 77 62 52 
+principle
+Largo_ 1 89 
+probably
+Largo_ 1 76 
+problem),
+Largo_ 1 96 
+problem,.
+Largo_ 1 73 
+problems..
+Largo_ 1 99 
+probstein,r.f.
+Largo_ 1 94 
+procedures
+Largo_ 1 30 
+processes)
+Largo_ 1 85 
+produce
+Largo_ 2 100 42 
+producing
+Largo_ 1 99 
+products
+Largo_ 1 99 
+profile,
+Largo_ 1 54 
+profiles,
+Largo_ 4 88 71 61 49 
+progressively
+Largo_ 1 72 
+propellant
+Largo_ 1 90 
+propeller,
+Largo_ 1 100 
+propellers
+Largo_ 1 42 
+property
+Largo_ 2 81 59 
+proportional
+Largo_ 2 94 55 
+proposed,
+Largo_ 1 93 
+protect
+Largo_ 1 90 
+protrusion
+Largo_ 1 89 
+provide,
+Largo_ 1 37 
+providing
+Largo_ 2 80 69 
+proximity
+Largo_ 1 86 
+psychological
+Largo_ 1 100 
+pulse
+Largo_ 1 91 
+pure
+Largo_ 2 83 33 
+q
+Largo_ 1 76 
+quantitatively
+Largo_ 1 39 
+quantities
+Largo_ 3 99 37 33 
+quasi-steady
+Largo_ 1 52 
+question,.
+Largo_ 1 36 
+quoted
+Largo_ 1 62 
+r
+Largo_ 1 18 
+r.,
+Largo_ 1 84 
+radiation,
+Largo_ 1 85 
+radiative
+Largo_ 1 82 
+raised
+Largo_ 1 99 
+raises
+Largo_ 1 15 
+random-
+Largo_ 1 75 
+ranging
+Largo_ 2 92 79 
+rapidly,
+Largo_ 1 32 
+rarefied
+Largo_ 1 22 
+rates
+Largo_ 3 84 59 36 
+rates)
+Largo_ 1 24 
+ratio)
+Largo_ 1 57 
+rationally
+Largo_ 1 17 
+ratios)
+Largo_ 1 86 
+re-entering
+Largo_ 1 82 
+re-entry,
+Largo_ 1 82 
+reaction,
+Largo_ 1 86 
+reader's
+Largo_ 1 91 
+realistic
+Largo_ 1 82 
+reasonable
+Largo_ 3 70 42 34 
+reasons
+Largo_ 1 93 
+reattachment
+Largo_ 2 89 53 
+received
+Largo_ 1 44 
+recent
+Largo_ 4 91 43 28 6 
+recently,
+Largo_ 1 99 
+recognized
+Largo_ 1 83 
+recompression
+Largo_ 1 89 
+record
+Largo_ 1 76 
+recur
+Largo_ 1 67 
+reduce
+Largo_ 1 44 
+reducible
+Largo_ 1 94 
+reducing
+Largo_ 2 100 77 
+redundant
+Largo_ 1 92 
+reed,w.h.
+Largo_ 1 78 
+reflection
+Largo_ 1 85 
+refraction
+Largo_ 1 65 
+regard
+Largo_ 1 75 
+regarding
+Largo_ 1 14 
+regimes
+Largo_ 1 33 
+regions
+Largo_ 4 94 89 85 53 
+related
+Largo_ 1 57 
+relating
+Largo_ 2 72 24 
+relationships
+Largo_ 2 69 47 
+rely
+Largo_ 1 89 
+remainder
+Largo_ 1 62 
+remarks
+Largo_ 1 17 
+report
+Largo_ 3 84 73 60 
+represent
+Largo_ 3 72 50 35 
+representative
+Largo_ 2 65 14 
+representing
+Largo_ 3 92 33 29 
+requirements
+Largo_ 1 62 
+requires
+Largo_ 1 77 
+requiring
+Largo_ 1 51 
+reshotko,e.
+Largo_ 1 62 
+resler
+Largo_ 1 34 
+resonance
+Largo_ 1 53 
+respectively,
+Largo_ 2 40 25 
+response,
+Largo_ 1 78 
+restraint
+Largo_ 1 29 
+resultant
+Largo_ 1 42 
+resulting
+Largo_ 3 91 62 29 
+return
+Largo_ 1 77 
+reversal
+Largo_ 2 89 43 
+review
+Largo_ 2 96 93 
+revolution
+Largo_ 3 57 56 25 
+ribner,h.s.
+Largo_ 1 65 
+rigid
+Largo_ 3 100 78 42 
+rocket
+Largo_ 1 77 
+root
+Largo_ 2 88 76 
+root-mean-square
+Largo_ 1 76 
+rotate
+Largo_ 1 81 
+rotation
+Largo_ 1 57 
+roughness,
+Largo_ 1 80 
+roughnesses
+Largo_ 2 79 40 
+rule,
+Largo_ 1 70 
+samson,s.h.
+Largo_ 1 47 
+satisfactorily
+Largo_ 1 70 
+satisfy
+Largo_ 1 94 
+say,
+Largo_ 1 44 
+scanlan,r.h.
+Largo_ 1 42 
+scheme
+Largo_ 2 39 38 
+schlieren
+Largo_ 2 58 45 
+sci.
+Largo_ 1 22 
+scientific
+Largo_ 1 83 
+scope
+Largo_ 2 92 53 
+sears,
+Largo_ 1 34 
+sears,w.r.
+Largo_ 1 33 
+sec
+Largo_ 1 85 
+second
+Largo_ 5 89 73 47 45 29 
+sections
+Largo_ 3 93 70 44 
+self-induced
+Largo_ 1 63 
+semi-incompressible
+Largo_ 1 87 
+semi-infinite
+Largo_ 1 72 
+senior
+Largo_ 1 77 
+sensitivity
+Largo_ 1 78 
+separately,
+Largo_ 1 38 
+sequence
+Largo_ 1 83 
+serbin,h.
+Largo_ 1 36 
+serve
+Largo_ 1 34 
+seventh-power
+Largo_ 1 72 
+shadowgraph
+Largo_ 1 53 
+shaped
+Largo_ 1 56 
+sharp
+Largo_ 1 58 
+shield,.
+Largo_ 1 82 
+shifted
+Largo_ 1 92 
+shockwave
+Largo_ 1 96 
+shorten
+Largo_ 1 100 
+showing
+Largo_ 2 89 42 
+shows
+Largo_ 7 94 65 35 32 25 24 20 
+shows,
+Largo_ 1 20 
+sign
+Largo_ 1 73 
+significance,
+Largo_ 2 87 44 
+significant,.
+Largo_ 1 75 
+significantly
+Largo_ 2 48 11 
+similar,
+Largo_ 1 96 
+simmons
+Largo_ 1 99 
+simpler
+Largo_ 2 94 93 
+simplicity
+Largo_ 1 34 
+simplifying
+Largo_ 1 86 
+simulating
+Largo_ 1 68 
+simulations
+Largo_ 1 68 
+simultaneous
+Largo_ 5 92 65 59 51 50 
+sinchtel,c.d.
+Largo_ 1 83 
+single
+Largo_ 3 80 65 56 
+single-element
+Largo_ 1 40 
+sinusoidal
+Largo_ 3 91 90 65 
+situated
+Largo_ 1 44 
+size
+Largo_ 2 92 58 
+skan
+Largo_ 1 59 
+skin,
+Largo_ 2 66 29 
+skip,
+Largo_ 1 77 
+slab,
+Largo_ 2 91 6 
+slender-tail
+Largo_ 1 60 
+slightly
+Largo_ 1 35 
+slipping
+Largo_ 1 22 
+slope-compatibility
+Largo_ 1 47 
+slow
+Largo_ 1 24 
+slowly
+Largo_ 1 24 
+so-called
+Largo_ 1 99 
+solar
+Largo_ 1 83 
+solid
+Largo_ 3 90 73 13 
+solution
+Largo_ 16 98 90 87 86 72 67 54 47 44 32 28 27 24 23 22 6 
+solutions/
+Largo_ 1 73 
+solutions/)
+Largo_ 1 73 
+solve
+Largo_ 2 92 50 
+solving
+Largo_ 1 93 
+somewhat,
+Largo_ 1 66 
+sonic
+Largo_ 4 70 58 39 37 
+sound
+Largo_ 2 65 64 
+sources
+Largo_ 1 45 
+space
+Largo_ 3 95 83 17 
+spacing
+Largo_ 1 7 
+spacing,
+Largo_ 1 7 
+spanning
+Largo_ 1 89 
+spar
+Largo_ 1 95 
+spatial
+Largo_ 1 65 
+special
+Largo_ 4 99 94 54 49 
+spectrum
+Largo_ 1 83 
+speed,
+Largo_ 1 78 
+sphere,
+Largo_ 1 85 
+spherical
+Largo_ 2 80 44 
+spots
+Largo_ 1 80 
+squares
+Largo_ 1 99 
+stabilization
+Largo_ 1 55 
+stagnation
+Largo_ 8 84 82 62 58 54 35 24 11 
+starting
+Largo_ 2 92 50 
+starts
+Largo_ 1 18 
+statements
+Largo_ 1 46 
+statically
+Largo_ 1 92 
+statistical
+Largo_ 1 99 
+steady,
+Largo_ 1 88 
+steep
+Largo_ 2 83 82 
+step
+Largo_ 1 47 
+steps
+Largo_ 1 89 
+stewartson's
+Largo_ 1 62 
+stiffening
+Largo_ 1 75 
+stonecypher
+Largo_ 1 91 
+stonecypher,t.e.
+Largo_ 1 90 
+stores
+Largo_ 1 52 
+strand,t.
+Largo_ 1 86 
+stream)
+Largo_ 1 27 
+streams
+Largo_ 2 83 11 
+strengths
+Largo_ 3 88 71 33 
+stress,
+Largo_ 1 30 
+stresses
+Largo_ 9 100 99 95 66 51 31 30 29 13 
+strongly
+Largo_ 1 78 
+structure
+Largo_ 9 100 95 92 51 47 45 30 29 13 
+structure,
+Largo_ 2 78 12 
+studied,
+Largo_ 1 33 
+studies,
+Largo_ 1 79 
+studies-experimental
+Largo_ 1 42 
+studies.dash
+Largo_ 1 21 
+study,
+Largo_ 1 90 
+studying
+Largo_ 1 77 
+subject
+Largo_ 5 91 85 46 43 12 
+submerged,
+Largo_ 1 88 
+subroutines,
+Largo_ 1 92 
+subsequent
+Largo_ 1 43 
+subsonic/supersonic
+Largo_ 1 38 
+substantially
+Largo_ 1 14 
+success
+Largo_ 1 99 
+suction
+Largo_ 2 87 44 
+sufficient
+Largo_ 4 80 57 43 34 
+sufficiently
+Largo_ 2 54 33 
+suggested
+Largo_ 5 99 30 19 17 12 
+suitably
+Largo_ 1 69 
+summarized
+Largo_ 2 49 12 
+supercritical
+Largo_ 1 70 
+superior
+Largo_ 1 77 
+superiority
+Largo_ 1 20 
+supersonic-wake
+Largo_ 1 89 
+supply-stream
+Largo_ 1 40 
+supported
+Largo_ 2 83 78 
+supposedly
+Largo_ 1 82 
+surface,
+Largo_ 2 82 62 
+surface-
+Largo_ 1 49 
+surface-temperature
+Largo_ 1 49 
+surfaces
+Largo_ 2 100 24 
+survey
+Largo_ 1 93 
+sweptback
+Largo_ 1 52 
+symmetrically
+Largo_ 1 86 
+system,
+Largo_ 1 62 
+systems
+Largo_ 1 92 
+tail
+Largo_ 1 60 
+taken
+Largo_ 4 52 50 43 25 
+talbot
+Largo_ 1 63 
+talbot,l.
+Largo_ 1 63 
+taylor's
+Largo_ 1 99 
+taylor,e.s.
+Largo_ 1 100 
+taylor-maccoll
+Largo_ 1 63 
+technical
+Largo_ 1 57 
+techniques
+Largo_ 4 60 42 33 14 
+tedious
+Largo_ 1 92 
+temperature)
+Largo_ 1 59 
+temperature,
+Largo_ 7 94 72 62 55 50 49 30 
+temperatures,
+Largo_ 1 82 
+tends
+Largo_ 3 94 89 78 
+term,
+Largo_ 1 57 
+terrestrial
+Largo_ 1 83 
+tested
+Largo_ 1 52 
+th.
+Largo_ 1 99 
+then,
+Largo_ 1 42 
+theoretically,
+Largo_ 1 99 
+theories
+Largo_ 4 99 86 36 14 
+therefore,
+Largo_ 3 80 37 36 
+thermal-boundary-layer
+Largo_ 1 72 
+thermally
+Largo_ 1 51 
+thermodynamic
+Largo_ 1 85 
+thicken
+Largo_ 1 89 
+thickness
+Largo_ 13 94 89 86 82 76 72 66 52 45 26 14 13 8 
+thickness-chord
+Largo_ 1 70 
+thin,
+Largo_ 1 82 
+thornton,p.
+Largo_ 1 81 
+thought
+Largo_ 1 42 
+throat,
+Largo_ 1 89 
+thrust,
+Largo_ 1 78 
+tietjens
+Largo_ 1 73 
+time,
+Largo_ 1 30 
+ting
+Largo_ 1 17 
+title,
+Largo_ 1 91 
+tn
+Largo_ 1 77 
+tn.1115,
+Largo_ 1 73 
+tn.1813,
+Largo_ 1 70 
+tn.2479,
+Largo_ 1 59 
+tn.2864,
+Largo_ 1 65 
+tn.2879,
+Largo_ 1 64 
+tn.2955,
+Largo_ 1 60 
+tn.3401,
+Largo_ 1 71 
+tn.3712,
+Largo_ 1 72 
+tn.4046,
+Largo_ 1 77 
+tn.4094,
+Largo_ 1 79 
+tn.4243,
+Largo_ 1 74 
+tn.4320,
+Largo_ 1 81 
+tn.4327,
+Largo_ 1 63 
+tn.d280,
+Largo_ 1 76 
+tn.d564,
+Largo_ 1 82 
+tn.d671,
+Largo_ 1 83 
+to,
+Largo_ 1 100 
+tobak
+Largo_ 1 67 
+tool
+Largo_ 1 14 
+torda
+Largo_ 1 95 
+torque
+Largo_ 1 81 
+total
+Largo_ 4 82 61 59 44 
+townend
+Largo_ 1 99 
+trail,
+Largo_ 1 85 
+trails-i.e.,
+Largo_ 1 85 
+trajectories
+Largo_ 1 77 
+trajectory
+Largo_ 3 77 67 32 
+tramposch,h.
+Largo_ 1 30 
+transferred
+Largo_ 2 49 47 
+transformation,
+Largo_ 1 17 
+transformations
+Largo_ 1 17 
+transforming
+Largo_ 1 68 
+transmitted
+Largo_ 1 100 
+transonic
+Largo_ 1 38 
+traverse
+Largo_ 1 67 
+traversing
+Largo_ 1 67 
+treatment
+Largo_ 3 92 85 78 
+treatment,
+Largo_ 2 85 44 
+trends
+Largo_ 1 78 
+tried
+Largo_ 1 99 
+trigonometric
+Largo_ 1 67 
+trip
+Largo_ 1 7 
+true
+Largo_ 1 58 
+tsien
+Largo_ 1 56 
+tsien,h.s.
+Largo_ 1 13 
+tube
+Largo_ 4 74 44 34 10 
+turbulen
+Largo_ 1 74 
+turbulence-intensity
+Largo_ 1 76 
+turbulent-velocity
+Largo_ 1 76 
+twice
+Largo_ 1 62 
+two-
+Largo_ 1 8 
+two-layer
+Largo_ 2 91 90 
+type)
+Largo_ 1 72 
+types
+Largo_ 6 92 89 77 69 64 60 
+typical
+Largo_ 2 66 14 
+unbalanced
+Largo_ 1 100 
+uncooled
+Largo_ 1 59 
+understanding
+Largo_ 1 83 
+unduly
+Largo_ 1 76 
+unfamiliar
+Largo_ 1 36 
+unheated
+Largo_ 2 59 13 
+unique,
+Largo_ 1 62 
+unit
+Largo_ 2 53 44 
+unity
+Largo_ 6 94 55 54 50 32 24 
+unlikely
+Largo_ 1 83 
+unpowered
+Largo_ 1 77 
+unsolved
+Largo_ 2 62 33 
+urgent
+Largo_ 1 92 
+use
+Largo_ 10 92 78 75 61 54 49 48 44 36 14 
+used,
+Largo_ 1 80 
+useful
+Largo_ 2 100 36 
+usual
+Largo_ 5 87 54 44 27 21 
+utilization
+Largo_ 1 60 
+utilized
+Largo_ 3 72 37 30 
+utilizing
+Largo_ 2 25 14 
+valid
+Largo_ 6 94 86 72 35 27 22 
+validity
+Largo_ 1 17 
+value)
+Largo_ 1 59 
+value,
+Largo_ 2 80 58 
+values,
+Largo_ 1 99 
+vanishes
+Largo_ 1 73 
+variables
+Largo_ 3 99 85 48 
+variation
+Largo_ 9 91 90 89 76 62 51 50 34 29 
+varied
+Largo_ 3 82 72 45 
+variety
+Largo_ 1 29 
+vary
+Largo_ 1 85 
+vas,
+Largo_ 1 25 
+vector
+Largo_ 1 18 
+vehicles
+Largo_ 5 86 83 77 69 67 
+veiocity
+Largo_ 1 49 
+velocities,
+Largo_ 1 99 
+velocity,
+Largo_ 4 72 59 50 35 
+vertical,
+Largo_ 1 88 
+vibrated,
+Largo_ 1 42 
+vibrations
+Largo_ 1 42 
+vibratory
+Largo_ 2 100 42 
+view,
+Largo_ 1 49 
+viscid
+Largo_ 1 62 
+viscosity,
+Largo_ 1 80 
+viscosity-temperature
+Largo_ 2 62 50 
+viscous-interaction
+Largo_ 1 63 
+visualization,
+Largo_ 1 45 
+von
+Largo_ 2 99 98 
+vortices
+Largo_ 1 7 
+w.
+Largo_ 1 91 
+wake
+Largo_ 3 96 89 85 
+wall,
+Largo_ 3 89 72 59 
+wall-pressure
+Largo_ 1 76 
+walls,
+Largo_ 1 62 
+wassermann
+Largo_ 1 6 
+wave)
+Largo_ 1 72 
+wave,
+Largo_ 2 72 64 
+waves,
+Largo_ 1 71 
+ways
+Largo_ 1 100 
+weak
+Largo_ 4 72 71 65 64 
+weight-flow,
+Largo_ 1 59 
+which,
+Largo_ 1 42 
+whitfield,j.d.
+Largo_ 1 43 
+wide
+Largo_ 4 92 71 70 29 
+widen
+Largo_ 1 85 
+width
+Largo_ 2 66 58 
+willett,j.e.
+Largo_ 1 48 
+windstream
+Largo_ 1 99 
+windward
+Largo_ 1 48 
+wing-fuselage-shell
+Largo_ 1 92 
+winglike
+Largo_ 1 66 
+wings
+Largo_ 4 96 52 14 13 
+withstand
+Largo_ 1 51 
+worked
+Largo_ 1 49 
+written
+Largo_ 2 33 32 
+x-direction
+Largo_ 1 44 
+years
+Largo_ 1 91 
+yields
+Largo_ 2 82 49 
+zakkay
+Largo_ 1 19 
+zeroth
+Largo_ 1 94 
+zone
+Largo_ 1 14 
+zero
+Largo_ 8 94 62 57 56 54 51 27 18 
+zartarian,g.
+Largo_ 1 14 
+yield
+Largo_ 2 77 35 
+yen,k.t.
+Largo_ 1 4 
+year
+Largo_ 1 83 
+yaw
+Largo_ 2 78 42 
+y
+Largo_ 2 44 20 
+x
+Largo_ 3 82 9 7 
+work
+Largo_ 7 99 95 49 34 29 28 19 
+wire/
+Largo_ 1 8 
+wing-tail
+Largo_ 1 60 
+wing,
+Largo_ 1 42 
+wing's
+Largo_ 1 14 
+wing
+Largo_ 12 95 78 76 69 60 52 42 31 30 14 13 1 
+wind-tunnel
+Largo_ 6 99 78 76 49 38 37 
+wind
+Largo_ 6 84 68 65 40 9 7 
+will,
+Largo_ 1 18 
+wider
+Largo_ 1 56 
+wide-flanged
+Largo_ 1 29 
+whirling
+Largo_ 1 42 
+wheel
+Largo_ 1 18 
+web
+Largo_ 2 95 30 
+way
+Largo_ 2 14 8 
+waves
+Largo_ 5 93 85 72 65 39 
+wave
+Largo_ 7 72 71 65 64 39 25 2 
+wasserman,b.
+Largo_ 1 5 
+wall-to-free-stream
+Largo_ 1 50 
+wall-cooling
+Largo_ 1 53 
+wall-
+Largo_ 1 43 
+wall
+Largo_ 18 94 87 84 80 76 74 72 71 62 59 55 54 53 45 44 43 36 24 
+wakes
+Largo_ 2 89 17 
+vorticity,
+Largo_ 2 73 7 
+vorticity
+Largo_ 7 73 65 64 35 7 4 2 
+volumetric
+Largo_ 1 88 
+volume
+Largo_ 1 69 
+viz.,
+Largo_ 1 7 
+viscous
+Largo_ 9 98 94 85 81 68 63 25 14 2 
+viscosity
+Largo_ 12 82 81 80 73 55 54 50 43 17 16 7 2 
+violent
+Largo_ 1 7 
+view
+Largo_ 2 28 27 
+victor
+Largo_ 1 19 
+vibration
+Largo_ 3 100 52 42 
+vertical)
+Largo_ 1 82 
+vertical
+Largo_ 2 88 42 
+verified
+Largo_ 1 9 
+velocity
+Largo_ 25 99 94 88 87 81 77 74 73 71 70 62 61 60 54 51 49 44 43 36 18 15 14 7 4 1 
+velocities
+Largo_ 5 99 85 51 36 11 
+vehicles,
+Largo_ 1 37 
+vehicle
+Largo_ 4 86 82 77 17 
+varying
+Largo_ 3 62 56 7 
+various
+Largo_ 6 93 79 72 60 56 28 
+varies
+Largo_ 2 54 7 
+variations
+Largo_ 7 90 82 81 76 66 50 20 
+variable
+Largo_ 4 62 59 49 32 
+vanes
+Largo_ 1 18 
+van
+Largo_ 4 93 50 40 7 
+values
+Largo_ 20 99 94 85 78 73 63 60 59 57 56 48 43 35 33 30 29 25 22 16 8 
+value
+Largo_ 9 94 85 83 80 73 62 59 15 9 
+v
+Largo_ 1 7 
+usually
+Largo_ 1 2 
+using
+Largo_ 9 93 90 77 76 72 50 41 14 6 
+used
+Largo_ 12 94 92 90 76 70 59 52 50 49 37 35 9 
+upstream
+Largo_ 1 53 
+untapered
+Largo_ 1 52 
+unsteady
+Largo_ 4 74 64 28 14 
+unknowns
+Largo_ 1 49 
+unknown
+Largo_ 2 99 47 
+university
+Largo_ 1 3 
+unique
+Largo_ 1 62 
+uniform
+Largo_ 9 99 87 72 71 48 44 28 9 4 
+undisturbed,
+Largo_ 1 43 
+undergoes
+Largo_ 1 42 
+undamped
+Largo_ 1 32 
+uncambered
+Largo_ 1 39 
+unbuckled
+Largo_ 1 15 
+unaffected
+Largo_ 3 80 79 24 
+u
+Largo_ 1 7 
+type
+Largo_ 6 89 76 75 69 44 5 
+two-dimensional
+Largo_ 15 94 86 73 60 59 52 49 25 20 18 15 9 8 4 2 
+ture
+Largo_ 1 59 
+turbulent-boundary-layer
+Largo_ 1 72 
+turbulent
+Largo_ 11 99 96 89 80 74 72 45 17 16 9 7 
+turbulence
+Largo_ 5 99 80 76 65 40 
+tunnels
+Largo_ 2 68 65 
+tunnel
+Largo_ 6 84 80 40 25 9 7 
+truman,j.c.
+Largo_ 1 42 
+troy,
+Largo_ 1 2 
+triangular
+Largo_ 4 91 69 6 5 
+treats
+Largo_ 2 85 65 
+treatments
+Largo_ 2 93 1 
+treated
+Largo_ 5 82 77 46 38 2 
+transverse
+Largo_ 8 94 88 87 61 44 25 23 9 
+transmission
+Largo_ 2 100 91 
+transition-triggering
+Largo_ 1 80 
+transition-reversal
+Largo_ 1 43 
+transition,
+Largo_ 1 8 
+transition
+Largo_ 13 96 94 89 80 79 53 43 41 40 24 9 8 7 
+transient
+Largo_ 8 95 91 82 51 30 29 6 5 
+transformed
+Largo_ 4 62 59 17 16 
+transformation
+Largo_ 4 94 62 32 16 
+transfer,
+Largo_ 4 88 62 49 37 
+transfer
+Largo_ 25 98 92 89 84 82 81 77 74 72 62 61 55 54 49 47 45 44 37 36 29 24 23 22 21 12 
+trails
+Largo_ 1 85 
+trailing
+Largo_ 1 7 
+trail
+Largo_ 1 85 
+traced
+Largo_ 2 100 30 
+total-pressure
+Largo_ 1 76 
+total-head
+Largo_ 1 9 
+torsion
+Largo_ 2 47 14 
+tools
+Largo_ 3 41 14 12 
+to-momentum
+Largo_ 1 45 
+to-ambient
+Largo_ 1 43 
+tn.d860,
+Largo_ 1 69 
+tn.d753,
+Largo_ 1 58 
+tn.d659,
+Largo_ 1 78 
+tn.d53,
+Largo_ 1 80 
+tn.d49,
+Largo_ 1 68 
+tn.d349,
+Largo_ 1 53 
+tn.4335,
+Largo_ 1 52 
+tn.4275,
+Largo_ 1 67 
+tn.4115,
+Largo_ 1 51 
+tn.4050,
+Largo_ 1 75 
+tn.3971,
+Largo_ 1 61 
+tn.3609,
+Largo_ 1 66 
+tn.3325,
+Largo_ 1 62 
+tn.3296,
+Largo_ 1 55 
+tn.2784,
+Largo_ 1 54 
+tn.2597,
+Largo_ 1 50 
+tn.2399,
+Largo_ 1 57 
+tn.2250,
+Largo_ 1 56 
+tip-bluntness
+Largo_ 1 44 
+tip
+Largo_ 1 42 
+ting-yili
+Largo_ 1 2 
+times
+Largo_ 6 89 85 83 53 25 6 
+time
+Largo_ 8 95 91 83 75 51 32 29 5 
+tical
+Largo_ 1 42 
+thus,
+Largo_ 2 82 37 
+three-year
+Largo_ 1 83 
+three-dimensional
+Largo_ 5 86 80 14 8 7 
+thicknesses,
+Largo_ 1 59 
+thickness,
+Largo_ 5 80 72 25 7 4 
+thermoelastic
+Largo_ 1 14 
+thermochemical
+Largo_ 1 24 
+thermal
+Largo_ 16 95 92 91 90 85 82 81 66 45 31 30 29 18 14 12 6 
+theory,
+Largo_ 1 25 
+theory
+Largo_ 23 99 86 79 73 58 52 51 49 42 37 36 35 30 28 27 26 24 20 15 14 13 10 1 
+theoretically
+Largo_ 1 60 
+theoretical
+Largo_ 14 85 84 82 80 78 57 55 47 38 30 29 11 10 1 
+that,
+Largo_ 4 89 70 36 25 
+tests,
+Largo_ 1 53 
+tests
+Largo_ 5 84 78 75 68 40 
+test
+Largo_ 7 84 76 75 68 53 40 36 
+terms
+Largo_ 9 88 77 73 65 47 30 24 14 8 
+term
+Largo_ 2 94 57 
+tend
+Largo_ 1 48 
+temperatures
+Largo_ 5 84 66 62 34 29 
+temperature
+Largo_ 33 98 95 94 91 90 88 82 81 80 79 73 72 71 69 66 62 61 59 55 54 53 51 50 49 43 34 31 30 29 22 16 13 6 
+technology,
+Largo_ 2 87 40 
+technology
+Largo_ 2 99 7 
+technique,
+Largo_ 1 9 
+technique
+Largo_ 4 90 37 9 4 
+taylor,
+Largo_ 1 25 
+taylor
+Largo_ 1 99 
+tangent
+Largo_ 2 70 44 
+taking
+Largo_ 2 42 22 
+takes
+Largo_ 2 63 11 
+tained
+Largo_ 1 7 
+tabulated
+Largo_ 2 71 59 
+tables
+Largo_ 2 59 48 
+systematically
+Largo_ 2 45 14 
+symmetry
+Largo_ 4 100 86 84 19 
+symmetric
+Largo_ 3 94 49 35 
+sutherland
+Largo_ 2 55 50 
+surveys
+Largo_ 2 89 9 
+surrounding
+Largo_ 1 7 
+surface
+Largo_ 26 91 90 88 84 82 80 79 74 73 72 70 62 52 51 49 48 40 39 37 33 27 25 20 14 9 5 
+supporting
+Largo_ 2 100 1 
+support
+Largo_ 2 93 20 
+supply,
+Largo_ 1 37 
+supersonic
+Largo_ 24 96 95 93 89 80 74 65 60 53 52 51 49 48 41 40 39 38 36 33 31 19 14 11 7 
+superimposed
+Largo_ 1 39 
+summary
+Largo_ 1 12 
+suggests
+Largo_ 1 39 
+suggestions
+Largo_ 1 14 
+suggestion
+Largo_ 1 8 
+suddenly,
+Largo_ 1 7 
+successive
+Largo_ 2 47 14 
+subtracting
+Largo_ 1 1 
+substantial
+Largo_ 1 1 
+subsonic
+Largo_ 5 89 80 74 38 33 
+subscript
+Largo_ 1 20 
+submitted
+Largo_ 1 43 
+sublayer
+Largo_ 1 7 
+subjected
+Largo_ 6 90 66 51 31 29 5 
+study
+Largo_ 16 83 74 73 71 70 56 55 39 37 29 25 17 11 8 2 1 
+studies
+Largo_ 5 83 75 45 41 9 
+studied
+Largo_ 5 77 73 61 51 33 
+structures
+Largo_ 8 100 92 75 66 51 47 31 12 
+structural
+Largo_ 5 75 51 47 46 12 
+strong
+Largo_ 1 72 
+stressing
+Largo_ 1 13 
+stress
+Largo_ 5 95 75 66 31 29 
+strength
+Largo_ 4 88 87 44 7 
+stream
+Largo_ 9 100 99 89 73 59 39 16 2 1 
+strains
+Largo_ 1 13 
+stiffness,
+Largo_ 2 78 42 
+stiffness
+Largo_ 2 78 42 
+stiffener
+Largo_ 1 66 
+stewartson,
+Largo_ 2 62 16 
+stephen
+Largo_ 1 21 
+steady-state
+Largo_ 2 59 14 
+steady
+Largo_ 7 89 82 60 52 4 3 2 
+stationary
+Largo_ 3 72 71 64 
+station
+Largo_ 3 76 70 43 
+static
+Largo_ 2 86 15 
+state
+Largo_ 4 82 24 18 12 
+standpoint
+Largo_ 1 44 
+standards
+Largo_ 1 8 
+stability
+Largo_ 9 80 79 78 73 67 55 54 36 9 
+square
+Largo_ 2 76 47 
+spring
+Largo_ 1 32 
+spread
+Largo_ 2 80 9 
+spiral
+Largo_ 2 18 7 
+spheres
+Largo_ 2 44 35 
+sphere
+Largo_ 1 44 
+speeds/
+Largo_ 1 33 
+speeds,
+Largo_ 1 33 
+speeds
+Largo_ 12 85 80 70 60 53 51 41 40 27 25 9 7 
+speed
+Largo_ 11 82 69 67 58 52 36 33 32 24 19 12 
+specific
+Largo_ 7 82 68 67 50 28 20 1 
+spark-
+Largo_ 1 45 
+spanwise
+Largo_ 1 1 
+span
+Largo_ 3 89 60 1 
+source
+Largo_ 2 100 30 
+sought,
+Largo_ 1 34 
+sort
+Largo_ 2 99 34 
+somewhat
+Largo_ 2 25 2 
+solved
+Largo_ 5 72 59 32 15 13 
+solutions,
+Largo_ 1 20 
+solutions
+Largo_ 18 94 93 82 81 73 72 62 61 59 47 38 35 34 14 11 6 5 4 
+smooth
+Largo_ 2 43 40 
+small-disturbance
+Largo_ 1 27 
+small
+Largo_ 12 94 89 82 80 73 47 27 26 25 22 5 2 
+slope
+Largo_ 1 39 
+slipstream
+Largo_ 1 1 
+slip-flow
+Largo_ 1 22 
+slip
+Largo_ 3 100 22 21 
+slight
+Largo_ 1 14 
+slender
+Largo_ 6 69 63 60 44 27 25 
+slabs
+Largo_ 1 5 
+slab
+Largo_ 4 91 90 6 5 
+skip
+Largo_ 2 77 67 
+skin-stiffener
+Largo_ 1 66 
+skin-friction
+Largo_ 9 94 81 74 71 55 50 49 23 9 
+skin
+Largo_ 8 72 66 62 61 49 21 9 4 
+sizes
+Largo_ 1 24 
+size,
+Largo_ 1 7 
+sixth-degree
+Largo_ 1 54 
+situations
+Largo_ 1 11 
+situation
+Largo_ 2 46 2 
+sinnott,c.s.
+Largo_ 2 39 38 
+sin
+Largo_ 1 20 
+simulation
+Largo_ 2 68 51 
+simulate
+Largo_ 4 51 42 30 29 
+simplify
+Largo_ 1 85 
+simplified
+Largo_ 1 73 
+simplifications
+Largo_ 2 33 14 
+simple-wave
+Largo_ 1 39 
+simple
+Largo_ 18 92 91 89 85 68 64 60 55 54 49 45 44 34 33 29 24 3 2 
+similarly
+Largo_ 1 56 
+similarity
+Largo_ 10 89 84 62 57 56 28 27 25 20 13 
+similar
+Largo_ 12 94 90 77 73 72 62 51 44 25 23 13 11 
+significant
+Largo_ 3 56 26 23 
+significance
+Largo_ 2 38 33 
+sidewall
+Largo_ 1 9 
+shown
+Largo_ 25 96 94 93 88 85 79 73 62 54 51 49 46 39 38 36 28 27 24 23 16 15 14 13 10 2 
+showed
+Largo_ 2 17 1 
+short
+Largo_ 2 89 54 
+shocks
+Largo_ 1 71 
+shocked
+Largo_ 1 48 
+shock-wave
+Largo_ 1 25 
+shock
+Largo_ 14 93 74 72 71 69 65 64 58 38 37 35 25 20 2 
+shields
+Largo_ 1 82 
+shield
+Largo_ 1 82 
+shed
+Largo_ 1 46 
+shear,
+Largo_ 2 50 16 
+shear
+Largo_ 9 99 89 88 65 45 9 4 3 2 
+shapes
+Largo_ 6 94 79 70 44 42 20 
+shape,
+Largo_ 2 37 25 
+shape
+Largo_ 7 85 69 52 44 27 25 14 
+seventh-degree
+Largo_ 1 54 
+sets
+Largo_ 1 47 
+set
+Largo_ 6 93 78 71 62 32 24 
+series
+Largo_ 2 91 13 
+separation,
+Largo_ 1 55 
+separation)
+Largo_ 1 53 
+separation
+Largo_ 10 96 94 89 62 59 55 54 53 49 16 
+separated
+Largo_ 5 89 62 53 45 32 
+sense
+Largo_ 3 87 77 44 
+semiempirical
+Largo_ 2 89 38 
+semi-
+Largo_ 1 44 
+self-preserving
+Largo_ 1 16 
+seems,
+Largo_ 1 36 
+seeding,
+Largo_ 1 33 
+sedov
+Largo_ 1 28 
+section
+Largo_ 6 84 76 70 49 40 14 
+seban,r.a.
+Largo_ 1 23 
+scs.
+Largo_ 52 100 98 95 93 92 90 89 88 86 85 84 49 48 47 45 43 42 41 40 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 20 18 16 15 14 13 12 11 10 9 8 7 6 5 4 1 
+science
+Largo_ 1 17 
+scheuing,r.a.
+Largo_ 1 22 
+schaaf,s.a.
+Largo_ 1 10 
+scale
+Largo_ 1 24 
+satisfactory
+Largo_ 2 54 25 
+san
+Largo_ 1 46 
+sakurai
+Largo_ 1 25 
+s.
+Largo_ 1 25 
+rule
+Largo_ 1 57 
+rubesin,m.
+Largo_ 1 49 
+row
+Largo_ 3 18 8 7 
+roughness)
+Largo_ 1 80 
+roughness
+Largo_ 7 96 80 74 43 40 8 7 
+rotational
+Largo_ 4 86 57 32 2 
+rotating
+Largo_ 3 98 81 42 
+rossow,v.j.
+Largo_ 2 61 57 
+rolling
+Largo_ 1 60 
+role
+Largo_ 1 42 
+rise
+Largo_ 6 83 70 43 42 38 16 
+rigidity)
+Largo_ 1 15 
+right
+Largo_ 1 25 
+riddell,f.r.
+Largo_ 1 24 
+rhyming,i.l.
+Largo_ 1 18 
+reynolds
+Largo_ 18 99 89 80 79 76 73 63 62 55 54 53 50 43 37 25 9 8 7 
+reviewer
+Largo_ 1 20 
+reviewed,
+Largo_ 1 14 
+reverts
+Largo_ 1 20 
+revealed
+Largo_ 1 30 
+rev.
+Largo_ 1 20 
+results,
+Largo_ 6 99 78 66 49 40 24 
+results
+Largo_ 40 99 98 95 93 89 86 85 84 82 78 76 75 68 63 58 55 54 53 52 50 49 47 42 41 39 38 35 29 25 24 22 20 16 15 14 10 9 8 7 1 
+result
+Largo_ 8 94 83 78 44 36 27 20 13 
+restricted
+Largo_ 3 94 35 2 
+response
+Largo_ 2 78 14 
+respect
+Largo_ 3 51 47 12 
+resler,e.j.
+Largo_ 1 33 
+resistance
+Largo_ 3 91 33 6 
+research
+Largo_ 5 53 33 14 12 11 
+requirements,
+Largo_ 1 47 
+requirement
+Largo_ 1 62 
+required
+Largo_ 9 85 81 78 77 55 51 34 33 16 
+represented
+Largo_ 3 65 24 8 
+reported
+Largo_ 2 76 16 
+replaced
+Largo_ 1 25 
+rensselaer
+Largo_ 1 2 
+remains
+Largo_ 3 29 22 16 
+remaining
+Largo_ 1 1 
+released
+Largo_ 1 83 
+relatively
+Largo_ 5 100 77 47 32 25 
+relative
+Largo_ 6 88 72 61 40 33 7 
+relationship
+Largo_ 1 14 
+relations,
+Largo_ 1 13 
+relations
+Largo_ 4 99 73 20 10 
+relation
+Largo_ 8 77 62 55 43 38 16 10 8 
+relate
+Largo_ 1 33 
+region),
+Largo_ 1 45 
+region
+Largo_ 8 94 89 84 53 45 35 22 2 
+regardless
+Largo_ 1 9 
+refracts
+Largo_ 1 64 
+reflects
+Largo_ 2 89 64 
+reflected
+Largo_ 1 39 
+refinements
+Largo_ 1 35 
+refers
+Largo_ 1 20 
+reference
+Largo_ 5 95 28 21 17 6 
+reduction
+Largo_ 2 44 33 
+reduced
+Largo_ 5 77 61 32 24 14 
+recovery
+Largo_ 3 89 71 23 
+recombination)
+Largo_ 1 24 
+recombination
+Largo_ 1 24 
+recently
+Largo_ 5 90 87 46 44 2 
+reasonably
+Largo_ 2 63 8 
+realization
+Largo_ 1 26 
+real-gas
+Largo_ 1 69 
+readily
+Largo_ 1 49 
+readers'
+Largo_ 1 6 
+reader
+Largo_ 1 46 
+reactions
+Largo_ 1 24 
+reach
+Largo_ 1 83 
+re-examined
+Largo_ 1 81 
+re-entry
+Largo_ 2 82 77 
+rayleigh-tollmien
+Largo_ 1 73 
+ratios,.
+Largo_ 1 66 
+ratios,
+Largo_ 1 66 
+ratios
+Largo_ 10 86 77 70 68 66 59 56 53 33 1 
+ratio
+Largo_ 17 94 89 88 76 73 66 62 59 57 56 50 45 43 33 28 20 14 
+rate
+Largo_ 7 94 88 61 59 24 6 5 
+rapid
+Largo_ 5 100 57 56 54 14 
+ranges
+Largo_ 2 59 47 
+range
+Largo_ 16 94 89 85 84 77 71 70 69 64 63 56 53 40 29 9 8 
+rameter
+Largo_ 1 63 
+rake
+Largo_ 1 9 
+radius
+Largo_ 3 94 58 18 
+radiation
+Largo_ 3 95 85 83 
+radiated
+Largo_ 1 77 
+radiant
+Largo_ 1 77 
+radial
+Largo_ 1 18 
+r,
+Largo_ 1 9 
+quite
+Largo_ 1 44 
+questioned
+Largo_ 2 100 15 
+quasi-one-dimensional
+Largo_ 1 33 
+quantity
+Largo_ 1 23 
+qualitative
+Largo_ 2 49 9 
+purposes
+Largo_ 2 57 47 
+purpose
+Largo_ 9 56 54 51 46 44 42 37 35 26 
+published)
+Largo_ 1 89 
+published
+Largo_ 2 96 46 
+psia
+Largo_ 1 84 
+provision
+Largo_ 1 33 
+provides
+Largo_ 3 87 47 44 
+provided
+Largo_ 5 84 83 70 25 24 
+provide
+Largo_ 4 92 72 47 34 
+protons
+Largo_ 1 83 
+proton
+Largo_ 1 83 
+protection
+Largo_ 2 83 82 
+prospects
+Largo_ 1 33 
+propulsion
+Largo_ 4 77 40 21 7 
+proposed
+Largo_ 2 89 14 
+propose
+Largo_ 1 6 
+properties
+Largo_ 10 91 87 82 59 55 48 44 25 23 14 
+proper
+Largo_ 1 13 
+propeller
+Largo_ 3 78 42 1 
+pronounced
+Largo_ 1 89 
+promoted
+Largo_ 2 80 40 
+program
+Largo_ 3 92 76 11 
+profiles
+Largo_ 6 94 82 76 74 54 49 
+profile
+Largo_ 5 74 72 70 64 14 
+product
+Largo_ 2 73 47 
+produces
+Largo_ 1 66 
+produced
+Largo_ 3 64 14 1 
+proceeds
+Largo_ 2 85 36 
+proceed
+Largo_ 1 24 
+procedure
+Largo_ 4 85 52 36 14 
+probstein)
+Largo_ 1 28 
+problems,
+Largo_ 1 73 
+problems
+Largo_ 8 96 92 60 33 28 14 12 11 
+problem,
+Largo_ 1 6 
+problem
+Largo_ 21 99 98 93 92 87 82 81 75 73 72 51 46 44 35 34 26 15 13 4 2 1 
+probable
+Largo_ 1 33 
+principally
+Largo_ 1 85 
+principal
+Largo_ 2 49 41 
+primarily
+Largo_ 4 94 73 54 8 
+pressures
+Largo_ 7 63 58 56 44 25 11 10 
+pressure,
+Largo_ 1 35 
+pressure
+Largo_ 37 96 94 89 85 84 80 79 77 76 75 74 70 64 62 59 58 57 56 55 54 53 49 39 38 37 36 35 27 25 20 19 16 15 14 11 10 3 
+presently
+Largo_ 1 19 
+presented
+Largo_ 25 89 86 76 72 68 66 64 63 62 60 57 56 52 50 49 47 35 32 29 20 19 15 12 5 3 
+present,
+Largo_ 2 44 34 
+present
+Largo_ 16 99 95 94 89 83 73 53 50 49 44 43 41 35 29 18 2 
+preliminary
+Largo_ 1 83 
+predicts
+Largo_ 1 14 
+prediction
+Largo_ 1 38 
+predicted
+Largo_ 3 69 30 25 
+precision
+Largo_ 1 14 
+precession
+Largo_ 1 78 
+prandtl-glauert
+Largo_ 1 70 
+prandtl's
+Largo_ 1 2 
+practical
+Largo_ 8 99 88 87 49 44 23 14 11 
+power,
+Largo_ 1 7 
+potter,j.l.
+Largo_ 1 43 
+potential
+Largo_ 1 1 
+possible
+Largo_ 6 82 62 49 45 25 2 
+position,
+Largo_ 1 7 
+polytechnic
+Largo_ 4 19 17 11 2 
+polynomial,
+Largo_ 1 49 
+polynomial
+Largo_ 1 49 
+poiscuille
+Largo_ 1 33 
+pointed-
+Largo_ 1 20 
+pointed
+Largo_ 1 14 
+point-function
+Largo_ 1 14 
+point
+Largo_ 15 91 89 84 82 55 54 51 49 37 35 28 27 24 16 6 
+pohlhausen,
+Largo_ 1 59 
+plug
+Largo_ 1 84 
+play
+Largo_ 1 42 
+plates
+Largo_ 1 31 
+plate,
+Largo_ 4 50 29 22 9 
+plate
+Largo_ 19 98 87 72 62 61 44 41 29 25 23 22 21 15 13 9 8 4 3 2 
+plasma
+Largo_ 1 34 
+plane-load
+Largo_ 1 92 
+plane
+Largo_ 5 65 64 48 25 23 
+place
+Largo_ 1 11 
+pitot
+Largo_ 1 9 
+piston
+Largo_ 2 52 14 
+pictures
+Largo_ 2 58 45 
+physically
+Largo_ 3 98 37 34 
+physical
+Largo_ 5 38 34 24 19 14 
+photo-thermoelastic
+Largo_ 1 30 
+phosphorescent
+Largo_ 1 9 
+phenomenon
+Largo_ 2 83 43 
+phenomena,
+Largo_ 1 37 
+phenomena
+Largo_ 3 37 25 11 
+perturbation
+Largo_ 2 26 21 
+pertaining
+Largo_ 1 75 
+persist
+Largo_ 1 7 
+permits
+Largo_ 1 54 
+permit
+Largo_ 2 84 47 
+periods
+Largo_ 1 83 
+period
+Largo_ 2 83 29 
+performed
+Largo_ 2 30 7 
+percent
+Largo_ 5 83 72 63 58 57 
+peak
+Largo_ 1 66 
+paul
+Largo_ 1 17 
+pattern
+Largo_ 2 65 39 
+path
+Largo_ 2 67 22 
+past
+Largo_ 7 94 87 44 39 27 3 2 
+passage
+Largo_ 1 65 
+parts
+Largo_ 4 83 42 38 29 
+particular,
+Largo_ 3 79 55 34 
+particular
+Largo_ 7 73 62 56 49 24 14 6 
+partial
+Largo_ 2 59 17 
+parameters,
+Largo_ 1 42 
+parameters
+Largo_ 7 84 79 78 72 59 29 24 
+parameter)
+Largo_ 1 59 
+parameter
+Largo_ 11 94 89 88 82 80 66 63 57 27 24 20 
+parallel
+Largo_ 5 99 91 87 44 23 
+paper,
+Largo_ 1 2 
+panels-is
+Largo_ 1 14 
+panel
+Largo_ 2 75 15 
+owing
+Largo_ 1 83 
+overall
+Largo_ 2 82 41 
+over-pressure
+Largo_ 1 25 
+outside
+Largo_ 2 18 2 
+outlined,
+Largo_ 1 14 
+outer
+Largo_ 6 73 63 62 54 29 7 
+other,
+Largo_ 1 6 
+oscillatory
+Largo_ 2 67 32 
+oscillating
+Largo_ 1 32 
+originated
+Largo_ 1 9 
+original
+Largo_ 1 2 
+orientation
+Largo_ 1 47 
+ordinary
+Largo_ 5 94 73 62 59 24 
+orders
+Largo_ 1 14 
+order
+Largo_ 10 94 85 84 77 73 60 49 37 33 1 
+operation
+Largo_ 1 47 
+open
+Largo_ 1 36 
+onset
+Largo_ 1 9 
+one-fourth
+Largo_ 1 7 
+one-dimensional
+Largo_ 4 91 30 6 5 
+oman,r.a.
+Largo_ 1 22 
+ohio
+Largo_ 2 87 21 
+of,
+Largo_ 1 8 
+occurs
+Largo_ 3 71 70 7 
+occur,
+Largo_ 1 5 
+obvious
+Largo_ 2 87 44 
+obtained,
+Largo_ 1 8 
+obtained
+Largo_ 22 79 78 76 73 72 68 66 63 54 53 52 48 47 42 40 34 29 25 19 9 6 4 
+observed
+Largo_ 5 80 79 78 53 30 
+observations
+Largo_ 2 53 45 
+observable
+Largo_ 1 85 
+oblique-
+Largo_ 1 69 
+oblique
+Largo_ 1 64 
+o.
+Largo_ 1 99 
+o'sullivan,w.j.
+Largo_ 1 51 
+numerically
+Largo_ 4 94 61 59 15 
+numbers
+Largo_ 19 98 89 80 79 74 73 70 64 62 56 53 52 49 40 37 35 14 9 7 
+number
+Largo_ 39 96 93 89 88 84 83 80 79 76 70 69 63 62 60 59 58 57 56 55 54 53 50 46 45 43 41 40 33 30 25 24 23 22 21 14 10 9 8 7 
+novel
+Largo_ 2 13 2 
+noted-namely,
+Largo_ 1 27 
+note,
+Largo_ 5 90 87 44 28 19 
+note
+Largo_ 8 88 57 46 43 37 28 26 18 
+notch
+Largo_ 2 89 45 
+noses,
+Largo_ 1 44 
+nosed
+Largo_ 1 25 
+nose
+Largo_ 7 82 79 58 44 25 20 2 
+normal
+Largo_ 10 82 81 73 64 62 58 52 42 20 14 
+nonuniform
+Largo_ 1 28 
+nonlinear
+Largo_ 3 62 24 14 
+noncatalytic
+Largo_ 1 24 
+nominal
+Largo_ 1 9 
+newtonian
+Largo_ 6 58 36 35 28 27 20 
+new
+Largo_ 4 63 46 37 14 
+network
+Largo_ 1 47 
+negligible,
+Largo_ 1 14 
+neglected,
+Largo_ 2 81 14 
+negatively
+Largo_ 1 49 
+negative
+Largo_ 3 59 49 44 
+need
+Largo_ 2 92 36 
+necessary
+Largo_ 6 94 82 49 42 17 2 
+nearly
+Largo_ 2 89 25 
+near
+Largo_ 9 83 73 58 54 50 49 28 25 24 
+national
+Largo_ 2 91 8 
+napolitano,l.
+Largo_ 1 11 
+n.y.
+Largo_ 2 19 2 
+mutually
+Largo_ 1 89 
+multiweb
+Largo_ 1 30 
+multiplications
+Largo_ 1 47 
+multilayer
+Largo_ 1 6 
+moving
+Largo_ 4 85 72 36 22 
+mounted
+Largo_ 3 78 76 42 
+mount
+Largo_ 1 42 
+motions
+Largo_ 1 67 
+motion
+Largo_ 13 99 77 71 67 61 60 52 42 32 25 21 15 14 
+moreover,
+Largo_ 1 14 
+momentum,
+Largo_ 1 59 
+momentum
+Largo_ 2 94 50 
+moments
+Largo_ 2 60 42 
+modified
+Largo_ 1 58 
+modification
+Largo_ 5 65 20 16 14 13 
+modes
+Largo_ 5 52 42 15 14 12 
+moderately
+Largo_ 2 70 66 
+moderate
+Largo_ 3 79 66 41 
+models
+Largo_ 3 89 51 29 
+model
+Largo_ 13 95 92 84 80 78 75 53 51 45 42 30 29 14 
+mixing
+Largo_ 3 89 17 11 
+mix
+Largo_ 1 11 
+missile
+Largo_ 2 32 17 
+minimum
+Largo_ 2 55 14 
+miltonberger,g.h.
+Largo_ 1 66 
+microphones
+Largo_ 1 76 
+methods
+Largo_ 10 100 85 72 69 68 48 47 33 24 12 
+method
+Largo_ 20 91 82 73 70 63 60 59 58 56 55 54 52 50 49 43 35 32 15 13 6 
+mentioned
+Largo_ 1 46 
+mention
+Largo_ 1 28 
+meet
+Largo_ 1 12 
+medium
+Largo_ 1 68 
+mechanism
+Largo_ 3 89 80 38 
+measurements
+Largo_ 9 76 74 58 53 45 41 30 9 8 
+measured
+Largo_ 10 99 84 80 78 69 63 58 39 16 13 
+means
+Largo_ 8 100 99 94 78 70 40 37 9 
+mean-velocity
+Largo_ 1 76 
+mean
+Largo_ 5 99 76 73 22 16 
+mccauley,w.d.
+Largo_ 1 7 
+maximum
+Largo_ 6 89 77 53 32 30 20 
+matter
+Largo_ 1 12 
+mathematics,
+Largo_ 1 3 
+materials
+Largo_ 2 51 37 
+mass,
+Largo_ 1 16 
+manner
+Largo_ 3 77 73 32 
+maneuvers
+Largo_ 1 14 
+manchester,
+Largo_ 1 3 
+making
+Largo_ 2 94 56 
+make
+Largo_ 1 17 
+majority
+Largo_ 1 11 
+main
+Largo_ 3 77 73 50 
+magnitudes
+Largo_ 2 48 23 
+magnified-schlieren
+Largo_ 1 40 
+magneto-hydrodynamic
+Largo_ 1 33 
+magneto-aerodynamics
+Largo_ 1 33 
+magnetic
+Largo_ 4 88 61 34 33 
+mager,a.
+Largo_ 1 16 
+mach
+Largo_ 34 94 89 84 80 79 78 76 73 70 69 64 63 62 58 57 56 55 54 53 52 50 49 48 45 41 40 39 35 33 27 14 10 9 7 
+m.
+Largo_ 1 3 
+m(d1)
+Largo_ 1 20 
+m
+Largo_ 4 94 73 19 14 
+lower
+Largo_ 4 79 78 53 9 
+low-speed
+Largo_ 2 70 9 
+low
+Largo_ 7 86 82 77 43 25 10 9 
+loss
+Largo_ 1 14 
+longer
+Largo_ 1 6 
+long
+Largo_ 4 89 83 77 30 
+logical
+Largo_ 1 14 
+localized
+Largo_ 1 84 
+local
+Largo_ 9 80 62 58 45 23 20 14 9 7 
+loading,
+Largo_ 1 47 
+loading
+Largo_ 3 75 13 1 
+little
+Largo_ 3 82 37 7 
+linked
+Largo_ 1 38 
+linearly
+Largo_ 2 54 29 
+linearized
+Largo_ 1 15 
+linear
+Largo_ 6 94 81 62 47 29 5 
+lin,
+Largo_ 1 25 
+limiting
+Largo_ 3 73 28 15 
+limit
+Largo_ 2 86 28 
+lighthill,
+Largo_ 1 14 
+light
+Largo_ 2 46 41 
+lift,
+Largo_ 2 86 1 
+lift
+Largo_ 3 86 69 1 
+lie
+Largo_ 1 83 
+libby,p.a.
+Largo_ 1 37 
+libby
+Largo_ 2 17 2 
+lewis
+Largo_ 2 24 21 
+let
+Largo_ 1 44 
+length-to-depth
+Largo_ 1 45 
+length
+Largo_ 5 89 74 53 33 29 
+lees,l.
+Largo_ 2 73 25 
+lees's
+Largo_ 1 20 
+leads
+Largo_ 5 82 67 54 43 13 
+leading
+Largo_ 5 26 25 9 8 2 
+layers
+Largo_ 6 76 72 53 34 17 16 
+layer,.
+Largo_ 1 89 
+layer,
+Largo_ 6 76 62 55 45 24 16 
+layer
+Largo_ 35 94 89 80 79 74 73 72 71 63 62 59 55 54 53 50 49 45 43 40 37 34 24 23 22 21 17 16 12 9 8 7 6 4 3 2 
+lateral
+Largo_ 3 80 42 7 
+larson,h.k.
+Largo_ 1 53 
+larger,
+Largo_ 1 14 
+largely
+Largo_ 1 12 
+large
+Largo_ 13 100 96 92 83 76 69 59 58 53 46 22 19 13 
+landahl,
+Largo_ 1 14 
+laminar-boundary-layer
+Largo_ 1 72 
+laminar-boundary
+Largo_ 1 59 
+laminar
+Largo_ 24 98 96 94 89 84 81 80 73 72 71 62 59 55 54 50 49 43 23 21 16 11 9 7 4 
+laboratory
+Largo_ 1 7 
+labor
+Largo_ 1 14 
+l.
+Largo_ 1 8 
+korkegi,r.h.
+Largo_ 1 9 
+known
+Largo_ 3 83 36 14 
+klein
+Largo_ 1 46 
+klebanoff,p.s.
+Largo_ 1 8 
+kinematic
+Largo_ 2 43 7 
+keating,s.j.
+Largo_ 1 53 
+karman-pohlhausen
+Largo_ 2 54 4 
+kaattari,g.e.
+Largo_ 1 69 
+k=2.0
+Largo_ 1 57 
+k=0.5,
+Largo_ 1 57 
+k
+Largo_ 4 57 43 20 7 
+june
+Largo_ 1 22 
+jump
+Largo_ 1 22 
+journal
+Largo_ 1 46 
+jet
+Largo_ 4 86 76 40 7 
+j.ae.scs.
+Largo_ 2 44 39 
+j.
+Largo_ 53 100 98 95 94 93 92 90 89 88 86 85 84 49 48 47 45 43 42 41 40 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 20 18 16 15 14 13 12 11 10 9 8 7 6 5 4 1 
+iterative
+Largo_ 1 14 
+isothermal
+Largo_ 4 84 81 62 13 
+isentropic
+Largo_ 1 64 
+isakson,g.
+Largo_ 1 29 
+is,
+Largo_ 4 80 77 44 13 
+irrotational
+Largo_ 1 2 
+irbm
+Largo_ 1 82 
+involves
+Largo_ 1 13 
+inviscid-flow
+Largo_ 1 63 
+inviscid
+Largo_ 9 93 62 48 37 35 28 26 25 2 
+investigation
+Largo_ 18 90 89 84 82 80 79 78 74 73 50 45 44 30 29 19 9 8 1 
+investigated
+Largo_ 12 87 84 82 79 73 72 57 56 44 40 9 2 
+inverse
+Largo_ 3 85 47 14 
+introduction
+Largo_ 1 14 
+introduced
+Largo_ 5 86 80 57 27 24 
+intimate
+Largo_ 1 46 
+interrelation
+Largo_ 1 12 
+interpret
+Largo_ 1 24 
+internal
+Largo_ 4 89 47 45 5 
+interference,
+Largo_ 1 60 
+interface
+Largo_ 1 6 
+interconnected
+Largo_ 1 47 
+interactions
+Largo_ 1 14 
+interaction
+Largo_ 8 89 64 63 37 26 25 14 11 
+intense
+Largo_ 3 83 65 25 
+intended
+Largo_ 2 29 1 
+integrated
+Largo_ 3 94 61 1 
+integral)
+Largo_ 1 65 
+integral
+Largo_ 4 85 72 62 15 
+insulated
+Largo_ 4 91 25 9 6 
+institute
+Largo_ 8 99 87 40 19 17 11 7 2 
+insensitive
+Largo_ 1 23 
+inputs
+Largo_ 2 75 12 
+input
+Largo_ 3 92 6 5 
+injection,
+Largo_ 1 9 
+injection
+Largo_ 1 9 
+initial
+Largo_ 5 89 50 32 15 7 
+influence
+Largo_ 11 89 88 85 84 82 80 57 26 22 14 11 
+infinitesimal
+Largo_ 1 17 
+infinite
+Largo_ 6 73 71 62 49 29 21 
+inevitable
+Largo_ 1 36 
+inducing
+Largo_ 1 29 
+induced
+Largo_ 5 100 71 42 25 7 
+indicate
+Largo_ 8 66 54 40 29 25 20 7 6 
+independence
+Largo_ 1 20 
+increment,
+Largo_ 1 1 
+increment
+Largo_ 1 1 
+increasing
+Largo_ 7 77 75 66 53 48 40 7 
+increase
+Largo_ 10 94 80 79 66 58 53 48 29 15 1 
+incompressible
+Largo_ 12 94 87 81 73 44 23 17 16 9 4 3 2 
+included,.
+Largo_ 1 95 
+included
+Largo_ 5 98 92 74 50 24 
+include
+Largo_ 5 81 59 57 33 16 
+inch
+Largo_ 1 7 
+in.,
+Largo_ 1 9 
+impulsively
+Largo_ 1 71 
+impulsive
+Largo_ 1 21 
+improved
+Largo_ 3 92 38 14 
+impossible
+Largo_ 1 14 
+important
+Largo_ 12 99 85 83 80 69 46 39 35 34 27 25 14 
+impermeable
+Largo_ 2 84 59 
+impeller
+Largo_ 1 18 
+impact
+Largo_ 4 89 36 35 10 
+illustrates
+Largo_ 1 49 
+illustrate
+Largo_ 2 55 14 
+identical
+Largo_ 1 71 
+idealized
+Largo_ 4 95 78 77 47 
+i.e.
+Largo_ 1 99 
+i.
+Largo_ 2 99 25 
+hypervelocity
+Largo_ 1 77 
+hypersonic
+Largo_ 19 93 85 84 68 63 57 56 37 36 35 28 27 26 25 20 19 17 9 2 
+human
+Largo_ 1 83 
+however,
+Largo_ 9 100 99 92 78 77 42 25 19 13 
+hot-wire
+Largo_ 3 80 76 41 
+horizontal
+Largo_ 1 42 
+hopeless
+Largo_ 1 46 
+hoff,n.j.
+Largo_ 1 31 
+highest
+Largo_ 1 77 
+higher-order
+Largo_ 1 14 
+higher
+Largo_ 6 89 84 63 49 30 8 
+high-speed
+Largo_ 5 92 38 14 12 2 
+high
+Largo_ 12 83 82 79 69 67 58 52 36 34 24 14 12 
+hence,
+Largo_ 3 75 61 42 
+hemisphere-cylinder
+Largo_ 1 25 
+helium
+Largo_ 3 84 68 25 
+height,
+Largo_ 1 7 
+height
+Largo_ 4 86 43 8 7 
+heating
+Largo_ 7 95 77 66 51 29 13 5 
+heat-
+Largo_ 1 44 
+heat
+Largo_ 32 98 95 91 89 88 85 84 82 81 77 74 73 72 62 61 55 54 51 50 49 45 37 36 30 29 24 23 22 21 12 6 5 
+hayes'
+Largo_ 1 35 
+hayes
+Largo_ 3 35 28 14 
+hastening
+Largo_ 1 9 
+hardware
+Largo_ 1 20 
+happen
+Largo_ 1 36 
+handled
+Largo_ 1 92 
+hand
+Largo_ 2 92 34 
+hammitt,
+Largo_ 1 25 
+h.
+Largo_ 2 21 8 
+gust
+Largo_ 1 14 
+guide
+Largo_ 2 72 18 
+grows
+Largo_ 1 14 
+griffith,g.e.
+Largo_ 1 66 
+greater
+Largo_ 7 94 77 72 58 36 25 9 
+gravity
+Largo_ 1 32 
+grape,r.g.
+Largo_ 1 55 
+gradients,
+Largo_ 2 79 62 
+gradients
+Largo_ 4 99 62 36 11 
+gradient
+Largo_ 13 94 79 74 73 62 59 55 54 49 22 13 11 3 
+governing
+Largo_ 2 86 73 
+good
+Largo_ 6 69 63 39 29 16 9 
+glauert
+Largo_ 1 3 
+giving
+Largo_ 1 35 
+given
+Largo_ 33 99 98 94 93 92 91 90 82 80 78 77 75 70 67 56 55 54 49 47 44 36 33 32 28 27 25 23 20 16 15 14 9 6 
+geometry
+Largo_ 4 89 45 39 25 
+generation
+Largo_ 1 65 
+generated
+Largo_ 1 25 
+generalizes
+Largo_ 1 20 
+generalized
+Largo_ 5 92 87 44 20 14 
+generalised-newtonian
+Largo_ 1 20 
+general,
+Largo_ 5 89 79 78 76 11 
+general
+Largo_ 12 99 73 68 54 49 47 46 27 24 17 16 6 
+gave
+Largo_ 2 50 6 
+gaseous
+Largo_ 1 34 
+gasdynamic
+Largo_ 1 33 
+gas
+Largo_ 8 85 73 49 34 33 27 22 18 
+galerkin
+Largo_ 1 15 
+galcit
+Largo_ 2 25 9 
+gain
+Largo_ 1 73 
+g.
+Largo_ 2 99 25 
+future
+Largo_ 1 14 
+furthermore,
+Largo_ 1 37 
+fung,y.c.
+Largo_ 1 15 
+fundamentally
+Largo_ 1 49 
+fundamental
+Largo_ 2 99 12 
+functional
+Largo_ 1 8 
+fully
+Largo_ 3 88 30 9 
+fruitful
+Largo_ 1 41 
+friedrich,h.r.
+Largo_ 1 32 
+friction,
+Largo_ 1 4 
+frequencies
+Largo_ 1 42 
+freeport,
+Largo_ 1 19 
+free-stream
+Largo_ 15 94 89 85 76 70 63 62 56 54 48 45 41 34 25 10 
+free-convection,
+Largo_ 1 88 
+free-convection
+Largo_ 2 88 87 
+free
+Largo_ 10 87 73 59 45 44 25 22 11 2 1 
+fourth-degree
+Largo_ 1 54 
+found,
+Largo_ 1 8 
+forward
+Largo_ 4 76 54 36 25 
+forum
+Largo_ 1 6 
+formulation
+Largo_ 5 94 92 80 28 24 
+formulated
+Largo_ 2 45 15 
+formulas
+Largo_ 2 48 14 
+formed
+Largo_ 4 89 47 43 33 
+form,
+Largo_ 3 94 66 25 
+form
+Largo_ 10 98 94 73 72 67 52 49 28 17 15 
+forebody
+Largo_ 1 37 
+forces
+Largo_ 7 100 88 60 52 47 33 14 
+force/
+Largo_ 1 13 
+foot
+Largo_ 1 79 
+following
+Largo_ 2 83 34 
+flux
+Largo_ 2 62 51 
+flutter
+Largo_ 3 52 15 14 
+fluid
+Largo_ 16 98 88 87 73 72 71 61 59 48 44 33 23 22 14 4 2 
+fluctuating
+Largo_ 2 76 16 
+flows
+Largo_ 10 94 84 73 62 53 49 38 33 19 17 
+flow,
+Largo_ 4 85 84 23 7 
+flow
+Largo_ 61 98 96 94 93 91 89 88 87 86 85 84 81 74 73 72 70 69 64 63 61 60 59 58 57 56 55 54 53 52 51 50 49 48 45 44 39 38 37 36 35 34 33 28 27 26 25 24 23 22 21 19 18 17 16 9 7 6 4 3 2 1 
+floating
+Largo_ 1 9 
+flight,
+Largo_ 2 85 77 
+flight
+Largo_ 14 85 82 77 76 51 49 37 36 33 25 24 21 14 12 
+flexibly
+Largo_ 2 78 42 
+flexibility
+Largo_ 1 42 
+flatness
+Largo_ 1 15 
+flat,
+Largo_ 1 44 
+flat
+Largo_ 18 87 75 74 72 62 61 50 41 29 25 23 22 21 9 8 4 3 2 
+flanges
+Largo_ 1 29 
+finite
+Largo_ 3 29 15 14 
+fineness
+Largo_ 2 57 56 
+finds
+Largo_ 1 25 
+finally,
+Largo_ 2 45 12 
+figures
+Largo_ 1 20 
+fig.
+Largo_ 1 18 
+fields
+Largo_ 3 88 33 19 
+field,
+Largo_ 1 7 
+field
+Largo_ 14 93 89 88 85 64 63 61 60 37 33 28 25 18 7 
+ferri
+Largo_ 1 2 
+feedback
+Largo_ 1 13 
+feature
+Largo_ 2 67 2 
+feasibility
+Largo_ 1 90 
+fay,j.a.
+Largo_ 1 24 
+faster
+Largo_ 1 27 
+far
+Largo_ 3 99 77 9 
+familiar
+Largo_ 1 36 
+fall
+Largo_ 2 43 27 
+fairly
+Largo_ 1 14 
+failure
+Largo_ 3 93 75 12 
+facts
+Largo_ 1 46 
+factors
+Largo_ 3 39 23 12 
+fact
+Largo_ 2 78 13 
+faces
+Largo_ 1 29 
+face,
+Largo_ 1 6 
+f.
+Largo_ 1 91 
+f
+Largo_ 1 50 
+extremely
+Largo_ 2 82 10 
+extrapolation
+Largo_ 2 84 36 
+external
+Largo_ 8 94 91 62 52 51 47 45 24 
+exterior
+Largo_ 1 23 
+extent
+Largo_ 4 88 80 25 14 
+extensively
+Largo_ 1 9 
+extension
+Largo_ 1 17 
+extending
+Largo_ 2 83 17 
+extend
+Largo_ 1 8 
+expression
+Largo_ 1 22 
+expressed
+Largo_ 2 99 20 
+exposed
+Largo_ 4 91 90 75 5 
+explosion
+Largo_ 1 28 
+explicit
+Largo_ 1 16 
+experiments
+Largo_ 6 41 40 30 25 15 7 
+experimentally
+Largo_ 4 43 37 30 16 
+experimental
+Largo_ 20 99 84 78 74 70 69 58 53 52 47 41 35 30 29 25 19 17 12 11 1 
+expect
+Largo_ 1 28 
+expansions
+Largo_ 4 94 92 72 14 
+expansion
+Largo_ 3 85 72 27 
+exists
+Largo_ 3 56 14 2 
+exist
+Largo_ 2 94 70 
+exhibits
+Largo_ 1 25 
+excessive
+Largo_ 2 87 44 
+exceeding
+Largo_ 1 73 
+exceed
+Largo_ 2 82 62 
+examples
+Largo_ 4 92 55 54 33 
+example,
+Largo_ 2 76 5 
+examined
+Largo_ 5 74 67 33 28 27 
+exactly
+Largo_ 1 24 
+exact
+Largo_ 9 98 87 86 60 59 44 28 20 14 
+evidence,
+Largo_ 1 1 
+events,
+Largo_ 1 83 
+events
+Largo_ 1 83 
+evaluation
+Largo_ 1 1 
+evaluated,
+Largo_ 1 23 
+evaluated
+Largo_ 2 60 23 
+eter
+Largo_ 1 43 
+estimating
+Largo_ 1 14 
+estimate
+Largo_ 3 36 33 17 
+established
+Largo_ 2 31 17 
+essentially
+Largo_ 7 94 85 76 69 62 16 14 
+equivalent
+Largo_ 3 68 39 16 
+equations,
+Largo_ 5 94 87 47 44 14 
+equations
+Largo_ 23 94 93 86 73 62 61 59 57 52 50 49 47 35 33 32 28 25 24 17 16 13 4 3 
+equation
+Largo_ 5 94 73 32 22 15 
+equal
+Largo_ 3 77 48 32 
+environment
+Largo_ 1 29 
+envelope
+Largo_ 1 32 
+entropy
+Largo_ 1 48 
+entirely
+Largo_ 1 49 
+entire
+Largo_ 3 100 47 25 
+entering
+Largo_ 1 24 
+ensuing
+Largo_ 1 7 
+england
+Largo_ 2 99 3 
+engines
+Largo_ 2 100 42 
+engineers
+Largo_ 1 12 
+engineering,
+Largo_ 2 87 2 
+engine-mount
+Largo_ 1 42 
+engine
+Largo_ 3 100 78 42 
+engaged
+Largo_ 1 20 
+ends
+Largo_ 1 42 
+encountered
+Largo_ 1 73 
+encompassed
+Largo_ 1 53 
+enables
+Largo_ 1 49 
+employing
+Largo_ 1 82 
+employed
+Largo_ 5 100 82 77 72 30 
+empirical
+Largo_ 3 58 38 1 
+emphasized
+Largo_ 1 73 
+emphasis
+Largo_ 3 73 14 9 
+emitting
+Largo_ 1 2 
+emissivity
+Largo_ 1 82 
+elliptical
+Largo_ 1 19 
+elements
+Largo_ 3 69 8 7 
+element,
+Largo_ 1 8 
+element
+Largo_ 4 43 9 8 7 
+electromagnetic
+Largo_ 3 87 85 44 
+electrodes
+Largo_ 1 33 
+electrically
+Largo_ 4 87 61 44 33 
+electric
+Largo_ 4 91 34 33 17 
+elastic
+Largo_ 2 42 14 
+eigenvalues
+Largo_ 1 14 
+effort
+Largo_ 1 49 
+effects,
+Largo_ 1 33 
+effects
+Largo_ 26 100 95 94 85 82 81 79 74 69 68 66 59 57 53 52 51 49 44 42 40 33 25 24 14 2 1 
+effective
+Largo_ 2 83 9 
+effect
+Largo_ 27 96 94 87 81 80 79 73 61 60 58 55 53 44 43 42 39 36 29 26 23 21 11 9 8 7 4 1 
+edge,
+Largo_ 1 8 
+edge
+Largo_ 9 73 63 62 54 26 25 9 7 2 
+earth's
+Largo_ 1 83 
+earth
+Largo_ 2 83 77 
+earlier
+Largo_ 1 9 
+dynamics
+Largo_ 2 46 27 
+duration
+Largo_ 2 83 6 
+dryden
+Largo_ 2 99 8 
+driest,e.r.
+Largo_ 3 50 40 7 
+drawn
+Largo_ 1 41 
+drag-divergence
+Largo_ 1 70 
+drag,
+Largo_ 2 69 57 
+drag
+Largo_ 7 89 77 70 61 57 44 25 
+downstream
+Largo_ 5 85 84 26 25 9 
+double-layer
+Largo_ 1 5 
+dominating
+Largo_ 1 12 
+does
+Largo_ 2 85 28 
+division
+Largo_ 2 46 17 
+disturbances
+Largo_ 6 80 73 64 41 18 9 
+distribution
+Largo_ 19 95 94 91 90 85 70 65 57 56 54 49 48 39 37 29 25 19 4 1 
+distinguishing
+Largo_ 1 67 
+distance,
+Largo_ 2 37 35 
+distance
+Largo_ 4 72 35 25 8 
+dissociated
+Largo_ 1 24 
+displacement,
+Largo_ 1 59 
+displacement
+Largo_ 1 8 
+discussion
+Largo_ 6 83 75 49 12 9 2 
+discussed,
+Largo_ 1 14 
+discussed
+Largo_ 11 98 92 85 70 50 49 35 15 13 12 2 
+discrete-type
+Largo_ 1 75 
+discrepancy
+Largo_ 1 30 
+discovery
+Largo_ 1 14 
+disadvantage
+Largo_ 1 77 
+directly
+Largo_ 4 100 99 48 25 
+directions
+Largo_ 1 18 
+direct
+Largo_ 2 100 9 
+dimensional
+Largo_ 3 89 51 8 
+diffusivity
+Largo_ 1 82 
+diffusion
+Largo_ 4 92 85 45 24 
+diffuser
+Largo_ 1 18 
+difficult
+Largo_ 1 28 
+differs
+Largo_ 2 95 23 
+differentials
+Largo_ 1 29 
+differential
+Largo_ 10 94 75 66 62 59 50 24 17 15 13 
+different
+Largo_ 12 99 84 82 68 47 42 35 33 24 11 2 1 
+differ
+Largo_ 3 58 48 10 
+diameter,
+Largo_ 1 76 
+diameter
+Largo_ 2 82 25 
+devices
+Largo_ 1 11 
+deviations
+Largo_ 1 58 
+deviation
+Largo_ 1 15 
+developed
+Largo_ 11 99 90 85 69 58 55 49 34 24 14 9 
+determined
+Largo_ 12 95 88 84 80 78 72 60 56 51 39 37 29 
+determine
+Largo_ 5 90 80 79 40 1 
+determinant,
+Largo_ 1 14 
+detection
+Largo_ 1 9 
+details
+Largo_ 3 93 85 25 
+detailed
+Largo_ 4 89 83 30 25 
+detachment
+Largo_ 3 58 37 35 
+destalling
+Largo_ 1 1 
+desired
+Largo_ 1 17 
+desirable,
+Largo_ 1 44 
+desirable
+Largo_ 2 82 8 
+design
+Largo_ 3 36 27 12 
+described,
+Largo_ 1 29 
+described
+Largo_ 6 93 89 52 30 29 14 
+derived
+Largo_ 9 80 73 68 56 54 48 39 28 19 
+derivatives
+Largo_ 4 99 60 59 36 
+depth)
+Largo_ 1 89 
+depth
+Largo_ 2 89 45 
+depends
+Largo_ 3 73 57 49 
+depending
+Largo_ 3 69 64 40 
+dependent
+Largo_ 1 33 
+depend
+Largo_ 5 78 73 36 25 24 
+department
+Largo_ 3 87 3 2 
+density
+Largo_ 4 85 80 74 73 
+densities
+Largo_ 1 10 
+demonstrate
+Largo_ 3 68 56 14 
+demands
+Largo_ 1 12 
+delayed
+Largo_ 1 40 
+degree
+Largo_ 3 70 40 9 
+deflections
+Largo_ 3 92 52 47 
+deflection
+Largo_ 2 52 47 
+definitely
+Largo_ 1 40 
+decreasing
+Largo_ 3 79 66 43 
+decrease
+Largo_ 2 53 40 
+deceleration
+Largo_ 1 33 
+deals
+Largo_ 2 73 42 
+data,
+Largo_ 2 17 8 
+damping
+Largo_ 2 78 32 
+cylinder
+Largo_ 2 94 23 
+cutouts
+Largo_ 2 92 89 
+customary
+Largo_ 1 49 
+curves,
+Largo_ 1 1 
+curved
+Largo_ 2 39 2 
+current
+Largo_ 2 91 26 
+critically
+Largo_ 1 24 
+critical
+Largo_ 5 89 80 55 54 15 
+crest,
+Largo_ 1 70 
+crandall,s.
+Largo_ 1 70 
+cover
+Largo_ 1 31 
+course
+Largo_ 2 34 8 
+coundary
+Largo_ 1 74 
+corresponding
+Largo_ 5 60 48 29 25 10 
+correlation
+Largo_ 6 99 89 70 30 24 20 
+correlated
+Largo_ 4 81 63 24 20 
+corrected
+Largo_ 1 81 
+corp.,
+Largo_ 1 46 
+coordinate
+Largo_ 1 81 
+cooling,
+Largo_ 4 80 79 53 40 
+cooling
+Largo_ 8 85 80 79 53 51 43 40 34 
+convert
+Largo_ 1 77 
+convergence
+Largo_ 1 28 
+convective
+Largo_ 2 77 29 
+convair,
+Largo_ 1 46 
+controlled
+Largo_ 3 85 33 7 
+contributions
+Largo_ 1 14 
+contribution
+Largo_ 2 91 6 
+continuum
+Largo_ 2 22 10 
+contemplated
+Largo_ 1 44 
+contamination
+Largo_ 1 9 
+contaminates
+Largo_ 1 7 
+constructed
+Largo_ 2 51 33 
+constraint
+Largo_ 1 15 
+constant-temperature
+Largo_ 1 34 
+constant-energy
+Largo_ 1 28 
+constant,
+Largo_ 3 94 50 29 
+constant
+Largo_ 17 98 91 89 87 82 76 64 56 49 44 34 32 25 23 13 9 2 
+consistent
+Largo_ 1 62 
+considers
+Largo_ 3 100 99 21 
+considered
+Largo_ 18 100 95 94 85 80 77 72 69 68 64 59 38 35 29 24 21 4 2 
+considerably
+Largo_ 2 66 49 
+considerable
+Largo_ 6 99 88 83 70 44 33 
+consider
+Largo_ 1 2 
+consequently,
+Largo_ 3 77 34 2 
+conical
+Largo_ 1 19 
+conformal-transformation
+Largo_ 1 60 
+confirms
+Largo_ 1 22 
+confirm
+Largo_ 1 15 
+configuration
+Largo_ 1 1 
+cones
+Largo_ 5 63 58 56 27 19 
+conductivity,
+Largo_ 1 34 
+conductivity
+Largo_ 6 88 82 81 73 66 33 
+conduction
+Largo_ 4 95 85 30 5 
+conducted
+Largo_ 3 53 40 8 
+conditions,
+Largo_ 3 84 47 22 
+conditions
+Largo_ 21 94 92 89 86 84 82 80 79 78 63 49 47 44 43 37 36 34 33 32 30 18 
+condition
+Largo_ 4 94 36 27 15 
+conclusion,
+Largo_ 2 83 35 
+concluded
+Largo_ 3 61 33 24 
+concerned
+Largo_ 3 99 29 12 
+concept,
+Largo_ 1 96 
+concept
+Largo_ 2 37 13 
+computing
+Largo_ 1 32 
+computed
+Largo_ 5 86 59 49 48 24 
+computations
+Largo_ 3 92 64 16 
+computational
+Largo_ 2 85 14 
+computation
+Largo_ 1 14 
+compressor
+Largo_ 1 18 
+compressible
+Largo_ 15 94 81 73 72 71 62 59 55 54 50 49 28 17 16 11 
+composite
+Largo_ 3 91 90 5 
+components,
+Largo_ 1 18 
+components
+Largo_ 3 99 81 16 
+component
+Largo_ 3 81 76 14 
+complicated
+Largo_ 1 13 
+completely
+Largo_ 1 49 
+complete
+Largo_ 4 80 55 32 9 
+comparisons,
+Largo_ 1 56 
+comparisons
+Largo_ 3 75 47 14 
+comparison
+Largo_ 6 52 35 25 20 17 4 
+compared
+Largo_ 14 99 95 94 85 78 76 69 60 58 56 49 35 23 9 
+comparative
+Largo_ 2 77 1 
+company,
+Largo_ 1 17 
+comments
+Largo_ 1 46 
+combined
+Largo_ 3 79 25 12 
+combination
+Largo_ 2 78 56 
+column
+Largo_ 1 47 
+collectively
+Largo_ 1 14 
+cole,j.d.
+Largo_ 1 27 
+cohen,c.b.
+Largo_ 1 62 
+coefficients,
+Largo_ 1 55 
+coefficients
+Largo_ 7 86 74 71 50 49 23 16 
+coefficient
+Largo_ 10 94 89 73 59 55 54 35 27 20 9 
+closely
+Largo_ 2 77 25 
+closed-form
+Largo_ 2 34 14 
+classical
+Largo_ 2 42 2 
+cited
+Largo_ 1 11 
+chosen
+Largo_ 1 69 
+chord
+Largo_ 1 52 
+cheng,h.k.
+Largo_ 1 26 
+chemical
+Largo_ 1 24 
+chart
+Largo_ 1 33 
+characteristies
+Largo_ 1 44 
+characteristics
+Largo_ 8 82 70 60 56 55 54 23 11 
+characteristic
+Largo_ 4 73 67 57 25 
+chapman,d.
+Largo_ 1 49 
+channels
+Largo_ 1 33 
+chambre,p.l.
+Largo_ 1 10 
+center
+Largo_ 2 32 30 
+cavity,
+Largo_ 1 45 
+cavity
+Largo_ 3 89 53 45 
+causing
+Largo_ 3 82 62 16 
+caused
+Largo_ 2 100 9 
+catalytic
+Largo_ 1 24 
+cases..
+Largo_ 1 6 
+cases
+Largo_ 7 100 94 61 59 43 33 23 
+case
+Largo_ 20 100 99 94 91 87 73 72 67 62 59 54 51 49 34 33 29 28 24 23 17 
+carried
+Largo_ 5 84 41 29 17 11 
+capacitance
+Largo_ 1 91 
+capable
+Largo_ 1 69 
+cantilevered
+Largo_ 1 42 
+campbell,w.f.
+Largo_ 1 6 
+camber
+Largo_ 1 52 
+called
+Largo_ 1 13 
+california
+Largo_ 3 99 40 7 
+calculations
+Largo_ 6 85 58 52 49 36 14 
+calculated
+Largo_ 7 86 78 74 63 49 43 13 
+c.
+Largo_ 1 25 
+by-step
+Largo_ 1 47 
+bureau
+Largo_ 1 8 
+built-
+Largo_ 1 29 
+buckled
+Largo_ 1 15 
+brown,w.d.
+Largo_ 1 59 
+brooklyn,
+Largo_ 2 19 17 
+brooklyn
+Largo_ 1 11 
+briefly
+Largo_ 3 42 13 6 
+brenckman,m.
+Largo_ 1 1 
+boxes
+Largo_ 1 47 
+box-wing
+Largo_ 1 13 
+boundary-value
+Largo_ 1 60 
+boundary-layer-control
+Largo_ 1 1 
+boundary
+Largo_ 37 94 89 80 79 76 74 73 72 71 63 62 59 55 54 53 50 49 47 45 43 40 37 34 24 23 22 21 18 17 16 12 9 8 7 4 3 2 
+bond,r.
+Largo_ 1 23 
+bogdonoff
+Largo_ 1 25 
+body
+Largo_ 15 100 94 93 87 85 84 79 77 69 44 36 35 25 20 2 
+bodies
+Largo_ 15 100 96 93 85 57 56 44 43 36 27 25 24 20 19 17 
+blunting,
+Largo_ 1 79 
+blunting
+Largo_ 1 44 
+blunted
+Largo_ 2 58 44 
+blunt-nosed
+Largo_ 1 25 
+blunt-nose
+Largo_ 1 20 
+blunt-base
+Largo_ 1 89 
+blunt-
+Largo_ 1 25 
+blunt
+Largo_ 10 93 85 84 77 58 44 36 35 26 25 
+blasius
+Largo_ 2 72 23 
+bisplinghoff,r.l.
+Largo_ 1 12 
+bertram,m.h.
+Largo_ 1 44 
+beneficial
+Largo_ 3 79 75 44 
+bending-
+Largo_ 1 14 
+behavior,
+Largo_ 1 37 
+behavior
+Largo_ 5 85 37 33 28 22 
+behave
+Largo_ 1 8 
+begins
+Largo_ 1 7 
+beams
+Largo_ 2 75 42 
+beam
+Largo_ 2 42 29 
+basis
+Largo_ 6 49 45 35 26 8 1 
+basic
+Largo_ 2 44 27 
+based
+Largo_ 11 91 85 69 63 60 54 48 43 25 14 8 
+ballistic-type
+Largo_ 1 32 
+b.
+Largo_ 1 3 
+axial
+Largo_ 8 100 85 62 54 40 23 19 11 
+avoiding
+Largo_ 1 15 
+avenues
+Largo_ 1 12 
+available
+Largo_ 8 69 34 30 19 17 14 12 8 
+author
+Largo_ 1 20 
+attributed
+Largo_ 1 49 
+attractive
+Largo_ 1 33 
+attention
+Largo_ 3 91 56 46 
+attainment
+Largo_ 1 58 
+attacking
+Largo_ 1 12 
+attack)
+Largo_ 1 32 
+attack
+Largo_ 9 70 69 58 57 56 48 32 27 1 
+atom
+Largo_ 1 24 
+atmosphere
+Largo_ 7 85 83 77 69 67 33 32 
+asymmetries
+Largo_ 1 78 
+assumptions
+Largo_ 6 89 87 86 56 44 24 
+assumption
+Largo_ 3 72 42 17 
+assumed
+Largo_ 13 95 91 87 82 72 55 54 52 50 44 18 15 14 
+associated
+Largo_ 5 100 70 58 29 16 
+assembled
+Largo_ 1 47 
+aspect-ratio
+Largo_ 1 47 
+ask
+Largo_ 1 42 
+ashley,h.
+Largo_ 1 14 
+art
+Largo_ 1 12 
+arrangements
+Largo_ 1 60 
+arranged
+Largo_ 1 18 
+arises,
+Largo_ 1 2 
+areas
+Largo_ 1 14 
+approximations,
+Largo_ 1 15 
+approximation,
+Largo_ 1 2 
+approximately
+Largo_ 4 89 84 80 9 
+approximate
+Largo_ 3 54 15 4 
+approach
+Largo_ 3 92 35 19 
+appreciably
+Largo_ 1 10 
+apply
+Largo_ 1 20 
+applied
+Largo_ 5 62 37 33 27 17 
+applications
+Largo_ 6 86 65 49 44 33 14 
+application
+Largo_ 7 60 39 28 27 17 16 13 
+applicability
+Largo_ 4 86 57 56 15 
+appears
+Largo_ 7 81 75 70 64 58 34 7 
+apparent
+Largo_ 3 99 19 16 
+anomaly
+Largo_ 1 49 
+angles
+Largo_ 4 69 58 25 1 
+anemometer
+Largo_ 1 41 
+and,
+Largo_ 6 100 83 55 45 11 8 
+analyzed
+Largo_ 7 89 88 77 70 41 38 31 
+analytically
+Largo_ 2 72 16 
+analytical
+Largo_ 5 93 78 72 28 12 
+analytic
+Largo_ 4 49 34 6 5 
+analogous
+Largo_ 3 73 32 25 
+analog
+Largo_ 1 13 
+amounts
+Largo_ 1 14 
+ambient
+Largo_ 1 50 
+allows
+Largo_ 2 60 32 
+alleviating
+Largo_ 1 12 
+algebraic
+Largo_ 1 34 
+airspeed,
+Largo_ 1 78 
+airplane
+Largo_ 3 78 76 42 
+airfoils,.
+Largo_ 1 39 
+airfoils
+Largo_ 2 70 14 
+aircraft,
+Largo_ 1 51 
+aircraft
+Largo_ 9 100 78 76 75 51 47 29 14 12 
+air
+Largo_ 11 100 68 50 49 37 33 27 25 24 14 9 
+agreement
+Largo_ 8 79 76 69 63 39 29 16 9 
+agree
+Largo_ 3 72 14 1 
+afterbody,
+Largo_ 1 25 
+affected
+Largo_ 1 76 
+affect
+Largo_ 1 42 
+aeronautical
+Largo_ 4 91 33 12 2 
+aeroelastic
+Largo_ 3 78 14 12 
+aerodynamics
+Largo_ 3 19 11 1 
+aerodynamic-
+Largo_ 1 14 
+aerodynamic
+Largo_ 13 95 77 73 66 52 51 44 36 32 29 14 13 5 
+aerelastic
+Largo_ 1 12 
+ae.
+Largo_ 52 100 98 95 93 92 90 89 88 86 85 84 49 48 47 45 43 42 41 40 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 20 18 16 15 14 13 12 11 10 9 8 7 6 5 4 1 
+advantages
+Largo_ 1 33 
+advancing
+Largo_ 2 72 71 
+admits
+Largo_ 1 62 
+adiabatic,
+Largo_ 1 90 
+adiabatic
+Largo_ 4 84 80 54 53 
+adequate
+Largo_ 3 93 89 54 
+additional
+Largo_ 5 94 83 58 32 8 
+addition
+Largo_ 3 87 83 44 
+actually
+Largo_ 2 80 73 
+actual
+Largo_ 1 44 
+acting
+Largo_ 4 87 52 51 44 
+acrothermoelasticity
+Largo_ 1 12 
+ackeret's
+Largo_ 1 14 
+achieved
+Largo_ 1 14 
+accurately
+Largo_ 3 72 25 24 
+accrue
+Largo_ 1 33 
+account
+Largo_ 9 87 78 63 52 44 42 26 25 22 
+accelerators
+Largo_ 1 34 
+acceleration
+Largo_ 2 33 29 
+absolute
+Largo_ 1 62 
+above-
+Largo_ 1 46 
+ablation
+Largo_ 1 82 
+ability
+Largo_ 2 77 51 
+a.
+Largo_ 3 99 25 17 
+98
+Largo_ 1 98 
+97.
+Largo_ 1 9 
+95
+Largo_ 1 95 
+94
+Largo_ 1 94 
+93
+Largo_ 1 93 
+924.
+Largo_ 1 5 
+91
+Largo_ 1 91 
+907.
+Largo_ 1 48 
+9
+Largo_ 2 40 9 
+885.
+Largo_ 1 40 
+87
+Largo_ 1 87 
+86
+Largo_ 1 86 
+85
+Largo_ 1 85 
+84
+Largo_ 1 84 
+83
+Largo_ 1 83 
+82
+Largo_ 1 82 
+81
+Largo_ 1 81 
+803.
+Largo_ 1 8 
+8
+Largo_ 2 58 8 
+783.
+Largo_ 1 30 
+77.
+Largo_ 1 28 
+767.
+Largo_ 1 38 
+75
+Largo_ 1 75 
+74
+Largo_ 1 74 
+735.
+Largo_ 1 10 
+728.
+Largo_ 1 4 
+71
+Largo_ 1 71 
+700.
+Largo_ 1 26 
+7.4
+Largo_ 1 62 
+7
+Largo_ 1 7 
+68
+Largo_ 1 68 
+679.
+Largo_ 1 47 
+671.
+Largo_ 1 23 
+663.
+Largo_ 1 43 
+653.
+Largo_ 1 42 
+64
+Largo_ 1 64 
+63
+Largo_ 1 63 
+628.
+Largo_ 1 32 
+611.
+Largo_ 1 29 
+60,000
+Largo_ 1 53 
+60
+Largo_ 1 60 
+6,
+Largo_ 2 100 22 
+6
+Largo_ 3 19 9 6 
+59
+Largo_ 1 59 
+58.
+Largo_ 1 36 
+57
+Largo_ 1 57 
+56
+Largo_ 1 56 
+55
+Largo_ 1 55 
+547.
+Largo_ 1 49 
+53
+Largo_ 1 53 
+52
+Largo_ 1 52 
+513.
+Largo_ 1 45 
+51
+Largo_ 1 51 
+50
+Largo_ 1 50 
+5.8
+Largo_ 2 63 9 
+5
+Largo_ 5 63 58 49 9 5 
+480.
+Largo_ 1 41 
+47
+Largo_ 1 47 
+464.
+Largo_ 1 37 
+45
+Largo_ 2 52 45 
+448.
+Largo_ 1 27 
+43
+Largo_ 1 43 
+42
+Largo_ 1 42 
+41
+Largo_ 1 41 
+400-401,
+Largo_ 1 22 
+40
+Largo_ 1 40 
+4.24,
+Largo_ 1 53 
+4
+Largo_ 4 80 79 77 4 
+389.
+Largo_ 1 11 
+37
+Largo_ 1 37 
+36
+Largo_ 2 82 36 
+35
+Largo_ 1 35 
+340.
+Largo_ 1 6 
+33
+Largo_ 1 33 
+324.
+Largo_ 1 1 
+314.
+Largo_ 1 20 
+305.
+Largo_ 1 16 
+3.67
+Largo_ 1 7 
+3.0
+Largo_ 1 52 
+3
+Largo_ 6 89 69 63 45 28 3 
+289.
+Largo_ 1 12 
+28
+Largo_ 1 28 
+27,
+Largo_ 9 92 90 48 47 38 34 28 18 7 
+261.
+Largo_ 1 7 
+26,
+Largo_ 4 39 30 22 20 
+26
+Largo_ 1 26 
+25.
+Largo_ 1 35 
+25,
+Largo_ 9 93 36 33 24 22 16 15 6 1 
+24,
+Largo_ 8 41 40 37 35 29 27 25 5 
+23,
+Largo_ 7 44 31 26 14 12 11 9 
+22,
+Largo_ 4 83 32 8 4 
+21
+Largo_ 1 21 
+20,000,
+Largo_ 1 76 
+20,
+Largo_ 2 25 13 
+2.71,
+Largo_ 1 7 
+2.06
+Largo_ 1 53 
+2,
+Largo_ 2 40 6 
+2
+Largo_ 7 89 73 62 58 49 9 2 
+1961,
+Largo_ 7 89 88 86 85 84 45 43 
+1960,
+Largo_ 9 92 90 48 47 38 34 28 18 7 
+1959.
+Largo_ 2 80 68 
+1959,
+Largo_ 4 39 30 22 20 
+1958.
+Largo_ 5 81 74 67 63 52 
+1958,
+Largo_ 8 93 36 33 24 16 15 6 1 
+1957.
+Largo_ 5 79 77 75 61 51 
+1957,
+Largo_ 8 41 40 37 35 29 27 25 5 
+1956.
+Largo_ 2 72 66 
+1956,898.
+Largo_ 1 44 
+1956,
+Largo_ 7 94 31 26 14 12 11 9 
+1955,
+Largo_ 3 32 8 4 
+1953.
+Largo_ 3 65 64 60 
+1953,
+Largo_ 1 13 
+1951.
+Largo_ 2 59 57 
+1951,
+Largo_ 1 23 
+1950,
+Largo_ 2 57 42 
+195.
+Largo_ 1 25 
+1949,
+Largo_ 1 49 
+1948,
+Largo_ 1 10 
+19,
+Largo_ 1 98 
+19
+Largo_ 1 19 
+18
+Largo_ 1 18 
+17
+Largo_ 1 17 
+16
+Largo_ 1 16 
+15,000
+Largo_ 1 85 
+15,
+Largo_ 1 10 
+14
+Largo_ 2 58 14 
+13
+Largo_ 1 13 
+12-in.
+Largo_ 2 40 7 
+11
+Largo_ 2 83 11 
+100
+Largo_ 1 100 
+10,
+Largo_ 2 82 9 
+10
+Largo_ 0 10
+Largo_ 3 98 63 10 
+1.90,
+Largo_ 1 7 
+1.76
+Largo_ 1 41 
+1.5,
+Largo_ 1 64 
+1.5
+Largo_ 2 56 9 
+1.0
+Largo_ 1 53 
+1.
+Largo_ 1 13 
+1,700
+Largo_ 1 25 
+1,
+Largo_ 1 64 
+1),
+Largo_ 1 59 
+1)
+Largo_ 1 18 
+1
+Largo_ 9 95 77 73 72 59 49 28 21 1 
+0.715
+Largo_ 1 23 
+0.50
+Largo_ 1 74 
+0.5
+Largo_ 3 98 63 57 
+0.46
+Largo_ 1 9 
+0.40
+Largo_ 1 9 
+0)
+Largo_ 1 59 
+0
+Largo_ 1 44 
+/trip
+Largo_ 1 8 
+/similarity
+Largo_ 1 13 
+/seeded/
+Largo_ 1 33 
+/rotational/
+Largo_ 1 32 
+/reduced
+Largo_ 1 15 
+/piston
+Largo_ 1 14 
+/inviscid
+Largo_ 1 73 
+/frozen/
+Largo_ 1 24 
+/destalling/
+Largo_ 1 1 
+/body
+Largo_ 1 13 
+./
+Largo_ 4 49 15 14 13 
+.)
+Largo_ 1 25 
+-67.6
+Largo_ 1 50 
+-
+Largo_ 3 93 77 14 
+(zero
+Largo_ 1 32 
+(with
+Largo_ 1 15 
+(very
+Largo_ 2 86 24 
+(to
+Largo_ 2 89 24 
+(temperature
+Largo_ 1 59 
+(stream
+Largo_ 1 59 
+(stagnation-point
+Largo_ 1 59 
+(spheres)
+Largo_ 1 7 
+(see
+Largo_ 1 18 
+(nondimensional
+Largo_ 1 59 
+(mach
+Largo_ 3 89 74 57 
+(j.
+Largo_ 1 22 
+(including
+Largo_ 1 59 
+(in
+Largo_ 2 89 45 
+(i.e.,
+Largo_ 1 18 
+(fourier
+Largo_ 1 65 
+(fast
+Largo_ 1 24 
+(contamination)
+Largo_ 1 7 
+(as
+Largo_ 1 72 
+(amr
+Largo_ 1 20 
+(5)
+Largo_ 1 7 
+(4)
+Largo_ 2 42 7 
+(3)
+Largo_ 3 42 40 7 
+(2)
+Largo_ 7 100 94 85 80 42 40 7 
+(1)
+Largo_ 7 100 94 85 80 42 40 7 
+Fecha: 28/08/17 Hora: 02:37:27

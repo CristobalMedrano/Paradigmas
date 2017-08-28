@@ -18,13 +18,8 @@ Index* createIndex(char* pathDocumentsFile, StopWords* sw, code*statusCode)
 
 	FILE* archivoEntrada;
 	Index* index = NULL;
-	Index* indexPalabra = NULL;
-	Result* listaID = NULL;
 	char* palabra = NULL;
-	int noEsStopWord = FALSE;
-	int palabraNoRepetida = FALSE;
-	int idRepetida = FALSE;
-	int caracterI = FALSE;
+	int textClasificacion = FALSE;
 	char* textID = NULL;
 	
 	archivoEntrada = fopen(pathDocumentsFile, "rb");
@@ -35,61 +30,28 @@ Index* createIndex(char* pathDocumentsFile, StopWords* sw, code*statusCode)
 		while (feof(archivoEntrada) == 0)
 		{
 			palabra = LeerPalabra(archivoEntrada);
-			// Leer un Texto.
-			caracterI = LeerTexto(palabra);
-			if(caracterI == TRUE)
+			textClasificacion = leerTipoClasificacion(palabra);
+			// Cambio el switch por un if.
+			switch(textClasificacion)
 			{
-				textID = LeerPalabra(archivoEntrada);
-				index =	InsertarPalabra(index, textID);
-				listaID = InsertarIndex(listaID, 0, textID);
-				indexPalabra = BuscarPalabraIndex(index, textID);
-				indexPalabra->indexListID = listaID;
-				listaID = NULL;
-
-				//index = AgregarIndice(index, palabra, textID);
-				//printf("Text(%s)\n", textID);
+				case TEXT_ID:
+					index = indexarID(index, &textID, archivoEntrada);
+					break;
+				// Variable que contendra el text title hasta que cambie
+				// mientras sea text_title entonces genera la cadena.
+				case TEXT_TITLE:
+					// Ciclo e indexar hasta que encuentre el .A
+					break;
+				case TEXT_AUTHOR:
+					// Ciclo e indexar hasta que encuentre el .B
+					break;
+				case TEXT_BODY:
+					// Ciclo e indexar hasta que encuentre el .W
+					break;
 			}
-			noEsStopWord = QuitarStopWords(palabra, sw);
-			palabraNoRepetida = QuitarPalabraRepetida(index, palabra);
 
-			if (noEsStopWord == TRUE)
-			{
-				// Si la palabra no existe en el indice.
-				if (palabraNoRepetida == TRUE)
-				{
-					index = InsertarPalabra(index, palabra);
-                    if (listaID == NULL)
-                    {
-                        listaID = InsertarIndex(listaID, 0, textID);
-                        indexPalabra = BuscarPalabraIndex(index, palabra);
-                        indexPalabra->indexListID = listaID;
-                        listaID = NULL;
-                    }
-                    else
-                    {
-                        listaID = NULL;
-                        listaID = InsertarIndex(listaID, 0, textID);
-                        indexPalabra = BuscarPalabraIndex(index, palabra);
-                        indexPalabra->indexListID = listaID;
-                        listaID = NULL;
-                    }				
-                }			
-				else
-				{
-					// si la palabra esta en el indice.
-					indexPalabra = BuscarPalabraIndex(index, palabra);
-					listaID = indexPalabra->indexListID;
-					//verifico la id
-					idRepetida = VerificarIDRepetida(listaID, textID);
-					// Si la id no se encuentra en la indexacion.
-					if (idRepetida == TRUE)
-					{
-						listaID = InsertarIndex(listaID, 0, textID);
-						indexPalabra->indexListID = listaID;
-						listaID = NULL;
-					}
-				}
-			}
+			//Indexamos la palabra
+			index = indexarPalabra(palabra, textID, index, sw);
 			//MostrarIndex(indexPalabra->indexListID);
 
 		}
@@ -109,6 +71,122 @@ Index* createIndex(char* pathDocumentsFile, StopWords* sw, code*statusCode)
 	*statusCode = OK;
 	return index;
 }
+
+void leerTextoContiguo(char* palabra, char* textoContiguo)
+{
+	// obtengo una cadena de caracteres.
+	// contateno la nueva palabra a la cadena
+	// retorno la cadena.
+
+	// Esto se debe repetir hasta que alguna condicion se cumpla.
+	// es decir .A - .B - .W (esta condicion debe ir fuera. o dentro)
+}
+
+Index* indexarID(Index* index, char** textID, FILE* archivoEntrada)
+{
+	Index* indexPalabra = NULL;
+	Result* listaID = NULL;
+
+	*textID = LeerPalabra(archivoEntrada);
+	index =	InsertarPalabra(index, *textID);
+	listaID = InsertarIndex(listaID, 0, *textID);
+	indexPalabra = BuscarPalabraIndex(index, *textID);
+	indexPalabra->indexListID = listaID;
+	listaID = NULL;
+	return index;
+}
+
+Index* indexarPalabra(char* palabra, char* textID, Index* index ,StopWords* sw)
+{
+	Index* indexPalabra = NULL;
+	Result* listaID = NULL;
+
+	int noEsStopWord = FALSE;
+	int palabraNoRepetida = FALSE;
+	int idRepetida = FALSE;
+	
+	noEsStopWord = QuitarStopWords(palabra, sw);
+	palabraNoRepetida = QuitarPalabraRepetida(index, palabra);
+
+	if (noEsStopWord == TRUE)
+	{
+		// Si la palabra no existe en el indice.
+		if (palabraNoRepetida == TRUE)
+		{
+			index = InsertarPalabra(index, palabra);
+            if (listaID == NULL)
+            {
+                listaID = InsertarIndex(listaID, 0, textID);
+                indexPalabra = BuscarPalabraIndex(index, palabra);
+                indexPalabra->indexListID = listaID;
+                listaID = NULL;
+            }
+            else
+            {
+                listaID = NULL;
+                listaID = InsertarIndex(listaID, 0, textID);
+                indexPalabra = BuscarPalabraIndex(index, palabra);
+                indexPalabra->indexListID = listaID;
+                listaID = NULL;
+            }				
+        }			
+		else
+		{
+			// si la palabra esta en el indice.
+			indexPalabra = BuscarPalabraIndex(index, palabra);
+			listaID = indexPalabra->indexListID;
+			//verifico la id
+			idRepetida = VerificarIDRepetida(listaID, textID);
+			// Si la id no se encuentra en la indexacion.
+			if (idRepetida == TRUE)
+			{
+				listaID = InsertarIndex(listaID, 0, textID);
+				indexPalabra->indexListID = listaID;
+				listaID = NULL;
+			}
+		}
+	}
+	return index;
+}
+
+int leerTipoClasificacion(char* palabra)
+{
+	// Leer el tipo de clasificacion.
+	if (strcmp(palabra, ".I") == 0)
+	{
+		return TEXT_ID;
+		// Indexo lo que viene.
+	}
+	if (strcmp(palabra, ".T") == 0)
+	{
+		return TEXT_TITLE;
+		// Guardo la cadena,  e indexo cada una.
+	}
+	if (strcmp(palabra, ".A") == 0)
+	{
+		return TEXT_AUTHOR;
+		// Guardo la cadena,  e indexo cada una.
+	}
+	return 0;
+	/*
+	if(caracterI == TRUE)
+	{
+		textID = LeerPalabra(archivoEntrada);
+		index =	InsertarPalabra(index, textID);
+		listaID = InsertarIndex(listaID, 0, textID);
+		indexPalabra = BuscarPalabraIndex(index, textID);
+		indexPalabra->indexListID = listaID;
+		listaID = NULL;
+
+		//index = AgregarIndice(index, palabra, textID);
+		//printf("Text(%s)\n", textID);
+	}*/
+}
+
+void leerTitulo(FILE* archivoEntrada)
+{
+}
+
 
 void saveIndex(Index*i, int*id, code*statusCode)
 {
@@ -142,12 +220,12 @@ void saveIndex(Index*i, int*id, code*statusCode)
 
 Index* loadIndex(int id, code* statusCode)
 {
-	Index* load_Index = NULL;
+	Index* cargarIndex = NULL;
 	Index* indicePalabra = NULL;
 	Result* listaID = NULL;
-	int n_Palabras = 0;
-	int n_Lista_Palabras = 0;
-	int cont_Lista_Palabras = 0;
+	int numPalabras = 0;
+	int numListaPalabras = 0;
+	int contListaPalabras = 0;
 	int i = 0;
 	char* palabra = NULL;
 
@@ -156,29 +234,29 @@ Index* loadIndex(int id, code* statusCode)
 	archivoEntrada = fopen(loadID, "rb");
 	if (archivoEntrada != NULL)
 	{
-		fscanf(archivoEntrada, "%d", &n_Palabras);
-		//printf("Numero de palabras: %d\n", n_Palabras);
-		while(i < n_Palabras)
+		fscanf(archivoEntrada, "%d", &numPalabras);
+		//printf("Numero de palabras: %d\n", numPalabras);
+		while(i < numPalabras)
 		{	
 			// Funcion que lee la palabra.
 			palabra = LeerPalabra(archivoEntrada);
 			// Insertar la palabra en el index.
-			load_Index = InsertarPalabra(load_Index, palabra);
+			cargarIndex = InsertarPalabra(cargarIndex, palabra);
 			// Obtener el index de la palabra.
-			indicePalabra = BuscarPalabraIndex(load_Index, palabra);
+			indicePalabra = BuscarPalabraIndex(cargarIndex, palabra);
 			// Leo Largo_
 			palabra = LeerPalabra(archivoEntrada);
 			if (strcmp(palabra, "Largo_") == 0)
 			{
-				cont_Lista_Palabras = 0;
-				n_Lista_Palabras = LeerNmoPalabra(archivoEntrada);
+				contListaPalabras = 0;
+				numListaPalabras = LeerNmoPalabra(archivoEntrada);
 
-				while(cont_Lista_Palabras < n_Lista_Palabras)
+				while(contListaPalabras < numListaPalabras)
 				{
 					palabra = LeerPalabra(archivoEntrada);
 					//printf(" %s ", palabra);
 					listaID = InsertarIndex(listaID, 0, palabra);
-					cont_Lista_Palabras++;
+					contListaPalabras++;
 				}
 				indicePalabra->indexListID = listaID;
 				listaID = NULL;
@@ -196,7 +274,7 @@ Index* loadIndex(int id, code* statusCode)
 	
 	fclose(archivoEntrada);
 	*statusCode = OK;
-	return load_Index;
+	return cargarIndex;
 }
 
 int QuitarStopWords(char* palabra, StopWords* listaSW)
