@@ -20,7 +20,10 @@ char* LeerPalabra(FILE* archivoEntrada);
 void leerTitulo(FILE* archivoEntrada);
 
 void leerTextoContiguo(char* palabra, char* textoContiguo);
-Index* indexarID(Index* index, char** textID, FILE* archivoEntrada);
+Title* leerTextTitulo(FILE* archivoEntrada);
+Author* leerTextAutor(FILE* archivoEntrada);
+//Index* indexarID(Index* index, char** textID, FILE* archivoEntrada);
+Index* indexarID(Index* index, char* textID);
 Index* indexarPalabra(char* palabra,char* textID, Index* index,StopWords* sw);
 int leerTipoClasificacion(char* palabra);
 

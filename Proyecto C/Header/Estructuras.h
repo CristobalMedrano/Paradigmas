@@ -1,11 +1,23 @@
 #ifndef _ESTRUCTURAS_H
 #define _ESTRUCTURAS_H
 
+typedef struct Title
+{
+	char* titulo;
+	struct Title* siguiente;
+} Title;
+
+typedef struct Author
+{
+	char* autor;
+	struct Author* siguiente;
+} Author;
+
 typedef struct Result
 {
 	char* id;
-	char* Titulo;
-	char* Author;
+	struct Title* titulo;
+	struct Author* autor;
 	struct Result* siguiente;
 
 } Result;

@@ -18,9 +18,12 @@ Index* createIndex(char* pathDocumentsFile, StopWords* sw, code*statusCode)
 
 	FILE* archivoEntrada;
 	Index* index = NULL;
+
+	char* textID = NULL;
+	Title* textTitulo = NULL;
+	Author* textAutor = NULL;
 	char* palabra = NULL;
 	int textClasificacion = FALSE;
-	char* textID = NULL;
 	
 	archivoEntrada = fopen(pathDocumentsFile, "rb");
 
@@ -35,22 +38,31 @@ Index* createIndex(char* pathDocumentsFile, StopWords* sw, code*statusCode)
 			switch(textClasificacion)
 			{
 				case TEXT_ID:
-					index = indexarID(index, &textID, archivoEntrada);
+					textID = LeerPalabra(archivoEntrada);
 					break;
 				// Variable que contendra el text title hasta que cambie
 				// mientras sea text_title entonces genera la cadena.
 				case TEXT_TITLE:
-					// Ciclo e indexar hasta que encuentre el .A
+					textTitulo = leerTextTitulo(archivoEntrada);
+					MostrarTitulo(textTitulo);
+					// Ciclo e indexar hasta que encuentre el "."
 					break;
 				case TEXT_AUTHOR:
+					textAutor = leerTextAutor(archivoEntrada);
+					MostrarAutor(textAutor);
 					// Ciclo e indexar hasta que encuentre el .B
 					break;
-				case TEXT_BODY:
-					// Ciclo e indexar hasta que encuentre el .W
-					break;
 			}
-
 			//Indexamos la palabra
+			//index = indexarID(index, textID);
+			// Proceso de indexar...
+			// Indexo ID: indexarPalabra(textID, textID, index, sw);
+			// Indexo Titulo: 
+			// Recorro titulo e indexo indexarPalabra(palabra, textID, index, sw);
+			// Indexo Author:
+			// Recorro autor e indexo indexarPalabra(palabra, textID, index, sw);
+			// Indexo Palabra:
+			//palabra = LeerPalabra(archivoEntrada);
 			index = indexarPalabra(palabra, textID, index, sw);
 			//MostrarIndex(indexPalabra->indexListID);
 
@@ -72,25 +84,41 @@ Index* createIndex(char* pathDocumentsFile, StopWords* sw, code*statusCode)
 	return index;
 }
 
-void leerTextoContiguo(char* palabra, char* textoContiguo)
+Title* leerTextTitulo(FILE* archivoEntrada)
 {
-	// obtengo una cadena de caracteres.
-	// contateno la nueva palabra a la cadena
-	// retorno la cadena.
+	Title* textTitulo = NULL;
+	char* palabra = NULL;
+	do
+	{
+		palabra = LeerPalabra(archivoEntrada);
+		textTitulo = InsertarTitulo(textTitulo, palabra);
 
-	// Esto se debe repetir hasta que alguna condicion se cumpla.
-	// es decir .A - .B - .W (esta condicion debe ir fuera. o dentro)
+	}while (strcmp(palabra, ".") != 0);
+	//MostrarTitulo(textTitulo);
+	return textTitulo;
 }
 
-Index* indexarID(Index* index, char** textID, FILE* archivoEntrada)
+Author* leerTextAutor(FILE* archivoEntrada)
+{
+	Author* textAutor = NULL;
+	char* palabra = LeerPalabra(archivoEntrada);;
+	while (strcmp(palabra, ".B") != 0)
+	{
+		textAutor = InsertarAutor(textAutor, palabra);
+		palabra = LeerPalabra(archivoEntrada);
+	}
+	//MostrarAutor(textAutor);
+	return textAutor;
+}
+
+Index* indexarID(Index* index, char* textID)
 {
 	Index* indexPalabra = NULL;
 	Result* listaID = NULL;
 
-	*textID = LeerPalabra(archivoEntrada);
-	index =	InsertarPalabra(index, *textID);
-	listaID = InsertarIndex(listaID, 0, *textID);
-	indexPalabra = BuscarPalabraIndex(index, *textID);
+	index =	InsertarPalabra(index, textID);
+	listaID = InsertarIndex(listaID, 0, textID);
+	indexPalabra = BuscarPalabraIndex(index, textID);
 	indexPalabra->indexListID = listaID;
 	listaID = NULL;
 	return index;
