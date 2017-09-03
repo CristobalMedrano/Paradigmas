@@ -13,19 +13,27 @@ typedef struct Author
 	struct Author* siguiente;
 } Author;
 
-typedef struct Result
+typedef struct IndexListID
 {
 	char* id;
 	struct Title* titulo;
 	struct Author* autor;
-	struct Result* siguiente;
+	struct IndexListID* hijoIzquierdo;
+	struct IndexListID* hijoDerecho;
+} IndexListID;
 
-} Result;
+typedef struct Results
+{
+	char* id;
+	struct IndexListID* textDocs;
+	struct Results* siguiente;
+
+} Results;
 
 typedef struct Index
 {
 	char* palabra;
-	Result* indexListID;
+	Results* resultsID;
 	struct Index* hijoIzquierdo;
 	struct Index* hijoDerecho;
 
@@ -33,7 +41,7 @@ typedef struct Index
 
 typedef struct Ranking
 {
-
+	struct Results* busqueda;
 } Ranking;
 
 typedef struct StopWords

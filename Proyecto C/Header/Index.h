@@ -9,36 +9,31 @@
 #define TEXT_AUTHOR 3
 #define TEXT_BODY 4
  
-// Creando IndexInvertido
+// Funciones Principales
 Index* createIndex(char* pathDocumentsFile, StopWords*sw, code*statusCode);
+void saveIndex(Index*i, int*id, code*statusCode);
+Index* loadIndex(int id, code*statusCode);
 
-int QuitarStopWords(char* palabra, StopWords* listaSW);
-int QuitarPalabraRepetida(Index* index, char* palabra);
-int VerificarIDRepetida(Result* indexListID, char* textID);
-int LeerTexto(char* palabra);
-char* LeerPalabra(FILE* archivoEntrada);
-void leerTitulo(FILE* archivoEntrada);
-
-void leerTextoContiguo(char* palabra, char* textoContiguo);
+// Funciones extras createIndex
+char* leerTextID(FILE* archivoEntrada);
 Title* leerTextTitulo(FILE* archivoEntrada);
 Author* leerTextAutor(FILE* archivoEntrada);
-//Index* indexarID(Index* index, char** textID, FILE* archivoEntrada);
-Index* indexarID(Index* index, char* textID);
-Index* indexarPalabra(char* palabra,char* textID, Index* index,StopWords* sw);
-int leerTipoClasificacion(char* palabra);
+Index* indexarPalabra(char* palabra, char* textID, Index* index ,StopWords* sw, IndexListID* resultID);
+int QuitarStopWords(char* palabra, StopWords* listaSW);
+int QuitarPalabraRepetida(Index* index, char* palabra);
+int VerificarIDRepetida(Results* resultsID, char* textID);
 
-// Guardando IndexInvertido
-void saveIndex(Index*i, int*id, code*statusCode);
-
-char* generarNombreSave(int *id);
-char* obtenerFecha(int *id);
+// Funciones extras saveIndex
 int obtenerID();
+char* obtenerFecha(int *id);
+char* generarNombreSave(int *id);
 void EscribirPalabra(FILE* archivoSalida, Index* index);
-void EscribirIndicePalabra(FILE* archivoSalida, Result* result);
+void EscribirIndicePalabra(FILE* archivoSalida, Results* result);
 
-// Cargando IndexInvertido
-Index* loadIndex(int id, code*statusCode);
+// Funciones extras loadIndex
 int LeerNmoPalabra(FILE* archivoEntrada);
 
+// Funciones utilitarias
+char* LeerPalabra(FILE* archivoEntrada);
 
 #endif

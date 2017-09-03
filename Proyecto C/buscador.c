@@ -19,7 +19,7 @@ int main(int argc, char const *argv[])
 	char* searchWord = NULL;
 	StopWords* listaSW = NULL;
 	Index* index = NULL;
-	Ranking* ranking = NULL;
+	Ranking* ranking = inicializarRanking();
 	code statusCode;
 	
 	do
@@ -72,7 +72,8 @@ int main(int argc, char const *argv[])
 				break;
 
 			case MOSTRAR_RESULTADOS:
-				printf("Mostrando resultados...\n");
+				printf("Mostrando resultados para: %s\n", searchWord);
+				showResults(ranking->busqueda, 10, &statusCode);
 				MostrarStatusCode(statusCode);
 				PresionarContinuar();
 				break;

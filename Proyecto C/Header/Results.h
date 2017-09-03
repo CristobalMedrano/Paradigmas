@@ -2,8 +2,8 @@
 #define _FUNC_RESULTS_H_
 
 Ranking* query(Index*i, StopWords*sw, char* text, code*statusCode);
-void showResults(Result*r, int TopK, code*statusCode);
+void showResults(Results*r, int TopK, code*statusCode);
 
-void recorrerIndex(Result* result);
+Ranking* inicializarRanking();
 
 #endif

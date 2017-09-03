@@ -27,7 +27,7 @@ HEADERS = Header/
 CC = gcc
 OPTS = -Wall -g3
 INCLUDE = -I $(HEADERS)
-OBJECTS = Results.o Results_LE.o Index_ABO.o Index.o StopWords_LE.o StopWords.o Menu.o buscador.o
+OBJECTS = Results.o Index_LE.o Results_ABO.o Index_ABO.o Index.o StopWords_LE.o StopWords.o Menu.o buscador.o
 
 .SILENT: clean all
 all: $(OBJECTS)
@@ -55,8 +55,11 @@ Index.o: $(SOURCES)Index.c $(HEADERS)Index.h
 Index_ABO.o: $(SOURCES)Index_ABO.c $(HEADERS)Index_ABO.h
 	$(CC) $(OPTS) $(INCLUDE) -c $(SOURCES)Index_ABO.c -o Index_ABO.o
 
-Results_LE.o: $(SOURCES)Results_LE.c $(HEADERS)Results_LE.h
-	$(CC) $(OPTS) $(INCLUDE) -c $(SOURCES)Results_LE.c -o Results_LE.o
+Index_LE.o: $(SOURCES)Index_LE.c $(HEADERS)Index_LE.h
+	$(CC) $(OPTS) $(INCLUDE) -c $(SOURCES)Index_LE.c -o Index_LE.o
+
+Results_ABO.o: $(SOURCES)Results_ABO.c $(HEADERS)Results_ABO.h
+	$(CC) $(OPTS) $(INCLUDE) -c $(SOURCES)Results_ABO.c -o Results_ABO.o
 
 Results.o: $(SOURCES)Results.c $(HEADERS)Results.h
 	$(CC) $(OPTS) $(INCLUDE) -c $(SOURCES)Results.c -o Results.o

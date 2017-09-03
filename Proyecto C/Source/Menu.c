@@ -10,7 +10,7 @@ void MostrarMenu(int ultimaID, int id)
 	printf("***----------------------***\n");
 	printf("**                        **\n");
 	printf("*         PaDSearch        *\n");
-	printf("*       Version 0.71       *\n");
+	printf("*        Version 0.9       *\n");
 	printf("**                        **\n");
 	printf("***----------------------***\n");
 	printf("\n");

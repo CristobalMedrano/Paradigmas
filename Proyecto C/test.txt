@@ -1,9 +1,20 @@
 .I 1
 .T
+El pasto es verde, porque el sol es amarillo, entonces
+si el agua es azul, tenemos un perro magico .
+.A
+Andrea Coloma.
+.B
+j. ae. scs. 25, 1958, 324.
+.W
 experimental investigation of the aerodynamics of a
 wing in a slipstream .
+.I 2
+.T
+Hola mundo orque el sol es amarillo, entonces
+si el agua es azul, tenemos un perro magico .
 .A
-brenckman,m.
+Cristobal Medrano.
 .B
 j. ae. scs. 25, 1958, 324.
 .W
