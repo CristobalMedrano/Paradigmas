@@ -2,15 +2,15 @@
 #include <stdlib.h>
 #include <Estructuras.h>
 #include <Results_LE.h>
-#include <Index.h>
 
-Result* CrearNodoIndex()
+Results* CrearNodoIndex()
 {
-	Result* result = (Result*)malloc(sizeof(Result));
+	Results* result = (Results*)malloc(sizeof(Results));
 	//Si la asignacion de memoria es exitosa, se inicializan las variables
 	if(result != NULL)
 	{
-	    result->id = 0;
+	    result->id = NULL;
+	    result->textDocs = NULL;
 		result->siguiente = NULL;
 		return result;
 	}
@@ -50,7 +50,23 @@ Author* crearNodoAutor()
 	}
 }
 
-Result* InsertarIndex(Result* result, int pos, char* id)
+Palabra* crearNodoPalabra()
+{
+	Palabra* nuevaPalabra = (Palabra*)malloc(sizeof(Palabra));
+	//Si la asignacion de memoria es exitosa, se inicializan las variables
+	if(nuevaPalabra != NULL)
+	{
+	    nuevaPalabra->palabra = NULL;
+		nuevaPalabra->siguiente = NULL;
+		return nuevaPalabra;
+	}
+	else
+	{	
+		return NULL;
+	}
+}
+
+Results* InsertarIndex(Results* result, IndexListID* resultID, int pos, char* id)
 {
 	int i;
 	if(pos < 0)
@@ -59,13 +75,14 @@ Result* InsertarIndex(Result* result, int pos, char* id)
 	}
 	if(pos == 0)
 	{
-		Result* nuevaID = CrearNodoIndex();
+		Results* nuevaID = CrearNodoIndex();
 		nuevaID->id = id;
+		nuevaID->textDocs = resultID;
 		nuevaID->siguiente = result;
 		return nuevaID;
 	}
 	i = 0;
-	Result* indice = CrearNodoIndex();
+	Results* indice = CrearNodoIndex();
 	indice = result;
 	while (indice != NULL && i < pos -1)
 	{
@@ -74,8 +91,9 @@ Result* InsertarIndex(Result* result, int pos, char* id)
 	}
 	if(indice != NULL)
 	{
-		Result* nuevaID = CrearNodoIndex();
+		Results* nuevaID = CrearNodoIndex();
 		nuevaID->id = id;
+		nuevaID->textDocs = resultID;
 		nuevaID->siguiente = indice->siguiente;
 		indice->siguiente = nuevaID;
 	}
@@ -164,11 +182,52 @@ Author* InsertarAutor(Author* L, char* autor)
     }
 }
 
-void MostrarIndex(Result* result)
+Palabra* InsertarPalabraFrase(Palabra* L, char* palabra)
+{
+	//Se crea una nueva lista
+	Palabra *nuevo = crearNodoPalabra();
+	Palabra *aux = crearNodoPalabra();
+	//Se comprueba si se realiza con exito
+	//Si la lista es creada con exito
+	if(nuevo!=NULL){
+        //Se ve si L esta vacia
+        if (L==NULL){
+            //En ese caso, L sera igual a la nueva lista que creamos
+        	L = nuevo;
+            nuevo->palabra = palabra;
+            nuevo->siguiente = NULL;
+            return L;
+        }
+        else
+        { 
+        	// Aux sera igual a L.
+        	aux = L;
+        	// Ubicamos el puntero en el ultimo nodo.
+        	while(aux->siguiente != NULL)
+        	{
+        		aux = aux->siguiente;
+        	}
+        	// Asignamos la ultima posicion al nuevo nodo.
+        	aux->siguiente = nuevo;
+        	nuevo->palabra = palabra;
+        	nuevo->siguiente = NULL;
+        	// Retornamos la lista.
+        	return L;
+        }
+
+	}
+	//En caso que la asignacion de memoria falle, se avisa del error y se retorna la lista L
+	else{
+        printf("Error en la asignacion de memoria\n");
+        return L;
+    }
+}
+
+void MostrarIndex(Results* result)
 {
 	if(result != NULL)
 	{
-        Result* auxiliar = CrearNodoIndex();
+        Results* auxiliar = CrearNodoIndex();
         auxiliar = result;
         while(auxiliar != NULL)
         {
@@ -209,10 +268,25 @@ void MostrarAutor(Author* author)
 	printf("\n");
 }
 
-int LargoIndex(Result* result)
+void MostrarFrase(Palabra* palabra)
+{
+	if(palabra != NULL)
+	{
+		Palabra* auxiliar = crearNodoPalabra();
+		auxiliar = palabra;
+		while(auxiliar != NULL)
+		{
+		    printf("%s ", auxiliar->palabra);
+		    auxiliar = auxiliar->siguiente;
+		}
+	}
+	printf("\n");
+}
+
+int largoFrase(Palabra* frase)
 {
 	int i = 0;
-	Result* indice = result;
+	Palabra* indice = frase;
 	while(indice != NULL)
 	{
 		indice = indice->siguiente;
@@ -221,7 +295,19 @@ int LargoIndex(Result* result)
 	return i;
 }
 
-char* ObtenerIndexID(Result* listaID, int pos)
+int LargoIndex(Results* result)
+{
+	int i = 0;
+	Results* indice = result;
+	while(indice != NULL)
+	{
+		indice = indice->siguiente;
+		i++;
+	}
+	return i;
+}
+
+char* ObtenerIndexID(Results* listaID, int pos)
 {
 	int i;
 	if(pos < 0)
@@ -229,7 +315,7 @@ char* ObtenerIndexID(Result* listaID, int pos)
 		return NULL;
 	}
 	i = 0;
-	Result* indice = listaID;
+	Results* indice = listaID;
 	while(indice != NULL && i < pos)
 	{
 		indice = indice->siguiente;

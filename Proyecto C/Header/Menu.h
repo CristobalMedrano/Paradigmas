@@ -7,7 +7,8 @@ void ValidarOpcionIngresada(int* opcionIngresada, int Min, int Max);
 void LimpiarConsola();
 void PresionarContinuar();
 void MostrarStatusCode(code statusCode);
-char* obtenerNombre(int tipo);
+char* obtenerNombre();
+char* obtenerText();
 int obtenerIDArchivo();
 void AcercaDe();
 #endif

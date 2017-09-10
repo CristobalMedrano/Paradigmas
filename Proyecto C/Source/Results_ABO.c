@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <Estructuras.h>
-#include <Index_LE.h>
+#include <Results_LE.h>
 #include <Results_ABO.h>
 
 

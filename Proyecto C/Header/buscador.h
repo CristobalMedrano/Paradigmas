@@ -8,8 +8,10 @@
 #define CARGAR_INDEX 4
 #define BUSCAR 5
 #define MOSTRAR_RESULTADOS 6
-#define ACERCA_DE 7
-#define SALIR 8
+#define GUARDAR_RANKING 7
+#define CARGAR_RANKING 8
+#define ACERCA_DE 9
+#define SALIR 10
 
 #define ARCHIVO 0
 #define BUSCAR_PALABRA 1

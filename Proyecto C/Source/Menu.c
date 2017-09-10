@@ -10,7 +10,7 @@ void MostrarMenu(int ultimaID, int id)
 	printf("***----------------------***\n");
 	printf("**                        **\n");
 	printf("*         PaDSearch        *\n");
-	printf("*        Version 0.9       *\n");
+	printf("*       Version 0.92       *\n");
 	printf("**                        **\n");
 	printf("***----------------------***\n");
 	printf("\n");
@@ -22,9 +22,10 @@ void MostrarMenu(int ultimaID, int id)
 	printf("4.- Cargar Index.\n");
 	printf("5.- Consultar(Query).\n");
 	printf("6.- Mostrar Resultados.\n");
-	//printf("0.- Buscar.\n")
-	printf("7.- Acerca de.\n");
-	printf("8.- Salir.\n\n");
+	printf("7.- Guardar Ranking.\n");
+	printf("8.- Cargar Ranking.\n");
+	printf("9.- Acerca de.\n");
+	printf("10.- Salir.\n\n");
 	printf("Ingrese la opcion deseada: ");
 
 }
@@ -63,7 +64,7 @@ void PresionarContinuar()
 	
 	#if defined(__linux__) || defined(__unix__) || defined(__APPLE__)
         	getchar();
-    #endif	
+    	#endif	
 }
 
 void MostrarStatusCode(code statusCode)
@@ -98,17 +99,9 @@ void MostrarStatusCode(code statusCode)
 	}
 }
 
-char* obtenerNombre(int tipo)
+char* obtenerNombre()
 {
-	switch(tipo)
-	{
-		case 0:
-			printf("Ingrese el nombre del archivo: ");
-			break;
-		case 1:
-			printf("Buscar: ");
-			break;
-	}
+	printf("Ingrese el nombre del archivo: ");
 	char* nombreArchivo = (char*)malloc(sizeof(char)*256);
 	char nombreLeido[256];
 	fflush(stdin);
@@ -116,6 +109,21 @@ char* obtenerNombre(int tipo)
 	fflush(stdin);
 	strcpy(nombreArchivo, nombreLeido);
 	return nombreArchivo;
+}
+
+char* obtenerText()
+{
+	char* nombreText = (char*)malloc(sizeof(char)*256);
+	char temporalNombreText[256];
+	printf("Consultar: ");
+	fflush(stdin);
+	#if defined(__linux__) || defined(__unix__) || defined(__APPLE__)
+        	getchar();
+    	#endif
+	fgets(temporalNombreText, 256, stdin);
+	fflush(stdin);
+	strcpy(nombreText, temporalNombreText);
+	return nombreText;
 }
 
 int obtenerIDArchivo()

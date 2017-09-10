@@ -6,7 +6,7 @@
 #include <StopWords.h>
 #include <Index_ABO.h>
 #include <Results_ABO.h>
-#include <Index_LE.h>
+#include <Results_LE.h>
 #include <Index.h>
 
 // FUNCIONES PRINCIPALES
@@ -85,6 +85,7 @@ Index* createIndex(char* pathDocumentsFile, StopWords* sw, code*statusCode)
 
 void saveIndex(Index*i, int*id, code*statusCode)
 {
+	printf("Guardando index...\n\n");
 	if (i == NULL)
 	{
 		*statusCode = ERR_INDEX_NOT_FOUND;
@@ -95,7 +96,7 @@ void saveIndex(Index*i, int*id, code*statusCode)
 		char* fecha = obtenerFecha(id);
 		char* saveID = generarNombreSave(id);
 		FILE *archivoSalida;
-		archivoSalida = fopen(saveID, "w");
+		archivoSalida = fopen(saveID, "wb");
 		if (archivoSalida != NULL)
 		{
 			// guardar Palabra, luego su lista con el largo de ella.

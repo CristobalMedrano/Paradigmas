@@ -1,17 +1,25 @@
-#ifndef _FUNC_RESULTS_LE_H_
-#define _FUNC_RESULTS_LE_H_
+#ifndef _FUNC_INDEX_LE_H_
+#define _FUNC_INDEX_LE_H_
 
-Result* CrearNodoIndex();
-Result* InsertarIndex(Result* result, int pos, char* id);
+Results* CrearNodoIndex();
+Title* crearNodoTitulo(); 
+Author* crearNodoAutor();
+Palabra* crearNodoPalabra();
 
-//Result* InsertarFinal(Result* L, char* id);
+Results* InsertarIndex(Results* result, IndexListID* resultID, int pos, char* id);
+
+//Results* InsertarFinal(Results* L, char* id);
 Title* InsertarTitulo(Title* L, char* titulo);
 Author* InsertarAutor(Author* L, char* autor);
+Palabra* InsertarPalabraFrase(Palabra* L, char* palabra);
 
-void MostrarIndex(Result* result);
+void MostrarIndex(Results* result);
 void MostrarTitulo(Title* title);
 void MostrarAutor(Author* author);
-int LargoIndex(Result* listaID);
-char* ObtenerIndexID(Result* listaID, int pos);
+void MostrarFrase(Palabra* palabra);
+int largoFrase(Palabra* frase);
+
+int LargoIndex(Results* listaID);
+char* ObtenerIndexID(Results* listaID, int pos);
 
 #endif

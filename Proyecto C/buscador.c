@@ -14,12 +14,13 @@ int main(int argc, char const *argv[])
 	int opcion;
 	int id = 0;
 	int ultimaID = ULTIMA_ID_OFF;
+	int cantidad = 0;
 	char* pathStopWordsFile = NULL;
 	char* pathDocumentsFile = NULL;
 	char* searchWord = NULL;
 	StopWords* listaSW = NULL;
 	Index* index = NULL;
-	Ranking* ranking = inicializarRanking();
+	Ranking* ranking = NULL;
 	code statusCode;
 	
 	do
@@ -28,26 +29,25 @@ int main(int argc, char const *argv[])
 		statusCode = FAIL;
 		LimpiarConsola();
 		MostrarMenu(ultimaID, id);
-		ValidarOpcionIngresada(&opcion, 1,8);
+		ValidarOpcionIngresada(&opcion, 1,10);
 
 		switch(opcion)
 		{
 			case CARGAR_STOPWORDS: 
-				pathStopWordsFile = obtenerNombre(ARCHIVO);
+				pathStopWordsFile = obtenerNombre();
 				listaSW = loadStopWords(pathStopWordsFile, &statusCode);
 				MostrarStatusCode(statusCode);
 				PresionarContinuar();
 				break;
 
 			case CREAR_INDEX:
-				pathDocumentsFile = obtenerNombre(ARCHIVO);
+				pathDocumentsFile = obtenerNombre();
 				index = createIndex(pathDocumentsFile, listaSW, &statusCode);
 				MostrarStatusCode(statusCode);
 				PresionarContinuar();
 				break;
 
 			case GUARDAR_INDEX:
-				printf("Guardando Index...\n");
 				saveIndex(index, &id, &statusCode);
 				printf("ID del Index creado: %d\n", id);
 				ultimaID = SAVE_ID_ON;
@@ -56,7 +56,7 @@ int main(int argc, char const *argv[])
 				break;
 
 			case CARGAR_INDEX:
-				printf("Cargando Index...\n");
+				printf("\nCargando Index...\n");
 				id = obtenerIDArchivo();
 				index = loadIndex(id, &statusCode);
 				ultimaID = ULTIMA_ID_ON;
@@ -65,16 +65,26 @@ int main(int argc, char const *argv[])
 				break;
 
 			case BUSCAR:
-				searchWord = obtenerNombre(BUSCAR_PALABRA);
+				searchWord = obtenerText(); 
 				ranking = query(index, listaSW, searchWord, &statusCode);
 				MostrarStatusCode(statusCode);
 				PresionarContinuar();
 				break;
 
 			case MOSTRAR_RESULTADOS:
-				printf("Mostrando resultados para: %s\n", searchWord);
-				showResults(ranking->busqueda, 10, &statusCode);
+				cantidad = resultadosAMostrar();
+				displayResults(ranking, cantidad, &statusCode);
 				MostrarStatusCode(statusCode);
+				PresionarContinuar();
+				break;
+
+			case GUARDAR_RANKING:
+				printf("Guardando ranking...\n");
+				PresionarContinuar();
+				break;
+
+			case CARGAR_RANKING:
+				printf("Cargando ranking...\n");
 				PresionarContinuar();
 				break;
 

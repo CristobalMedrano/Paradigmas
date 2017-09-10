@@ -1,6 +1,12 @@
 #ifndef _ESTRUCTURAS_H
 #define _ESTRUCTURAS_H
 
+typedef struct Palabra
+{
+	char* palabra;
+	struct Palabra* siguiente;
+} Palabra;
+
 typedef struct Title
 {
 	char* titulo;
@@ -41,6 +47,7 @@ typedef struct Index
 
 typedef struct Ranking
 {
+	int numTextos;
 	struct Results* busqueda;
 } Ranking;
 
