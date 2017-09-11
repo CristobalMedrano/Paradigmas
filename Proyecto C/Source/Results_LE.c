@@ -100,6 +100,49 @@ Results* InsertarIndex(Results* result, IndexListID* resultID, int pos, char* id
 	return result; 
 }
 
+Results* insertarIndexOrdenado(Results* result, IndexListID* resultID ,char* id)
+{
+	//Se crea una nueva lista
+	Results *nuevo = CrearNodoIndex();
+	Results *aux = CrearNodoIndex();
+	//Se comprueba si se realiza con exito
+	//Si la lista es creada con exito
+	if(nuevo!=NULL){
+        //Se ve si result esta vacia
+        if (result==NULL){
+            //En ese caso, result sera igual a la nueva lista que creamos
+        	result = nuevo;
+            nuevo->id = id;
+            nuevo->textDocs = resultID;
+            nuevo->siguiente = NULL;
+            return result;
+        }
+        else
+        { 
+        	// Aux sera igual a result.
+        	aux = result;
+        	// Ubicamos el puntero en el ultimo nodo.
+        	while(aux->siguiente != NULL)
+        	{
+        		aux = aux->siguiente;
+        	}
+        	// Asignamos la ultima posicion al nuevo nodo.
+        	aux->siguiente = nuevo;
+        	nuevo->id = id;
+        	nuevo->textDocs = resultID;
+        	nuevo->siguiente = NULL;
+        	// Retornamos la lista.
+        	return result;
+        }
+
+	}
+	//En caso que la asignacion de memoria falle, se avisa del error y se retorna la lista L
+	else{
+        printf("Error en la asignacion de memoria\n");
+        return result;
+    }
+}
+
 Title* InsertarTitulo(Title* L, char* titulo)
 {
 	//Se crea una nueva lista
@@ -327,3 +370,4 @@ char* ObtenerIndexID(Results* listaID, int pos)
 	}
 	return indice->id;
 }
+

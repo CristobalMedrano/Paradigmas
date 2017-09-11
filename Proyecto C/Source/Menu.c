@@ -10,7 +10,7 @@ void MostrarMenu(int ultimaID, int id)
 	printf("***----------------------***\n");
 	printf("**                        **\n");
 	printf("*         PaDSearch        *\n");
-	printf("*       Version 0.92       *\n");
+	printf("*        Version 1.0       *\n");
 	printf("**                        **\n");
 	printf("***----------------------***\n");
 	printf("\n");
@@ -38,7 +38,7 @@ void ValidarOpcionIngresada(int* opcionIngresada, int Min, int Max)
 		if ((scanf("%d", opcionIngresada) == 0) || (*opcionIngresada < Min || *opcionIngresada > Max))
 		{
 		    while (getchar() != '\n');
-		    printf("Error. Ingrese una opcion valida: ");
+		    printf(BOLDRED"Error. Ingrese una opcion valida: "RESET);
 		    fflush(stdin); // Limpiamos buffer.
 		}
 		
@@ -73,28 +73,28 @@ void MostrarStatusCode(code statusCode)
 	switch(statusCode)
 	{
 		case OK: 
-			printf("statusCode: OK\n");
+			printf(BOLDGREEN"statusCode: OK\n" RESET);
 			break;
 		case NO_MEMORY: 
-			printf("statusCode: NO_MEMORY\n");
+			printf(BOLDRED"statusCode: NO_MEMORY\n" RESET);
 			break;
 		case ERR_FILE_NOT_FOUND: 
-			printf("statusCode: ERROR_FILE_NOT_FOUND\n");
+			printf(BOLDRED"statusCode: ERROR_FILE_NOT_FOUND\n"RESET);
 			break;
 		case ERR_FILE_NOT_PERMISSION: 
-			printf("statusCode: ERR_FILE_NOT_PERMISSION\n");
+			printf(BOLDRED"statusCode: ERR_FILE_NOT_PERMISSION\n"RESET);
 			break;
 		case FAIL: 
-			printf("statusCode: FAIL\n");
+			printf(BOLDYELLOW"statusCode: FAIL\n" RESET);
 			break;
 		case ERR_STOPWORDS_NOT_FOUND:
-			printf("statusCode: ERR_STOPWORDS_NOT_FOUND\n");
+			printf(BOLDRED"statusCode: ERR_STOPWORDS_NOT_FOUND\n"RESET);
 			break;
 		case ERR_INDEX_NOT_FOUND:
-			printf("statusCode: ERR_INDEX_NOT_FOUND\n");
+			printf(BOLDRED"statusCode: ERR_INDEX_NOT_FOUND\n"RESET);
 			break;
 		case NO_SEARCH_RESULTS:
-			printf("statusCode: NO_SEARCH_RESULTS\n");
+			printf(BOLDYELLOW"statusCode: NO_SEARCH_RESULTS\n"RESET);
 			break;
 	}
 }
@@ -134,6 +134,16 @@ int obtenerIDArchivo()
 	scanf("%d", &idArchivo);
 	fflush(stdin);
 	return idArchivo;
+}
+int resultadosAMostrar()
+{
+	int cantidad;
+	printf("Ingrese la cantidad de resultados a mostrar: ");
+	if(scanf("%d", &cantidad) == 0)
+	{
+		return 0;
+	}
+	return cantidad;
 }
 
 void AcercaDe()

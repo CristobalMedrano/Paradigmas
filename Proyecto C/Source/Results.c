@@ -39,6 +39,7 @@ Ranking* query(Index*i, StopWords*sw, char* text, code*statusCode)
 			listaCoincidencias = obtenerListaResults(listaCoincidencias, largoTotal, &largoBase);
 			nuevoResultado = generarResultado(listaCoincidencias, largoBase - 1, textDocs);
 			ranking->numTextos = largoBase-1;
+			ranking->text = text;
 			ranking->busqueda = nuevoResultado;
 			*statusCode = OK;
 			return ranking;
@@ -53,35 +54,50 @@ Ranking* query(Index*i, StopWords*sw, char* text, code*statusCode)
 	*statusCode = NO_MEMORY;
 	return ranking;
 }
+
 void displayResults(Ranking *r, int TopK, code *statusCode)
 {
 	if(r != NULL)
-	{
-		/*
-		IndexListID* indice = NULL;
-        Results* auxiliar = CrearNodoIndex();
-        auxiliar = r;
-        int i = 0;
-        while(auxiliar != NULL && i < TopK)
-        {
-            indice = obtenerIndexID(r->textDocs, auxiliar->id);
+	{   
+		IndexListID* indiceDoc = NULL;
+		Results* result = r->busqueda;
+		if(result != NULL)
+		{
+	        Results* auxiliar = CrearNodoIndex();
+	        auxiliar = result;
+       		int i = 0;
+       		printf("Su consulta: '%s', genero %d coincidencias.\n", r->text, r->numTextos);
 
-        	// Aca lo que sera una id.
-        	printf("*********************************************\n");
-            printf("ID: %s\n", auxiliar->id);
-            printf("Title: ");
-            MostrarTitulo(indice->titulo);
-            printf("Author: ");
-            MostrarAutor(indice->autor);
-            printf("\n");
-            auxiliar = auxiliar->siguiente;
-            i++;
-        }*/
-        if (TopK > 0)
-        {
-        	printf("*********************************************\n");
-        }
-		*statusCode = OK;
+       		if (TopK > r->numTextos)
+	        {
+   		        printf("Resultados a mostrar (%d de %d).\n",  r->numTextos, r->numTextos);
+	        }
+	        else
+	        {
+	        	printf("Resultados a mostrar (%d de %d).\n",  TopK, r->numTextos);
+	        }
+       		printf("\nListado de documentos que cumplen con su busqueda: \n\n");
+
+	        while(auxiliar != NULL && i < TopK)
+	        {
+	        	indiceDoc = obtenerIndexID(result->textDocs, auxiliar->id);
+	            printf(".-- Documento(ID): %s --.\n", auxiliar->id);
+	            printf("\nTitle: ");
+	            MostrarTitulo(indiceDoc->titulo);
+	            printf("Author: ");
+	            MostrarAutor(indiceDoc->autor);
+	            printf("\n'--------------------------------------'\n");
+	            auxiliar = auxiliar->siguiente;
+	            i++;
+	        }
+	        printf("Fin de la busqueda...\n\n");
+	        *statusCode = OK;
+		}
+		else
+		{
+			*statusCode = NO_SEARCH_RESULTS;
+		}
+	
 	}
 	else
 	{
@@ -95,19 +111,6 @@ Ranking* inicializarRanking()
 	ranking->numTextos = 0;
 	ranking->busqueda = NULL;
 	return ranking;
-}
-
-int resultadosAMostrar()
-{
-	int cantidad;
-	printf("Ingrese la cantidad maxima de resultados a mostrar: ");
-	if(scanf("%d", &cantidad) == 0)
-	{
-		printf("Cantidad a mostrar: 0\n");
-		return 0;
-	}
-	printf("Cantidad a mostrar: %d\n", cantidad);
-	return cantidad;
 }
 
 Palabra* obtenerFrase(char* text, StopWords* sw)
@@ -327,7 +330,6 @@ int elementoEnLista(int* lista, int largo, int elemento)
 	return FALSE;
 }
 
-
 Results* generarResultado(int* listaCoincidencias, int largoBase, IndexListID* textDocs)
 {
 	Results* nuevoResultado = NULL;
@@ -340,15 +342,7 @@ Results* generarResultado(int* listaCoincidencias, int largoBase, IndexListID* t
 	}
 	return nuevoResultado;
 }
-// Results* obtenerResults(Index*i, StopWords*sw, char* text)
-/*{
-	
-	int esStopWord = QuitarStopWords(palabra, sw);
-	if(esStopWord == FALSE)
-	{
-		frase = InsertarPalabraFrase(frase, palabra)
-	}
-}*/
+
 /*int solicitarVerResultados(Results* r, int TopK, code* statusCode)
 {
 	printf("Desea ver resultados de su busqueda?(y)/(n)\n");

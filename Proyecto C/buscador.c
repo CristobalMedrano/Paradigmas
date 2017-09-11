@@ -10,11 +10,11 @@
 
 int main(int argc, char const *argv[])
 {
-	srand(time(NULL));
+	//srand(time(NULL));
 	int opcion;
 	int id = 0;
 	int ultimaID = ULTIMA_ID_OFF;
-	int cantidad = 0;
+	int TopK = 0;
 	char* pathStopWordsFile = NULL;
 	char* pathDocumentsFile = NULL;
 	char* searchWord = NULL;
@@ -49,7 +49,7 @@ int main(int argc, char const *argv[])
 
 			case GUARDAR_INDEX:
 				saveIndex(index, &id, &statusCode);
-				printf("ID del Index creado: %d\n", id);
+				printf("ID del Index creado: %d", id);
 				ultimaID = SAVE_ID_ON;
 				MostrarStatusCode(statusCode);
 				PresionarContinuar();
@@ -72,19 +72,25 @@ int main(int argc, char const *argv[])
 				break;
 
 			case MOSTRAR_RESULTADOS:
-				cantidad = resultadosAMostrar();
-				displayResults(ranking, cantidad, &statusCode);
+				LimpiarConsola();
+				TopK = resultadosAMostrar();
+				displayResults(ranking, TopK, &statusCode);
 				MostrarStatusCode(statusCode);
 				PresionarContinuar();
 				break;
 
 			case GUARDAR_RANKING:
-				printf("Guardando ranking...\n");
+				saveRanking(ranking, &id, &statusCode);
+				printf("\nID del Ranking creado: %d\n", id);
+				MostrarStatusCode(statusCode);
 				PresionarContinuar();
 				break;
 
 			case CARGAR_RANKING:
-				printf("Cargando ranking...\n");
+				printf("\nCargando ranking...\n");
+				id = obtenerIDArchivo();
+				ranking = loadRanking(id, &statusCode);
+				MostrarStatusCode(statusCode);
 				PresionarContinuar();
 				break;
 

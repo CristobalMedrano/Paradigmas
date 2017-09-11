@@ -14,6 +14,15 @@ Index* createIndex(char* pathDocumentsFile, StopWords*sw, code*statusCode);
 void saveIndex(Index*i, int*id, code*statusCode);
 Index* loadIndex(int id, code*statusCode);
 
+// FUNCIONES EXTRAS
+
+void saveRanking(Ranking *r, int *id, code *statusCode);
+void escribirRankingDocs(FILE* archivoSalida, Results* result);
+void escribirResults(FILE* archivoSalida, Results* result);
+Ranking* loadRanking(int id, code *statusCode);
+char* obtenerTextLoad(FILE* archivoEntrada);
+
+
 // Funciones extras createIndex
 char* leerTextID(FILE* archivoEntrada);
 Title* leerTextTitulo(FILE* archivoEntrada);
@@ -26,14 +35,19 @@ int VerificarIDRepetida(Results* resultsID, char* textID);
 // Funciones extras saveIndex
 int obtenerID();
 char* obtenerFecha(int *id);
-char* generarNombreSave(int *id);
+void escribirTextDocs(FILE* archivoSalida, IndexListID* resultID);
+void escribirTitulo(FILE* archivoSalida, Title* title);
+void escribirAutor(FILE* archivoSalida, Author* author);
 void EscribirPalabra(FILE* archivoSalida, Index* index);
 void EscribirIndicePalabra(FILE* archivoSalida, Results* result);
 
 // Funciones extras loadIndex
 int LeerNmoPalabra(FILE* archivoEntrada);
+IndexListID* cargarTextos(int* numDocumentosIndexados, FILE* archivoEntrada);
+Index* cargarPalabras(FILE* archivoEntrada, IndexListID* indiceDocs);
 
 // Funciones utilitarias
 char* LeerPalabra(FILE* archivoEntrada);
+char* generarNombreSave(int *id, int opcion);
 
 #endif

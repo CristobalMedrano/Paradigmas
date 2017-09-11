@@ -40,6 +40,8 @@ typedef struct Index
 {
 	char* palabra;
 	Results* resultsID;
+	int textosIndexados;
+	IndexListID* saveTextDocs;
 	struct Index* hijoIzquierdo;
 	struct Index* hijoDerecho;
 
@@ -48,6 +50,7 @@ typedef struct Index
 typedef struct Ranking
 {
 	int numTextos;
+	char* text;
 	struct Results* busqueda;
 } Ranking;
 

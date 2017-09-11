@@ -12,7 +12,6 @@ Ranking* inicializarRanking();
 Palabra* obtenerFrase(char* text, StopWords* sw);
 //int* obtenerListaCoincidencias(Palabra* frase, Index* i, int* largoTotal);
 int* obtenerListaCoincidencias(Palabra* frase, Index* i, int* largoListaCoincidencias, IndexListID** textDocs);
-int resultadosAMostrar();
 int* agregarIDLista(int* count, int* listaCoincidencias, Results* result);
 int* ordenarLista(int* listaCoincidencias, int largoListaCoincidencias);
 int* obtenerListaResults(int* lista, int largo, int* largoBase);

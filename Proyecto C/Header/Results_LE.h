@@ -7,6 +7,7 @@ Author* crearNodoAutor();
 Palabra* crearNodoPalabra();
 
 Results* InsertarIndex(Results* result, IndexListID* resultID, int pos, char* id);
+Results* insertarIndexOrdenado(Results* result, IndexListID* resultID ,char* id);
 
 //Results* InsertarFinal(Results* L, char* id);
 Title* InsertarTitulo(Title* L, char* titulo);
@@ -17,6 +18,7 @@ void MostrarIndex(Results* result);
 void MostrarTitulo(Title* title);
 void MostrarAutor(Author* author);
 void MostrarFrase(Palabra* palabra);
+
 int largoFrase(Palabra* frase);
 
 int LargoIndex(Results* listaID);
