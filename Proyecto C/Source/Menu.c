@@ -38,7 +38,7 @@ void ValidarOpcionIngresada(int* opcionIngresada, int Min, int Max)
 		if ((scanf("%d", opcionIngresada) == 0) || (*opcionIngresada < Min || *opcionIngresada > Max))
 		{
 		    while (getchar() != '\n');
-		    printf(BOLDRED"Error. Ingrese una opcion valida: "RESET);
+		    printf("Error. Ingrese una opcion valida: ");
 		    fflush(stdin); // Limpiamos buffer.
 		}
 		
@@ -60,11 +60,7 @@ void PresionarContinuar()
 {
 	fflush(stdin);
 	printf("\nPresione intro para continuar...");
-	getchar();
-	
-	#if defined(__linux__) || defined(__unix__) || defined(__APPLE__)
-        	getchar();
-    	#endif	
+	while (getchar() != '\n');	
 }
 
 void MostrarStatusCode(code statusCode)
@@ -73,29 +69,34 @@ void MostrarStatusCode(code statusCode)
 	switch(statusCode)
 	{
 		case OK: 
-			printf(BOLDGREEN"statusCode: OK\n" RESET);
+			printf("statusCode: OK\n" );
 			break;
 		case NO_MEMORY: 
-			printf(BOLDRED"statusCode: NO_MEMORY\n" RESET);
+			printf("statusCode: NO_MEMORY\n" );
 			break;
 		case ERR_FILE_NOT_FOUND: 
-			printf(BOLDRED"statusCode: ERROR_FILE_NOT_FOUND\n"RESET);
+			printf("statusCode: ERROR_FILE_NOT_FOUND\n");
 			break;
 		case ERR_FILE_NOT_PERMISSION: 
-			printf(BOLDRED"statusCode: ERR_FILE_NOT_PERMISSION\n"RESET);
+			printf("statusCode: ERR_FILE_NOT_PERMISSION\n");
 			break;
 		case FAIL: 
-			printf(BOLDYELLOW"statusCode: FAIL\n" RESET);
+			printf("statusCode: FAIL\n" );
 			break;
 		case ERR_STOPWORDS_NOT_FOUND:
-			printf(BOLDRED"statusCode: ERR_STOPWORDS_NOT_FOUND\n"RESET);
+			printf("statusCode: ERR_STOPWORDS_NOT_FOUND\n");
 			break;
 		case ERR_INDEX_NOT_FOUND:
-			printf(BOLDRED"statusCode: ERR_INDEX_NOT_FOUND\n"RESET);
+			printf("statusCode: ERR_INDEX_NOT_FOUND\n");
+			break;
+		case ERR_RANKING_NOT_FOUND:
+			printf("statusCode: ERR_RANKING_NOT_FOUND\n");
 			break;
 		case NO_SEARCH_RESULTS:
-			printf(BOLDYELLOW"statusCode: NO_SEARCH_RESULTS\n"RESET);
+			printf("statusCode: NO_SEARCH_RESULTS\n");
 			break;
+		case ERR_TEXT_INPUT_NOT_FOUND:
+			printf("statusCode: ERR_TEXT_INPUT_NOT_FOUND\n");
 	}
 }
 
@@ -113,16 +114,29 @@ char* obtenerNombre()
 
 char* obtenerText()
 {
-	char* nombreText = (char*)malloc(sizeof(char)*256);
+	char* nombreText = NULL;
 	char temporalNombreText[256];
 	printf("Consultar: ");
 	fflush(stdin);
 	#if defined(__linux__) || defined(__unix__) || defined(__APPLE__)
-        	getchar();
-    	#endif
-	fgets(temporalNombreText, 256, stdin);
-	fflush(stdin);
-	strcpy(nombreText, temporalNombreText);
+        getchar();
+    #endif
+	if( fgets(temporalNombreText, 256, stdin) != NULL)
+	{
+		fflush(stdin);
+		if (strlen(temporalNombreText) != 1)
+		{
+			nombreText = (char*)malloc(sizeof(char)*256);
+			strcpy(nombreText, temporalNombreText);
+			return nombreText;
+		}
+		else
+		{
+			nombreText = NULL;
+			return nombreText;
+		}
+	    
+	}
 	return nombreText;
 }
 

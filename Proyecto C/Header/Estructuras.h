@@ -1,6 +1,11 @@
 #ifndef _ESTRUCTURAS_H
 #define _ESTRUCTURAS_H
 
+/**
+	@struct Palabra
+	@brief Estructura para la creacion de una frase a traves de palabras.
+
+*/
 typedef struct Palabra
 {
 	char* palabra;
@@ -64,6 +69,7 @@ typedef struct StopWords
 
 
 typedef enum code { OK, NO_MEMORY, ERR_FILE_NOT_FOUND, ERR_FILE_NOT_PERMISSION, FAIL
-	, ERR_STOPWORDS_NOT_FOUND, ERR_INDEX_NOT_FOUND, NO_SEARCH_RESULTS} code;
+	, ERR_STOPWORDS_NOT_FOUND, ERR_INDEX_NOT_FOUND, NO_SEARCH_RESULTS, ERR_RANKING_NOT_FOUND
+	, ERR_TEXT_INPUT_NOT_FOUND} code;
 
 #endif

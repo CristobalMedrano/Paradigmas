@@ -16,11 +16,7 @@ Index* loadIndex(int id, code*statusCode);
 
 // FUNCIONES EXTRAS
 
-void saveRanking(Ranking *r, int *id, code *statusCode);
-void escribirRankingDocs(FILE* archivoSalida, Results* result);
-void escribirResults(FILE* archivoSalida, Results* result);
-Ranking* loadRanking(int id, code *statusCode);
-char* obtenerTextLoad(FILE* archivoEntrada);
+
 
 
 // Funciones extras createIndex

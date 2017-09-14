@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <Estructuras.h>
 #include <Results_LE.h>
 
@@ -304,7 +305,10 @@ void MostrarAutor(Author* author)
         auxiliar = author;
         while(auxiliar != NULL)
         {
-            printf("%s ", auxiliar->autor);
+        	if (strcmp(auxiliar->autor, ".B") != 0)
+        	{
+        		printf("%s ", auxiliar->autor);
+        	}
             auxiliar = auxiliar->siguiente;
         }
 	}

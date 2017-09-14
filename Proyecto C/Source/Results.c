@@ -22,11 +22,15 @@ Ranking* query(Index*i, StopWords*sw, char* text, code*statusCode)
 		*statusCode = ERR_STOPWORDS_NOT_FOUND; 
 		return ranking;
 	}
+	if (text == NULL)
+	{
+		*statusCode = ERR_TEXT_INPUT_NOT_FOUND;
+		return ranking;
+	}
 	
 	IndexListID* textDocs = NULL;
 	Palabra* frase = NULL;
 	Results* nuevoResultado = NULL;
-
 	frase = obtenerFrase(text, sw);
 	int* listaCoincidencias = NULL;
 	int largoTotal = 0;
@@ -42,6 +46,11 @@ Ranking* query(Index*i, StopWords*sw, char* text, code*statusCode)
 			ranking->text = text;
 			ranking->busqueda = nuevoResultado;
 			*statusCode = OK;
+			/*int res = solicitarVerResultados();
+			if (res == 1)
+			{
+				displayResults(ranking, largoBase-1, statusCode);
+			}*/
 			return ranking;
 		}
 		else
@@ -51,7 +60,7 @@ Ranking* query(Index*i, StopWords*sw, char* text, code*statusCode)
 		}
 		
 	}
-	*statusCode = NO_MEMORY;
+	*statusCode = NO_SEARCH_RESULTS;
 	return ranking;
 }
 
@@ -66,7 +75,7 @@ void displayResults(Ranking *r, int TopK, code *statusCode)
 	        Results* auxiliar = CrearNodoIndex();
 	        auxiliar = result;
        		int i = 0;
-       		printf("Su consulta: '%s', genero %d coincidencias.\n", r->text, r->numTextos);
+       		printf("\nSu consulta: '%s', genero %d coincidencias.\n", r->text, r->numTextos);
 
        		if (TopK > r->numTextos)
 	        {
@@ -82,11 +91,10 @@ void displayResults(Ranking *r, int TopK, code *statusCode)
 	        {
 	        	indiceDoc = obtenerIndexID(result->textDocs, auxiliar->id);
 	            printf(".-- Documento(ID): %s --.\n", auxiliar->id);
-	            printf("\nTitle: ");
+	            printf("\n");
 	            MostrarTitulo(indiceDoc->titulo);
-	            printf("Author: ");
 	            MostrarAutor(indiceDoc->autor);
-	            printf("\n'--------------------------------------'\n");
+	            printf("\n'--------------------------------------'\n\n");
 	            auxiliar = auxiliar->siguiente;
 	            i++;
 	        }
@@ -103,6 +111,88 @@ void displayResults(Ranking *r, int TopK, code *statusCode)
 	{
 		*statusCode = NO_SEARCH_RESULTS;
 	}
+}
+
+void saveRanking(Ranking *r, int *id, code *statusCode)
+{
+	printf("Guardando ranking...\n");
+	if (r == NULL)
+	{
+		*id = 0;
+		*statusCode = ERR_RANKING_NOT_FOUND;
+	}
+	else
+	{
+		*id = obtenerID();
+		char* fecha = obtenerFecha(id);
+		char* saveID = generarNombreSave(id, 1);
+		FILE *archivoSalida;
+		archivoSalida = fopen(saveID, "wb");
+		// funcion que guarda el texto.
+		if (archivoSalida != NULL && r != NULL)
+		{
+			fprintf(archivoSalida, "%s\n", r->text);
+			fprintf(archivoSalida, "%d\n", r->numTextos);
+			escribirRankingDocs(archivoSalida, r->busqueda);
+	        fprintf(archivoSalida, "%d\n", r->numTextos);
+	        escribirResults(archivoSalida, r->busqueda);
+			fprintf(archivoSalida, "%s\n", fecha);
+			*statusCode = OK;
+		}
+		else
+		{
+			*statusCode = ERR_FILE_NOT_PERMISSION;
+		}
+		fclose(archivoSalida);
+	}
+}
+
+Ranking* loadRanking(int id, code *statusCode)
+{
+	Ranking* ranking = (Ranking*)malloc(sizeof(Ranking));
+	ranking->numTextos = 0;
+	ranking->busqueda = NULL;
+
+	IndexListID* indiceDocs = NULL;
+	Results* result = NULL;
+	char* text = NULL;
+	int numDocumentosIndexados = 0;
+	int numPalabras = 0;
+	
+	char* loadID = generarNombreSave(&id, 1);
+	FILE* archivoEntrada;
+	
+	archivoEntrada = fopen(loadID, "rb");
+	if (archivoEntrada != NULL)
+	{
+		text = obtenerTextLoad(archivoEntrada);
+		indiceDocs = cargarTextos(&numDocumentosIndexados, archivoEntrada);
+		int i = 0;
+		fscanf(archivoEntrada, "%d", &numPalabras);
+		char* id = NULL;
+		while(i < numPalabras)
+		{
+			id = (char*)malloc(sizeof(char)*256);
+			fscanf(archivoEntrada, "%s", id);
+			result = insertarIndexOrdenado(result, indiceDocs, id);
+			i++;
+		}
+		// Indexo clave para guardar.
+		ranking->text = text;
+		ranking->numTextos = numDocumentosIndexados;
+		ranking->busqueda = result;
+		*statusCode = OK;
+	}
+	else
+	{
+		*statusCode = ERR_FILE_NOT_FOUND;
+		return NULL;
+	}
+	
+	fclose(archivoEntrada);
+	*statusCode = OK;
+	return ranking;	
+
 }
 
 Ranking* inicializarRanking()
@@ -185,7 +275,8 @@ int* agregarIDLista(int* count, int* listaCoincidencias, Results* result)
 	Results* indice = result;
 	while(indice != NULL)
 	{
-		int id = atoi(indice->id);
+		//int id = atoi(indice->id); // DESCONTINUADO...
+		int id = toString(indice->id);
 		listaCoincidencias[*count] = id;
 		//printf("id: %d", id);
 		indice = indice->siguiente;
@@ -193,6 +284,39 @@ int* agregarIDLista(int* count, int* listaCoincidencias, Results* result)
 		*count = *count + 1;
 	}
 	return listaCoincidencias;
+}
+
+int toString(char* a) 
+{
+	
+	int c, sign, offset, n;
+
+	if (a[0] == '-')
+	{
+		sign = -1;
+	}
+
+	if (sign == -1) 
+	{
+		offset = 1;
+	}
+	else
+	{
+		offset = 0;
+	}
+
+	n = 0;
+
+	for (c = offset; a[c] != '\0'; c++)
+	{
+		n = n * 10 + a[c] - '0';
+	}
+
+	if (sign == -1)
+	{
+		n = -n;
+	}
+	return n;
 }
 
 int* ordenarLista(int* listaCoincidencias, int largoListaCoincidencias)
@@ -343,19 +467,64 @@ Results* generarResultado(int* listaCoincidencias, int largoBase, IndexListID* t
 	return nuevoResultado;
 }
 
-/*int solicitarVerResultados(Results* r, int TopK, code* statusCode)
+// FUNCIONES EXTRAS - SAVE RANKING
+void escribirRankingDocs(FILE* archivoSalida, Results* result)
 {
-	printf("Desea ver resultados de su busqueda?(y)/(n)\n");
+	IndexListID* indiceDoc = NULL;
+	if(result != NULL)
+	{
+        Results* auxiliar = CrearNodoIndex();
+        auxiliar = result;
+        while(auxiliar != NULL)
+        {
+        	indiceDoc = obtenerIndexID(result->textDocs, auxiliar->id);
+        	fprintf(archivoSalida, ".I %s\n", auxiliar->id);
+            escribirTitulo(archivoSalida, indiceDoc->titulo);
+            escribirAutor(archivoSalida, indiceDoc->autor);
+            auxiliar = auxiliar->siguiente;
+        }
+	}
+}
+
+void escribirResults(FILE* archivoSalida, Results* result)
+{
+	if(result != NULL)
+	{
+        Results* auxiliar = CrearNodoIndex();
+        auxiliar = result;
+        while(auxiliar != NULL)
+        {
+        	fprintf(archivoSalida, "%s ", auxiliar->id);
+            auxiliar = auxiliar->siguiente;
+        }
+	}
+	fprintf(archivoSalida, "\n");
+}
+
+// FUNCIONES EXTRAS - LOAD RANKING
+char* obtenerTextLoad(FILE* archivoEntrada)
+{
+	char *newText = NULL;
+	char* text = (char*)malloc(sizeof(char)*256);
+	fgets(text, 256, archivoEntrada);
+
+	// Quitamos saltos de linea.
+	newText = strtok(text, "\n");
+	return newText;
+}
+
+int solicitarVerResultados()
+{
+	printf("Desea ver resultados de su busqueda: (y)/(n)\n");
 	char* opcion = (char*)malloc(sizeof(char)*10);
 	scanf("%c", opcion);
-	if (strcmp(opcion, "y") == 0)
+	if (strcmp(opcion, "y") == 0 || strcmp(opcion, "Y") == 0)
 	{
-		showResults(r, TopK, 0);
 		return 1;
 	}
-	if (strcmp(opcion, "n") == 0)
+	if (strcmp(opcion, "n") == 0 || strcmp(opcion, "N") == 0)
 	{
 		return 0;
 	}
 	return 0;
-}*/
+}

@@ -87,6 +87,7 @@ void saveIndex(Index*i, int* id, code*statusCode)
 	printf("Guardando index...\n");
 	if (i == NULL)
 	{
+		*id = 0;
 		*statusCode = ERR_INDEX_NOT_FOUND;
 	}
 	else
@@ -154,79 +155,7 @@ Index* loadIndex(int id, code* statusCode)
 
 // FUNCIONES EXTRAS
 
-void saveRanking(Ranking *r, int *id, code *statusCode)
-{
-	printf("Guardando ranking...\n");
-	*id = obtenerID();
-	char* fecha = obtenerFecha(id);
-	char* saveID = generarNombreSave(id, 1);
-	FILE *archivoSalida;
-	archivoSalida = fopen(saveID, "wb");
-	// funcion que guarda el texto.
-	if (archivoSalida != NULL && r != NULL)
-	{
-		fprintf(archivoSalida, "%s\n", r->text);
-		fprintf(archivoSalida, "%d\n", r->numTextos);
-		escribirRankingDocs(archivoSalida, r->busqueda);
-        fprintf(archivoSalida, "%d\n", r->numTextos);
-        escribirResults(archivoSalida, r->busqueda);
-		fprintf(archivoSalida, "%s\n", fecha);
-		*statusCode = OK;
-	}
-	else
-	{
-		*statusCode = ERR_FILE_NOT_PERMISSION;
-	}
-	fclose(archivoSalida);
-}
 
-Ranking* loadRanking(int id, code *statusCode)
-{
-	Ranking* ranking = (Ranking*)malloc(sizeof(Ranking));
-	ranking->numTextos = 0;
-	ranking->busqueda = NULL;
-
-	IndexListID* indiceDocs = NULL;
-	Results* result = NULL;
-	char* text = NULL;
-	int numDocumentosIndexados = 0;
-	int numPalabras = 0;
-	
-	char* loadID = generarNombreSave(&id, 1);
-	FILE* archivoEntrada;
-	
-	archivoEntrada = fopen(loadID, "rb");
-	if (archivoEntrada != NULL)
-	{
-		text = obtenerTextLoad(archivoEntrada);
-		indiceDocs = cargarTextos(&numDocumentosIndexados, archivoEntrada);
-		int i = 0;
-		fscanf(archivoEntrada, "%d", &numPalabras);
-		char* id = NULL;
-		while(i < numPalabras)
-		{
-			id = (char*)malloc(sizeof(char)*256);
-			fscanf(archivoEntrada, "%s", id);
-			result = insertarIndexOrdenado(result, indiceDocs, id);
-			i++;
-		}
-		// Indexo clave para guardar.
-		ranking->text = text;
-		ranking->numTextos = numDocumentosIndexados;
-		ranking->busqueda = result;
-		*statusCode = OK;
-	}
-	else
-	{
-		*statusCode = ERR_FILE_NOT_FOUND;
-		return NULL;
-	}
-	
-	fclose(archivoEntrada);
-	*statusCode = OK;
-	return ranking;	
-
-}
 
 // FUNCIONES EXTRAS CREATEINDEX
 char* leerTextID(FILE* archivoEntrada)
@@ -279,6 +208,7 @@ Author* leerTextAutor(FILE* archivoEntrada)
 		{
 			palabra = LeerPalabra(archivoEntrada);
 			textAutor = InsertarAutor(textAutor, palabra);	
+
 		}while((strcmp(palabra, ".B") != 0) && (strcmp(palabra, ".W") != 0)
 		 	&& (strcmp(palabra, ".I") != 0) && (strcmp(palabra, ".") != 0));
 	}
@@ -591,53 +521,6 @@ Index* cargarPalabras(FILE* archivoEntrada, IndexListID* indiceDocs)
 		i++;
 	}
 	return cargarIndex;
-}
-
-
-// FUNCIONES EXTRAS - SAVE RANKING
-void escribirRankingDocs(FILE* archivoSalida, Results* result)
-{
-	IndexListID* indiceDoc = NULL;
-	if(result != NULL)
-	{
-        Results* auxiliar = CrearNodoIndex();
-        auxiliar = result;
-        while(auxiliar != NULL)
-        {
-        	indiceDoc = obtenerIndexID(result->textDocs, auxiliar->id);
-        	fprintf(archivoSalida, ".I %s\n", auxiliar->id);
-            escribirTitulo(archivoSalida, indiceDoc->titulo);
-            escribirAutor(archivoSalida, indiceDoc->autor);
-            auxiliar = auxiliar->siguiente;
-        }
-	}
-}
-
-void escribirResults(FILE* archivoSalida, Results* result)
-{
-	if(result != NULL)
-	{
-        Results* auxiliar = CrearNodoIndex();
-        auxiliar = result;
-        while(auxiliar != NULL)
-        {
-        	fprintf(archivoSalida, "%s ", auxiliar->id);
-            auxiliar = auxiliar->siguiente;
-        }
-	}
-	fprintf(archivoSalida, "\n");
-}
-
-// FUNCIONES EXTRAS - LOAD RANKING
-char* obtenerTextLoad(FILE* archivoEntrada)
-{
-	char *newText = NULL;
-	char* text = (char*)malloc(sizeof(char)*256);
-	fgets(text, 256, archivoEntrada);
-
-	// Quitamos saltos de linea.
-	newText = strtok(text, "\n");
-	return newText;
 }
 
 // FUNCIONES UTILITARIAS
